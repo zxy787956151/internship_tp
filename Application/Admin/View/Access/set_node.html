@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[title]</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__PUBLIC__/template/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="__PUBLIC__/template/css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/template/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<div id="page-wrapper">
+    <div class="row">
+        <a href="{:U('Access/add_access')}" class="btn btn-success">添加新权限</a>
+    </div>
+    <form method="post" action="{:U('category/add')}">
+
+        <div class="form-group">
+            <label for="aa">节点名</label> <!-- 没用 -->
+            <input type="text" name="title" class="form-control" id="aa" placeholder="输入分类标题">
+        </div>
+        <div class="form-group">
+            <label for="bb">角色</label>
+            <select name="pid" id="bb" class="form-control">
+                <option value="">船长</option>
+                <foreach name="cate" item="v">
+                    <option value="{$v.id}">{$v.html} {$v.title}</option>
+                </foreach>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="bb">权限设置</label>
+            access1<input type="checkbox" value="access1" name="access" />
+            access2<input type="checkbox" value="access2" name="access" />
+            access3<input type="checkbox" value="access3" name="access" />
+        </div>
+        <button type="submit" class="btn btn-default">添加</button>
+    </form>
+</div>
+<script src="__PUBLIC__/template/js/jquery-1.10.2.js"></script>
+<script src="__PUBLIC__/template/js/bootstrap.js"></script>
+<script src="__PUBLIC__/template/js/app.js"></script>
+
+</body>
+</html>
+</body>
+</html>
