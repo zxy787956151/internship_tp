@@ -7,11 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Product :: w3layouts</title>
+<title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Checkout :: w3layouts</title>
 <link href="/Application/Home/View//Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="/Application/Home/View//Public/js/jquery.min.js"></script>
-<script src="/Application/Home/View//Public/js/addCar.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="/Application/Home/View//Public/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -39,7 +38,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- js -->
 		 <script src="/Application/Home/View//Public/js/bootstrap.js"></script>
 	<!-- js -->
-
+	<style>
+		.Clearing{
+			font-size: 24px;
+			width:200px;
+			height:30px;
+			background-color: orange;
+		}
+	</style>
 </head>
 <body> 
 <!--header-->	
@@ -119,152 +125,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>	
  				<div class="clearfix"> </div>	
 			</div>	
+<!---->
 <div class="back">
-	<h2>Produts</h2>
+	<h2>Checkout</h2>
 </div>
 		<!---->
 		<div class="product">
 			<div class="container">
 				<div class="col-md-3 product-price">
-					  <div class="price-grid">
-					    <div class="of-left">
-						<h3 class="cate cate-on">PRICE</h3>
-					</div>
-	  <ul class="dropdown-menu1">
-            <li><a href="#">
-                <p>
-                      <label for="amount" class="amount">Range:</label>
-                     <input type="text" id="amount" style="border: 0; color: #ff5d56; font-weight: bold;" />
-                         
-						  </p>
-                
-                   <div id="slider-range"></div>
-                </a></li>
+					  
 				
-          </ul>
-		  <a  class="go" href="single.html">GO</a>
-		  	<div class="clearfix"> </div>
-<!---->
- <script type="text/javascript" src="/Application/Home/View//Public/js/jquery-ui.min.js"></script>
-
-      <link rel="stylesheet" type="text/css" href="/Application/Home/View//Public/css/jquery-ui.css">
-
-<script type='text/javascript'>//<![CDATA[ 
-$(window).load(function(){
- $( "#slider-range" ).slider({
-            range: true,
-            min: 0,
-            max: 500,
-            values: [ 100, 400 ],
-            slide: function( event, ui ) {  $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-            }
- });
-$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-
-});//]]>  
-
-</script>
-
-
-<!---->
-		</div>
-				<div class=" rsidebar span_1_of_left">
-					<div class="of-left">
-						<h3 class="cate">CATEGORIES</h3>
-					</div>
-		 <ul class="menu">
-		<li class="item1"><a href="#">Men </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails </a></li>
-			</ul>
-		</li>
-		<li class="item2"><a href="#">Women </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails </a></li>
-			</ul>
-		</li>
-		<li class="item3"><a href="#">Kids</a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails</a></li>
-			</ul>
-		</li>
-		<li class="item4"><a href="#">Accesories</a>
-			<ul class="cute">
-				<li class="subitem1"><a href="single.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="single.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="single.html">Automatic Fails</a></li>
-			</ul>
-		</li>
-				
-		<li class="item4"><a href="#">Shoes</a>
-			<ul class="cute">
-				<li class="subitem1"><a href="product.html">Cute Kittens </a></li>
-				<li class="subitem2"><a href="product.html">Strange Stuff </a></li>
-				<li class="subitem3"><a href="product.html">Automatic Fails </a></li>
-			</ul>
-		</li>
-	</ul>
-					</div>
-				<!--initiate accordion-->
-		<script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
-			
-			});
-		</script>
-<!---->
-	<div class="product-middle">
-		
-					<div class="fit-top">
-						<h6 class="shop-top">LOREM IPSUM</h6>
-						<a href="single.html" class="shop-now">SHOP NOW</a>
-<div class="clearfix"> </div>
-	</div>
-				</div>	 
-						<div class="sellers">
-							<div class="of-left-in">
-								<h3 class="tag">TAGS</h3>
-							</div>
-								<div class="tags">
-									<ul>
-										<li><a href="#">design</a></li>
-										<li><a href="#">fashion</a></li>
-										<li><a href="#">lorem</a></li>
-										<li><a href="#">dress</a></li>
-										<li><a href="#">fashion</a></li>
-										<li><a href="#">dress</a></li>
-										<li><a href="#">design</a></li>
-										<li><a href="#">dress</a></li>
-										<li><a href="#">design</a></li>
-										<li><a href="#">fashion</a></li>
-										<li><a href="#">lorem</a></li>
-										<li><a href="#">dress</a></li>
-										
-										<div class="clearfix"> </div>
-									</ul>
-								
-								</div>
-								
-		</div>
 				<!---->
 				<div class="product-bottom">
 					<div class="of-left-in">
@@ -272,11 +142,11 @@ $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) + " - $" + 
 							</div>
 					<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/f1.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/be.jpg" alt=""></a>
 									
 								</div>
 							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html" >Lorem ipsum dolor sit
+								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
 amet consectetuer  </a></h6>
 								
 								<span class=" price-in1"> $40.00</span>
@@ -286,11 +156,11 @@ amet consectetuer  </a></h6>
 							</div>
 							<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/f2.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/be1.jpg" alt=""></a>
 									
 								</div>
 							<div class="fashion-grid1">
-								<h6 class="best2"><a href="single.html" >Lorem ipsum dolor sit
+								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
 amet consectetuer </a></h6>
 								
 								<span class=" price-in1"> $40.00</span>
@@ -300,11 +170,11 @@ amet consectetuer </a></h6>
 							</div>
 							<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/f3.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/be2.jpg" alt=""></a>
 									
 								</div>
 							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html" >Lorem ipsum dolor sit
+								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
 amet consectetuer </a></h6>
 								<ul class="star-footer">
 									<li><a href="#"><i> </i></a></li>
@@ -320,141 +190,112 @@ amet consectetuer </a></h6>
 							</div>
 				</div>
 <div class=" per1">
-				<a href="single.html" ><img class="img-responsive" src="/Application/Home/View//Public/images/n7.jpg" alt="">
+				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi9.jpg" alt="">
 				<div class="six1">
 					<h4>DISCOUNT</h4>
 					<p>Up to</p>
-					<span>60%</span>
+					<span>20%</span>
 				</div></a>
 			</div>
 				</div>
-				
-		
-			<!---->
-			
 				<!---->
 				<div class="col-md-9 product-price1">
-					<div class="mens-toolbar">
-						<p class="showing">Showing 1–9 of 21 results</p>
-	                 <div class="sort">
-			            <select>
-			                  <option value=""> Sorting By Rate</option>
-			                    <option value="">Sorting By Color </option>
-			                    <option value="">Sorting By Price </option>
-			            </select>
-			          
-	    		     </div>
-    	      
-                	<div class="clearfix"></div>		
-		        </div>
-		        <div class="product-right-top">
-		        
+				<div class="check-out">	 
+			
+		 <div class=" cart-items">
+			 <h3>My Shopping Bag (2)</h3>
+				<script>$(document).ready(function(c) {
+//					$('.close1').on('click', function(c){
+//						$('.cart-header').fadeOut('slow', function(c){
+//							$('.cart-header').remove();
+//						});
+//						});
+//					});
+			   </script>
 
-	   		     	<?php if(is_array($model)): foreach($model as $key=>$v): ?><div class="col-md-4 chain-grid simpleCart_shelfItem" id="br">
-						
-						<div class="grid-span-1">
-		   		     		<a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"><img class="img-responsive " src="/Application/Home/View//Public/images/n1.jpg" alt=" ">
-							<div class="link">
-		   		     			<ul >
-											<li><i class="glyphicon glyphicon-search"> </i></li>
-											
-								</ul>
-		   		     		</div><span>NEW</span></a>
-		   		     		</div>
-		   		     		<div class="grid-chain-bottom ">
-		   		     			<a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></a>
-		   		     			<div class="star-price">
-		   		     				<div class="price-at">
-			   		     				<ul class="star-footer">
-											<li><a href="#"><i> </i></a></li>
-											<li><a href="#"><i> </i></a></li>
-											<li><a href="#"><i> </i></a></li>
-											<li><a href="#"><i> </i></a></li>
-											<li><a href="#"><i> </i></a></li>
-										</ul>
-										</div>
-										<div class="price-at-bottom ">
-											<span class="item_price">$<?php echo ($v["price"]); ?></span>
-										</div>
-		   		     				<div class="clearfix"> </div>
-								</div>
-								<div class="cart-add">
-									<a class="addCar add1 item_add" href="#">ADD TO CART <i> </i></a>
-									<a class="addCar add2" href="#"><i class="glyphicon glyphicon-heart-empty"> </i></a>
-									<div class="clearfix"> </div>
-									<input type="hidden" class="addCarId" value="<?php echo ($v["id"]); ?>" />
-								</div>
-		   		     		</div>
-		   		     		<br/>
-		   		     	</div><?php endforeach; endif; ?>
-				<?php echo ($page); ?>
-		        </div>
-		        </div>	
-	        	<!-- <ul class="start">
-					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>0));?>">首页</a></li>
-					&nbsp;&nbsp;&nbsp;
-					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'-'));?>">Up</a></li>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<?php $__FOR_START_7340__=1;$__FOR_END_7340__=$pagGlobals+1;for($i=$__FOR_START_7340__;$i < $__FOR_END_7340__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
-						&nbsp;&nbsp;<?php } ?>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'+'));?>">Down</a></li>
-					&nbsp;&nbsp;&nbsp;
-					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'last'));?>">尾页</a></li>
-				</ul> -->
-		        
-				<div class="clearfix"> </div>
-				</div>
+
 				
-			<div class="clearfix"> </div>
-			
-				<div class="shipping">
-					<div class="col-md-3 col-md1">
-						<div class=" phone">
-						
-							<div class="num">
-								<span>8(802)234-5678</span>
-								<p>Monday - Saturday: 8am - 5pm PST</p>
-							</div>
-							<i class="phone-in"> </i>
-							<div class="clearfix"> </div>
-						</div>
-					
-					</div>
-					<div class="col-md-5 col-md2">
-						<div class=" phone1">
-					
-							<i class="phone-in1"> </i>
-							<div class="num1">
-								<span>Free Shipping</span>
-								<p>on all orders over $99</p>
-							</div>
-							<a class="learn-in" href="single.html">Learn More</a>
-							<div class="clearfix"> </div>
-						</div>
-			
-					</div>
-					<div class="col-md-4 col-md3">
-						<div class=" phone2">
-					
-							
-							<div class="num2">
-								<span>Crazy Sale!</span>
-								<p>on selected items</p>
-							</div>
-							<a class="learn-in1" href="single.html">Learn More</a>
-							<div class="clearfix"> </div>
-						</div>
-			</div>
-			<div class="clearfix"> </div>
-			</div>
-					
-				</div>
-				
-			<!---->
-		
+				  <div class="in-check" >
+
+		  <?php if($_SESSION['user'] == null): ?><!--eq 等于-->
+			  <!--neq 不等于-->
+			  <!--gt 大于-->
+			  <!--egt 大于等于-->
+			  <!--lt 小于-->
+			  <!--elt 小于等于-->
+			  <!--like LIKE-->
+			  <!--between BETWEEN-->
+			  <!--notnull IS NUT NULL-->
+			  <!--null IS NULL-->
+			  <ul class="unit">
+				  <li><span>无记录,请登录!</span></li>
+				  <div class="clearfix"> </div>
+			  </ul>
+			  <?php else: ?>
+
+			  <ul class="unit">
+				  <li><span>Photo</span></li>
+				  <li><span>Product Name</span></li>
+				  <li><span>Unit Price</span></li>
+				  <li><span>Stock Status</span></li>
+				  <li><span>Purchase Quantity</span></li>
+				  <li></li>
+				  <div class="clearfix"> </div>
+			  </ul>
+
+				  <?php if(is_array($model)): foreach($model as $key=>$plvv): ?><ul class="cart-header">
+						  <a href="<?php echo U('Checkout/close',array('id' => $plvv[id]));?>"><div class="close1"></div></a>
+						  <li class="ring-in"><a href="<?php echo U('Single/index');?>&pid=<?php echo ($plvv["id"]); ?>" ><img src="/Application/Home/View//Public/images/<?php echo ($plvv["photo"]); ?>" class="img-responsive" alt=""></a>
+						  </li>
+						  <li><span><?php echo ($plvv["name"]); ?></span></li>
+						  <li><span><?php echo ($plvv["price"]); ?></span></li>
+						  <li>
+							  <span>
+								  <?php if($plvv[stock] == 1): ?>In Stock
+									<?php else: ?>Out Of Stock<?php endif; ?>
+							  </span>
+						  </li>
+						  <li><span><?php echo ($plvv["quantity"]); ?></span></li>
+						  <div class="clearfix"> </div>
+					  </ul><?php endforeach; endif; endif; ?>
+			  <ul class="cart-header">
+				  <center><a class="Clearing" href="<?php echo U('Checkout/clear');?>">结算</a></center>
+			  </ul>
 		</div>
-		<div class="bottom-grid1">
+			 </div>
+					  
+		 </div>
+		 
+<div class=" per2">
+				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi2.jpg" alt="">
+				<div class="six3">
+					<h4>DISCOUNT</h4>
+					<p>Up to</p>
+					<span>30%</span>
+				</div></a>
+			</div>
+			<div class=" per3">
+				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi3.jpg" alt="">
+				<div class="six3">
+					<h4>DISCOUNT</h4>
+					<p>Up to</p>
+					<span>45%</span>
+				</div></a>
+			</div>
+						<div class=" per4">
+				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi10.jpg" alt="">
+				<div class="six4">
+					<h4>DISCOUNT</h4>
+					<p>Up to</p>
+					<span>70%</span>
+				</div></a>
+			</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+			<!---->
+				<div class="bottom-grid1">
 					
 					<div class="fit1">
 						<h3>HAPPY SHOPPING</h3>
@@ -462,16 +303,13 @@ amet consectetuer </a></h6>
 sed diam nonummy nibh euismod</p>
 					</div>
 				</div>
-		
 <!---->
-
-<script src="/Application/Home/View//Public/js/simpleCart.min.js"> </script>
-<!---->
-<div class="footer">
+	<div class="footer">
 		<div class="container">
 			<div class="col-md-4 footer-top">
 				<h3>Quick Contact</h3>
 				<form>
+						
 						<input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
 						
 						<input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
@@ -483,6 +321,7 @@ sed diam nonummy nibh euismod</p>
 							<input type="submit" value="SEND MESSAGE" >
 						
 					</form>
+
 			</div>
 			<div class="col-md-4 footer-middle">
 				<h3>Top Rated Products</h3>

@@ -1,40 +1,40 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>index</title>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/style.css">
-	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/js/left.js"></script>
+	<link rel="stylesheet" type="text/css" href="/Application/Admin/View//Public/style/style.css">
+	<script type="text/javascript" src="/Application/Admin/View//Public/js/jquery.js"></script>
+	<script type="text/javascript" src="/Application/Admin/View//Public/js/left.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="nav">
 			<div class="head">
-				<img src="__PUBLIC__/images/head/1901.jpg" alt="">
+				<img src="/Application/Admin/View//Public/images/head/1901.jpg" alt="">
 			</div>
 			<div class="menu">
 				<ul>
 					<a href="#" class="nav-main" id="nav-main0"><span id="nav-ico0"></span>控制面板</a>
 				</ul>
 				<ul>
-					<a href="{:U('Menu/index')}" class="nav-main" id="nav-main1" target="myFrame"><span id="nav-ico1"></span>菜单管理</a>
+					<a href="<?php echo U('Menu/index');?>" class="nav-main" id="nav-main1" target="myFrame"><span id="nav-ico1"></span>菜单管理</a>
 					<!-- <li class="nav-li" id="nav-li1">
-						<a href="{:U('Menu/index')}" target="myFrame">菜单管理</a>
+						<a href="<?php echo U('Menu/index');?>" target="myFrame">菜单管理</a>
 					</li> -->
 				</ul>
 				<ul>
 					<a href="#" class="nav-main" id="nav-main2"><span id="nav-ico2"></span>用户&权限管理</a>
 					<li class="nav-li" id="nav-li2">
-						<a href="{:U('Access/user_index')}" target="myFrame">用户列表</a>
-						<a href="{:U('Access/role_index')}" target="myFrame">动态管理权限</a>
+						<a href="<?php echo U('Access/user_index');?>" target="myFrame">用户列表</a>
+						<a href="<?php echo U('Access/role_index');?>" target="myFrame">动态管理权限</a>
 						<a href="#">3</a>
 						<a href="#">4</a>
 						<a href="#">5</a>
 					</li>
 				</ul>
 				<ul>
-					<a href="{:U('Product/index')}" class="nav-main" id="nav-main2" target="myFrame"><span id="nav-ico2"></span>商品管理</a>
+					<a href="<?php echo U('Product/index');?>" class="nav-main" id="nav-main2" target="myFrame"><span id="nav-ico2"></span>商品管理</a>
 					<li class="nav-li" id="nav-li2">
 						<a href="#"></a>
 						<a href="#">2</a>
@@ -66,7 +66,7 @@
 				<ul>
 					<a href="#" class="nav-main" id="nav-main5"><span id="nav-ico5"></span>设置</a>
 					<li class="nav-li" id="nav-li5">
-						<a href="{:U('Login/loginout')}">退出登录</a>
+						<a href="<?php echo U('Login/loginout');?>">退出登录</a>
 						<a href="#">2</a>
 					</li>
 				</ul>

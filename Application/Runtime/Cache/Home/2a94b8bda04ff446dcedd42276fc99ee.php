@@ -116,7 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 					<!---->
 					<div class="cart box_1">
-						<a href="<?php echo U('Checkout/index');?>">
+						<a href="<?php echo U('Product/car');?>">
 						<h3> <div class="total">
 							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
 							<img src="/Application/Home/View//Public/images/cart2-2.png" alt=""/></h3>

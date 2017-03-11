@@ -11,6 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="__PUBLIC__/js/jquery.min.js"></script>
+<script src="__PUBLIC__/js/addCar.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -275,7 +276,7 @@ amet consectetuer </a></h6>
 		        <div class="product-right-top">
 		        
 
-	   		     	<foreach name="PageNow" item="v"> 
+	   		     	<foreach name="model" item="v"> 
 		   		     	<div class="col-md-4 chain-grid simpleCart_shelfItem" id="br">
 						
 						<div class="grid-span-1">
@@ -305,19 +306,20 @@ amet consectetuer </a></h6>
 		   		     				<div class="clearfix"> </div>
 								</div>
 								<div class="cart-add">
-									<a class="add1 item_add" href="{:U('Checkout/addCar',array('pid'=>$v[pid]))}">ADD TO CART <i> </i></a>
-									<a class="add2" href="#"><i class="glyphicon glyphicon-heart-empty"> </i></a>
+									<a class="addCar add1 item_add" href="#">ADD TO CART <i> </i></a>
+									<a class="addCar add2" href="#"><i class="glyphicon glyphicon-heart-empty"> </i></a>
 									<div class="clearfix"> </div>
+									<input type="hidden" class="addCarId" value="{$v.id}" />
 								</div>
 		   		     		</div>
 		   		     		<br/>
 		   		     	</div>
 		   		     
 	   		     	</foreach>
-
+				{$page}
 		        </div>
 		        </div>	
-	        	<ul class="start">
+	        	<!-- <ul class="start">
 					<li class="arrow"><a href="{:U('Product/index',array('pd'=>0))}">首页</a></li>
 					&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="{:U('Product/index',array('pd'=>'-'))}">Up</a></li>
@@ -330,7 +332,7 @@ amet consectetuer </a></h6>
 					<li class="arrow"><a href="{:U('Product/index',array('pd'=>'+'))}">Down</a></li>
 					&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="{:U('Product/index',array('pd'=>'last'))}">尾页</a></li>
-				</ul>
+				</ul> -->
 		        
 				<div class="clearfix"> </div>
 				</div>
