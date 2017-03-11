@@ -11,8 +11,6 @@
     <!-- Add custom CSS here -->
     <link href="/Application/Admin/View//Public/template/css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="/Application/Admin/View//Public/template/font-awesome/css/font-awesome.min.css">
-</head>
-
 <body>
 <div id="page-wrapper">
     
@@ -41,15 +39,23 @@
                 <th>启用|锁死</th>
                 <th>上次登录时间</th>
                 <th>上次登录ip</th>
+                <th>操作</th>
             </tr>
         </thead>
         <tbody>
-        <?php if(is_array($model)): foreach($model as $key=>$v): ?><tr>
-                <td><?php echo ($v["id"]); ?></td>
-                <td><?php echo ($v["html"]); ?> <?php echo ($v["title"]); ?></td>
-                <td><?php echo ($v["name"]); ?></td>
+        <?php if(is_array($users)): foreach($users as $key=>$v): ?><tr>
+                <td><?php echo ($v["user_id"]); ?></td>
+                <td><?php echo ($v["username"]); ?></td>
+                <td><?php echo ($v["user_to_role"]["rolename"]); ?></td>
+                <td><?php echo ($v["password"]); ?></td>
+                <td>
+                    <?php $lock = $v['locked']?"是":"否";echo $lock; ?>
+                </td>
+                <td><?php echo ($v["logintime"]); ?></td>
+                <td><?php echo ($v["loginip"]); ?></td>
+                <!-- 直接这么写就行 不用再遍历三维数组,因为它也不是三维数组 -->
                 <!-- 删除角色 -->
-                <td><a href="<?php echo U('category/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除角色</a></td>
+                <td><a href="<?php echo U('category/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除用户</a></td>
             </tr><?php endforeach; endif; ?>
         </tbody>
     </table>

@@ -11,8 +11,6 @@
     <!-- Add custom CSS here -->
     <link href="__PUBLIC__/template/css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="__PUBLIC__/template/font-awesome/css/font-awesome.min.css">
-</head>
-
 <body>
 <div id="page-wrapper">
     
@@ -41,16 +39,24 @@
                 <th>启用|锁死</th>
                 <th>上次登录时间</th>
                 <th>上次登录ip</th>
+                <th>操作</th>
             </tr>
         </thead>
         <tbody>
-        <foreach name="model" item="v">
+        <foreach name="users" item="v">
             <tr>
-                <td>{$v.id}</td>
-                <td>{$v.html} {$v.title}</td>
-                <td>{$v.name}</td>
+                <td>{$v.user_id}</td>
+                <td>{$v.username}</td>
+                <td>{$v.user_to_role.rolename}</td>
+                <td>{$v.password}</td>
+                <td>
+                    <php>$lock = $v['locked']?"是":"否";echo $lock;</php>
+                </td>
+                <td>{$v.logintime}</td>
+                <td>{$v.loginip}</td>
+                <!-- 直接这么写就行 不用再遍历三维数组,因为它也不是三维数组 -->
                 <!-- 删除角色 -->
-                <td><a href="{:U('category/update?id=')}{$v.id}">编辑</a> | <a href="{:U('category/delete?id=')}{$v.id}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除角色</a></td>
+                <td><a href="{:U('category/update?id=')}{$v.id}">编辑</a> | <a href="{:U('category/delete?id=')}{$v.id}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除用户</a></td>
             </tr>
         </foreach>
         </tbody>

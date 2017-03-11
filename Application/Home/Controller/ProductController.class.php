@@ -3,6 +3,17 @@ namespace Home\Controller;
 use Think\Controller;
 	class ProductController extends Controller{
 		public function index(){
+			// $data = array(
+			// 	'username'=>'xzf',
+			// 	'password' => md5("xzf"),
+			// 	'logintime' =>  date('y-m-d h:i:s',time()),
+			// 	'loginip' =>  $_SERVER["REMOTE_ADDR"],
+			// 	'role_id' =>'3',
+			// 	);
+			// if ($pd = M('user')->data($data)->add()) {
+			// 	$this->success('ok');
+			// }
+			// die();
             $db = M('Product');  
 	        
 	        $count  = $db->count();// 查询满足要求的总记录数
@@ -16,15 +27,17 @@ use Think\Controller;
 
 		public function car(){
 			//用关联模型 多对多?
-			$db = M('prod_user');
-			$count  = $db->count();// 查询满足要求的总记录数
-	        $Page = new \Extend\Page($count,3);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-	        $show = $Page->show();// 分页显示输出
-	        $pages = $db->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
-	        test($pages);
-	        die();
-	        $this->assign('model', $pages);
-	        $this->assign('page',$show);
+			// $db = M('prod_user');
+			// $count  = $db->count();// 查询满足要求的总记录数
+	  //       $Page = new \Extend\Page($count,3);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+	  //       $show = $Page->show();// 分页显示输出
+	  //       $pages = $db->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
+			$User = D('User');
+			//用户vs商品more_to_more
+			$user_to_prod = $User->relation(true)->where("user_id=%d",'19')->find();
+	        test($user_to_prod);
+	        // $this->assign('model', $pages);
+	        // $this->assign('page',$show);
 			$this->display();
 		}
 
