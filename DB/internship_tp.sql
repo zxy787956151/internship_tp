@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 03 月 11 日 06:56
+-- 生成日期: 2017 年 03 月 12 日 09:06
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -46,13 +46,16 @@ CREATE TABLE IF NOT EXISTS `menu` (
   `pid` int(33) NOT NULL,
   `level` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
 -- 转存表中的数据 `menu`
 --
 
 INSERT INTO `menu` (`id`, `name`, `pid`, `level`) VALUES
+(21, 'KLJJHKUGH', 20, 3),
+(19, 'woman', 0, 1),
+(20, 'WDAD', 14, 2),
 (14, 'Men', 0, 1);
 
 -- --------------------------------------------------------
@@ -99,19 +102,17 @@ CREATE TABLE IF NOT EXISTS `prod_user` (
   `pid` int(33) NOT NULL,
   `count` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
 -- 转存表中的数据 `prod_user`
 --
 
 INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`) VALUES
-(1, 18, 1, 1),
-(2, 18, 2, 2),
-(3, 18, 4, 4),
-(4, 18, 5, 5),
-(5, 19, 1, 11),
-(6, 19, 2, 1);
+(12, 19, 8, 2),
+(11, 19, 7, 6),
+(9, 18, 11, 3),
+(10, 18, 10, 5);
 
 -- --------------------------------------------------------
 

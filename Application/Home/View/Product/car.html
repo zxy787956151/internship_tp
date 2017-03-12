@@ -163,9 +163,7 @@ amet consectetuer </a></h6>
 				  <li><span>Photo</span></li>
 				  <li><span>Product Name</span></li>
 				  <li><span>Unit Price</span></li>
-				  <li><span>Stock Status</span></li>
-				  <li><span>Purchase Quantity</span></li>
-				  <li></li>
+				  <li><span>Chount</span></li>
 				  <div class="clearfix"> </div>
 			  </ul>
 			  	
@@ -175,20 +173,15 @@ amet consectetuer </a></h6>
 						  <li class="ring-in"><a href="{:U('Single/index')}&pid={$plvv.id}" ><img src="__PUBLIC__/images/{$plvv.photo}" class="img-responsive" alt=""></a>
 						  </li>
 						  <li><span>{$plvv.name}</span></li>
-						  <li><span>{$plvv.price}</span></li>
-						  <li>
-							  <span>
-								  <if condition="$plvv[stock] eq 1">In Stock
-									<else />Out Of Stock
-								  </if>
-							  </span>
-						  </li>
-						  <li><span>{$plvv.quantity}</span></li>
+						  <li><span class="price">{$plvv.price}</span></li>
+						  
+						  <li><span>{$plvv.count}</span></li>
+						  <input type="hidden" name="" value="{$plvv.id}" />
 						  <div class="clearfix"> </div>
 					  </ul>
 				  </foreach>
 			  <ul class="cart-header">
-				  <center><a class="Clearing" href="{:U('Checkout/clear')}">结算</a></center>
+				  <center><a id="Clearing" href="#">结算</a></center>
 			  </ul>
 		</div>
 			 </div>

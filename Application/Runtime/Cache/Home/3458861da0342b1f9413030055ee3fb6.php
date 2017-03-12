@@ -11,7 +11,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="/Application/Home/View//Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="/Application/Home/View//Public/js/jquery.min.js"></script>
-<script src="/Application/Home/View//Public/js/addCar.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="/Application/Home/View//Public/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -395,7 +394,7 @@ amet consectetuer </a></h6>
 					&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'-'));?>">Up</a></li>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<?php $__FOR_START_22490__=1;$__FOR_END_22490__=$pagGlobals+1;for($i=$__FOR_START_22490__;$i < $__FOR_END_22490__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
+					<?php $__FOR_START_15977__=1;$__FOR_END_15977__=$pagGlobals+1;for($i=$__FOR_START_15977__;$i < $__FOR_END_15977__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
 						&nbsp;&nbsp;<?php } ?>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'+'));?>">Down</a></li>

@@ -1,0 +1,44 @@
+[ 2017-03-12T17:03:41+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+SQL: SHOW COLUMNS FROM `prod_user` [ RunTime:0.014342s ]
+SQL: SELECT * FROM `prod_user` WHERE ( pid=7 )  [ RunTime:0.000340s ]
+SQL: UPDATE `prod_user` SET `count`=count+1 WHERE ( pid=7 ) [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2017-03-12T17:03:49+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003268s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `prod_user` WHERE ( pid=7 )  [ RunTime:0.000325s ]
+SQL: UPDATE `prod_user` SET `count`=count+1 WHERE ( pid=7 ) [ RunTime:0.000278s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001773s ]
+
+[ 2017-03-12T17:04:52+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002221s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `prod_user` WHERE ( pid=8 )  [ RunTime:0.000259s ]
+SQL: INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (19,8,1) [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2017-03-12T17:05:23+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003828s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `prod_user` WHERE ( pid=8 )  [ RunTime:0.000348s ]
+SQL: UPDATE `prod_user` SET `count`=count+1 WHERE ( pid=8 ) [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002048s ]
+
