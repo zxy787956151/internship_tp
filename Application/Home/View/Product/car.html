@@ -48,6 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</style>
 </head>
 <body> 
+
 <!--header-->	
 		<include file="Public/header-info" title="前台头部" />	
 	<include file="Public/menu" title="头部菜单" />	
@@ -143,7 +144,6 @@ amet consectetuer </a></h6>
 				
 				  <div class="in-check" >
 
-		  <if condition="$_SESSION['user'] eq null">
 			  <!--eq 等于-->
 			  <!--neq 不等于-->
 			  <!--gt 大于-->
@@ -158,7 +158,6 @@ amet consectetuer </a></h6>
 				  <li><span>无记录,请登录!</span></li>
 				  <div class="clearfix"> </div>
 			  </ul>
-			  <else />
 
 			  <ul class="unit">
 				  <li><span>Photo</span></li>
@@ -169,7 +168,7 @@ amet consectetuer </a></h6>
 				  <li></li>
 				  <div class="clearfix"> </div>
 			  </ul>
-
+			  	
 				  <foreach name="model" item="plvv">
 					  <ul class="cart-header">
 						  <a href="{:U('Checkout/close',array('id' => $plvv[id]))}"><div class="close1"></div></a>
@@ -187,9 +186,7 @@ amet consectetuer </a></h6>
 						  <li><span>{$plvv.quantity}</span></li>
 						  <div class="clearfix"> </div>
 					  </ul>
-
 				  </foreach>
-			  </if>
 			  <ul class="cart-header">
 				  <center><a class="Clearing" href="{:U('Checkout/clear')}">结算</a></center>
 			  </ul>

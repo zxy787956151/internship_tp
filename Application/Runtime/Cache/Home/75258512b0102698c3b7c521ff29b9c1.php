@@ -141,7 +141,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <div class=" login-right">
 			  	<h3>REGISTERED CUSTOMERS</h3>
 				<p>If you have an account with us, please log in.</p>
-				<form action="<?php echo U('Account/login');?>" method="post">
+				<form action="<?php echo U('Account/runLogin');?>" method="post">
 				  <div>
 					<span>UserName</span>
 					<input type="text" name="username"> 
@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="password" name="password"> 
 				  </div>
 				  <a class="forgot" href="#">Forgot Your Password?</a>
-				  <input type="submit" value="Login" name="sub">
+				  <input type="submit" value="Login" name="submit">
 			    </form>
 			   </div>	
 			    <div class=" login-left">

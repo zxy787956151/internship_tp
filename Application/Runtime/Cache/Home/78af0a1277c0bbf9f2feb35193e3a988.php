@@ -48,6 +48,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</style>
 </head>
 <body> 
+
 <!--header-->	
 		<div class="header-info">
 			<div class="container">
@@ -217,7 +218,7 @@ amet consectetuer </a></h6>
 				
 				  <div class="in-check" >
 
-		  <?php if($_SESSION['user'] == null): ?><!--eq 等于-->
+			  <!--eq 等于-->
 			  <!--neq 不等于-->
 			  <!--gt 大于-->
 			  <!--egt 大于等于-->
@@ -231,7 +232,6 @@ amet consectetuer </a></h6>
 				  <li><span>无记录,请登录!</span></li>
 				  <div class="clearfix"> </div>
 			  </ul>
-			  <?php else: ?>
 
 			  <ul class="unit">
 				  <li><span>Photo</span></li>
@@ -242,7 +242,7 @@ amet consectetuer </a></h6>
 				  <li></li>
 				  <div class="clearfix"> </div>
 			  </ul>
-
+			  	
 				  <?php if(is_array($model)): foreach($model as $key=>$plvv): ?><ul class="cart-header">
 						  <a href="<?php echo U('Checkout/close',array('id' => $plvv[id]));?>"><div class="close1"></div></a>
 						  <li class="ring-in"><a href="<?php echo U('Single/index');?>&pid=<?php echo ($plvv["id"]); ?>" ><img src="/Application/Home/View//Public/images/<?php echo ($plvv["photo"]); ?>" class="img-responsive" alt=""></a>
@@ -257,7 +257,7 @@ amet consectetuer </a></h6>
 						  </li>
 						  <li><span><?php echo ($plvv["quantity"]); ?></span></li>
 						  <div class="clearfix"> </div>
-					  </ul><?php endforeach; endif; endif; ?>
+					  </ul><?php endforeach; endif; ?>
 			  <ul class="cart-header">
 				  <center><a class="Clearing" href="<?php echo U('Checkout/clear');?>">结算</a></center>
 			  </ul>

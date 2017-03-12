@@ -27,17 +27,22 @@ use Think\Controller;
 
 		public function car(){
 			//用关联模型 多对多?
-			// $db = M('prod_user');
-			// $count  = $db->count();// 查询满足要求的总记录数
-	  //       $Page = new \Extend\Page($count,3);// 实例化分页类 传入总记录数和每页显示的记录数(25)
-	  //       $show = $Page->show();// 分页显示输出
-	  //       $pages = $db->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
+			$data = array(
+				'id'=>1,
+				);
+			create_xls($data);
+			die();
 			$User = D('User');
 			//用户vs商品more_to_more
-			$user_to_prod = $User->relation(true)->where("user_id=%d",'19')->find();
-	        test($user_to_prod);
-	        // $this->assign('model', $pages);
-	        // $this->assign('page',$show);
+			$user_to_prod = $User->relation(true)->where("user_id=%d",$_SESSION['mallUserId'])->find();
+	        // test($user_to_prod['user_to_prod']);
+			$count = count($user_to_prod);// 查询满足要求的总记录数
+	        $Page = new \Extend\Page($count,3);
+	        // 实例化分页类 传入总记录数和每页显示的记录数(3)
+	        $show = $Page->show();// 分页显示输出
+	        // $pages = $db->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
+	        $this->assign('model',$user_to_prod['user_to_prod']);
+	        $this->assign('page',$show);
 			$this->display();
 		}
 

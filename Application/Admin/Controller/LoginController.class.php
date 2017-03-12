@@ -39,9 +39,14 @@ use Think\Controller;
 					        // if(!($this->check_verify(I('verify','','strtolower')))){
 					        //     $this->error('验证码错误');
 					        // }else{
-					        	session_start();
-					        	$_SESSION['username'] = I('username');
-					        	$this->success("登陆成功!",U('Index/index'));
+	                			$role = $model->where($where)->field('role_id')->select();
+	                			if ($role['0']['role_id'] == 1||$role['0']['role_id'] == 2) {
+	                				session_start();
+						        	$_SESSION['username'] = I('username');
+						        	$this->success("登陆成功!",U('Index/index'));
+	                			}else{
+	                				$this->error("您无权登录!");
+	                			}
 					        // }
 	                	}else{
 	                		$this->error("密码错误!");
