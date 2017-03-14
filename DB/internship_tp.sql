@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 03 月 12 日 09:06
+-- 生成日期: 2017 年 03 月 14 日 14:36
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -46,16 +46,16 @@ CREATE TABLE IF NOT EXISTS `menu` (
   `pid` int(33) NOT NULL,
   `level` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=35 ;
 
 --
 -- 转存表中的数据 `menu`
 --
 
 INSERT INTO `menu` (`id`, `name`, `pid`, `level`) VALUES
-(21, 'KLJJHKUGH', 20, 3),
+(24, 'shirt', 14, 2),
 (19, 'woman', 0, 1),
-(20, 'WDAD', 14, 2),
+(34, 'hurdles', 24, 3),
 (14, 'Men', 0, 1);
 
 -- --------------------------------------------------------
@@ -69,26 +69,19 @@ CREATE TABLE IF NOT EXISTS `product` (
   `name` varchar(50) NOT NULL,
   `price` varchar(50) NOT NULL,
   `photoname` varchar(50) NOT NULL,
+  `mid` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=49 ;
 
 --
 -- 转存表中的数据 `product`
 --
 
-INSERT INTO `product` (`id`, `name`, `price`, `photoname`) VALUES
-(1, '1', '11', ''),
-(2, '2', '22', ''),
-(3, '3', '33', ''),
-(4, '4', '44', ''),
-(5, '5', '55', ''),
-(6, '6', '66', ''),
-(7, '7', '77', ''),
-(8, '8', '88', ''),
-(9, '9', '99', ''),
-(10, '10', '1010', ''),
-(11, '11', '1111', ''),
-(12, '12', '1212', '');
+INSERT INTO `product` (`id`, `name`, `price`, `photoname`, `mid`) VALUES
+(48, 'hurdles1', '213', '', 34),
+(45, 'woman1', '312', '', 19),
+(46, 'men1', '31', '', 14),
+(47, 'shirit1', '123', '', 24);
 
 -- --------------------------------------------------------
 
@@ -101,18 +94,17 @@ CREATE TABLE IF NOT EXISTS `prod_user` (
   `user_id` int(33) NOT NULL,
   `pid` int(33) NOT NULL,
   `count` int(33) NOT NULL,
+  `checkout` int(33) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- 转存表中的数据 `prod_user`
 --
 
-INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`) VALUES
-(12, 19, 8, 2),
-(11, 19, 7, 6),
-(9, 18, 11, 3),
-(10, 18, 10, 5);
+INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`, `checkout`) VALUES
+(17, 18, 46, 1, 1),
+(16, 18, 45, 3, 1);
 
 -- --------------------------------------------------------
 

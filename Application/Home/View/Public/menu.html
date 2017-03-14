@@ -7,36 +7,13 @@
 					<h1><a href="index.html">Z-<span>xy</span></a></h1>
 				</div>
 		 <!---->	
-		 
+
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="{:U('Index/index')}">Home</a></li>
 
-				<foreach name="arr" item="v">
-					<li class="grid">
-						<if condition="$v.title eq CONTACT"> <a href="{:U('Contact/index')}">{$v.title}</a>
-							<else /> <a href="{:U('Product/index',array('id' => 0))}">{$v.title}</a>
-						</if>
-
-						<div class="mepanel">
-							<div class="row">
-								
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>											
-											<?php 
-												for ($i=0; $i <count($v['child']) ; $i++) { 
-														echo "<li><a href='".U('Product/index',array('id' => 0))."'>"
-														.$v['child'][$i]['title']."</a></li>";
-												}
-											 ?>
-										</ul>
-									</div>
-																
-							</div>
-						</div>
-					</li>
-				</foreach>
-				
+				<php>
+					zxy_foreach($arr,1);
+				</php>
 					
 				</ul>
 				<div class="clearfix"> </div>

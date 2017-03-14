@@ -73,7 +73,8 @@ use Think\Controller;
 
 		public function delete(){
 			$db = M('Menu');
-			if ($db->where("id=%d",I('id'))->delete()&& $db->where("pid=%d",I('id'))->delete()) {
+			if (M('Product')->where("mid=%d",I('id'))->delete()&&$db->where("pid=%d",I('id'))->delete()&&$db->where("id=%d",I('id'))->delete()) {
+				//三个且连用出错,未搞定!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 				$this->success('删除成功!');
 			}else{
 				$this->error('访问错误!');

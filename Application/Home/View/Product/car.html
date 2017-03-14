@@ -10,7 +10,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Checkout :: w3layouts</title>
 <link href="__PUBLIC__/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/Calculate.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -181,7 +182,8 @@ amet consectetuer </a></h6>
 					  </ul>
 				  </foreach>
 			  <ul class="cart-header">
-				  <center><a id="Clearing" href="#">结算</a></center>
+			  	  <input type="hidden" class="allPrice" name="allPrice" value="{$allPrice}" />
+				  <center><a class="checkout" href="javascript:;">结算</a></center>
 			  </ul>
 		</div>
 			 </div>

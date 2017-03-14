@@ -1,0 +1,12 @@
+[ 2017-03-14T22:25:08+08:00 ] 127.0.0.1 /Home/Product/checkout?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002922s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.012952s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000249s ]
+SQL: UPDATE `prod_user` SET `checkout`=1 WHERE ( user_id=18 ) [ RunTime:0.000325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001374s ]
+

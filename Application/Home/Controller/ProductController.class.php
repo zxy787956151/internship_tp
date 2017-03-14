@@ -1,7 +1,7 @@
 <?php 
 namespace Home\Controller;
 use Think\Controller;
-	class ProductController extends Controller{
+	class ProductController extends InitializeController{
 		public function index(){
 			// $data = array(
 			// 	'username'=>'xzf',
@@ -19,7 +19,7 @@ use Think\Controller;
 	        $count  = $db->count();// 查询满足要求的总记录数
 	        $Page = new \Extend\Page($count,6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 	        $show = $Page->show();// 分页显示输出
-	        $pages = $db->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
+	        $pages = $db->limit($Page->firstRow.','.$Page->listRows)->where("mid=%d",I('id'))->order('id DESC')->select();
 	        $this->assign('model', $pages);
 	        $this->assign('page',$show);
 			$this->display();
@@ -40,9 +40,11 @@ use Think\Controller;
 	        	$cou = M('prod_user')->where("user_id=%d and pid=%d",array($_SESSION['mallUserId'],$v['id']))->field('count')->select();
 	        	$user_to_prod['user_to_prod']["$k"]['count'] = $cou['0']['count'];
 	        	$user_to_prod['user_to_prod']["$k"]['price'] *=$cou['0']['count']; 
+	        	$allPrice += $user_to_prod['user_to_prod']["$k"]['price'];
 	        	//价格为总价 不是单价
 	        }
 	        $this->assign('model',$user_to_prod['user_to_prod']);
+	        $this->assign('allPrice',$allPrice);
 	        $this->assign('page',$show);
 			$this->display();
 		}
@@ -52,7 +54,6 @@ use Think\Controller;
 				$db = M('prod_user');
 				if ($pd = $db ->where("pid=%d",I('id'))->select()) {
 					if ($add = $db->where("pid=%d",I('id'))->setInc('count',I('count'))) {
-						//购物车里此用户这件商品数量加1
 						$arr['success']=1;
 						$arr['count'] = I('count');
 						echo json_encode($arr);	//将数值转换成json数据存储格式
@@ -80,8 +81,18 @@ use Think\Controller;
 				$where['user_id'] = $_SESSION['mallUserId'];
 				//此处数组做条件 依然不好使
 				if ($pd = $db ->where($where)->setField(array('price','count'),array(I('price')*I('count')))) {
-					//购物车里此用户这件商品数量加1
 					$arr['success']=1;
+					echo json_encode($arr);	//将数值转换成json数据存储格式
+				}
+			}
+		}
+
+		public function  checkout(){
+			$db = M('prod_user');
+			if ($_GET['action'] == 'ajax') {
+				if ($db->where("user_id=%d",$_SESSION['mallUserId'])->setField('checkout',1)) {
+					$arr['success']=1;
+					$arr['allPrice'] = I('allPrice');
 					echo json_encode($arr);	//将数值转换成json数据存储格式
 				}
 			}

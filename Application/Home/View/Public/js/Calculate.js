@@ -1,16 +1,14 @@
 // JavaScript Document
 $(function(){
 var lock = false;
-$(".addCar").click(function(){		
-	$(".addCar").live('click',function(){		//live 发生某个事件（ click事件） 
+$(".checkout").click(function(){		
+	$(".checkout").live('click',function(){		//live 发生某个事件（ click事件） 
 		if (lock) {return;}
 		lock = true;
-		var id = $(".id").val();
-		var price = $(".price").text();
-		var count = $(".count").val();
+		var allPrice = $(".allPrice").val();
 		$.ajax({	
 			type: "POST",//要求为String类型的参数，请求方式（post或get）默认为get。注意其他http请求方法，例如put和delete也可以使用，但仅部分浏览器支持。
-			url: "Home/Product/add_car?action=ajax",//要求为String类型的参数，（默认为当前页地址）发送请求的地址。
+			url: "Home/Product/checkout?action=ajax",//要求为String类型的参数，（默认为当前页地址）发送请求的地址。
 			//tp里ajax连接这么写!
 			dataType: "json",	 // 要求为String类型的参数，预期服务器返回的数据类型。如果不指定，JQuery将自动根据http包mime信息返回responseXML或responseText，并作为回调函数参数传递。可用的类型如下：
 			// 						xml：返回XML文档，可用JQuery处理。
@@ -20,7 +18,7 @@ $(".addCar").click(function(){
 			// 						jsonp：JSONP格式。使用SONP形式调用函数时，例如myurl?callback=?，JQuery将自动替换后一个“?”为正确的函数名，以执行回调函数。
 			// 						text：返回纯文本字符串。
 								
-			data: {"id":id,"price":price,"count":count},/* 要求为Object或String类型的参数，
+			data: {"allPrice":allPrice},/* 要求为Object或String类型的参数，
 												发送到服务器的数据。如果已经不是字符串，将自动转换为字符串格式。
 												get请求中将附加在url后。防止这种自动转换，可以查看　　processData选项。
 												对象必须为key/value格式，例如{foo1:"bar1",foo2:"bar2"}转换为&foo1=bar1&foo2=bar2。
@@ -36,7 +34,7 @@ $(".addCar").click(function(){
 				if(json.success==1){
 					json.success=0;
 					// $(".img_child").css({"opacity":"1","left":"400%","top":"-60%","width":"0","height":"0"});
-					alert("添加成功!");
+					alert("请您支付"+json.allPrice);
 				}else{
 					alert("AjaxWrong!!");
 				}

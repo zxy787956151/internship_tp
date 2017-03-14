@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品管理</title>
+    <title>用户结算</title>
 
     <!-- Bootstrap core CSS -->
     <link href="__PUBLIC__/template/css/bootstrap.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     
     <div class="row">
         <div class="col-md-6">
-            <a href="{:U('Product/add')}" class="btn btn-success">添加商品</a>
+            <a href="{:U('Product/add')}" class="btn btn-success">导出Excel</a>
         </div>
         <div class="col-md-6">
             <form action="{:U('category/index')}" method="post">
@@ -33,11 +33,9 @@
     </div>
     <table class="table table-hover table-striped">
         <th>编号</th>  
-        <th>商品名</th>  
-        <th>图片</th>
-        <th>单价</th>
-        <th>所属分类(菜单)</th>
-        <th>操作</th>
+        <th>商城用户名</th>  
+        <th>所购物品</th>
+        <th>总价</th>
         <form action="{:U('Menu/update')}" method="post">
             <foreach name='model' key="k" item='v'>  
                 <tr>  
@@ -45,10 +43,6 @@
                     <td>{$v.name}</td>  
                     <td>{$v.photoname}</td>  
                     <td>{$v.price}</td>  
-                    <td>{$v.menu}</td>
-                    <!--str_repeat('字符串','重复的次数');重复一个字符串-->  
-                    <td>
-                    <a href="{:U('Product/update?id=')}{$v.id}">编辑</a> | <a href="{:U('Product/delete?id=')}{$v.id}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将同时删除所有子类!');">删除</a></td> 
                 </tr>  
             </foreach>  
         </form>

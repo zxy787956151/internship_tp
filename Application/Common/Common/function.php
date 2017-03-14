@@ -46,4 +46,83 @@
 	    $objwriter->save('php://output');
 	    exit;
 	}
+
+	function findChild(&$arr,$id){
+	  $childs=array();
+	  foreach ($arr as $k => $v){
+	   if($v['pid']== $id){
+	    $childs[]=$v;
+	   }
+	  }
+	  return $childs;
+	 }
+	 
+	 function build_tree($rows,$root_id){
+	  $childs=findChild($rows,$root_id);
+	  if(empty($childs)){
+	   return null;
+	  }
+	 foreach ($childs as $k => $v){
+	  $rescurTree=build_tree($rows,$v['id']);
+	  if( null != $rescurTree){
+	  $childs[$k]['child']=$rescurTree;
+	  }
+	 }
+	  return $childs;
+ 	}
+
+
+ 	function arr_foreach ($arr)
+	{
+	    foreach ($arr as $key => $val )
+	    {
+	        if ($val['pid']!=0)
+	        {
+	            arr_foreach ($val['childs']);
+	        }
+	        else
+	        {
+	            echo $val['name'].'<br/>';
+	        }
+	    }
+	}
+
+	function zxy_foreach($arr,$level){
+		foreach ($arr as $k => $v) {
+						if (isset($v['child'])) {
+								echo "
+									<li class='grid'>
+										<a href='".U('Product/index',array('id'=>$v['id']))."'>".$v['name']."</a>
+										<div class='mepanel'>
+											<div class='row'>
+												
+													<div class='col1 me-one'>
+														<h4>Shop</h4>
+														<ul>
+								";
+								
+								$fun = zxy_foreach($v['child'],$level+1);
+						}else{
+							echo "
+									<li class='grid'>
+										<a href='".U('Product/index',array('id'=>$v['id']))."'>".$v['name']."</a>
+										<div class='mepanel'>
+											<div class='row'>
+													<div class='col1 me-one'>
+														<h4>Shop</h4>
+														<ul>
+								";
+							for($i=0;$i<$level;$i++){
+								echo "
+														</ul>
+													</div>
+											</div>
+										</div>
+									</li>
+								";
+							}
+						}			
+					}
+	}
+
  ?>

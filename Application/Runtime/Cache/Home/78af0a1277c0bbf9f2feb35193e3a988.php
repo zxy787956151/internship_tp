@@ -10,7 +10,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Checkout :: w3layouts</title>
 <link href="/Application/Home/View//Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/Application/Home/View//Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/Application/Home/View//Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="/Application/Home/View//Public/js/Calculate.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="/Application/Home/View//Public/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -81,28 +82,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1><a href="index.html">Z-<span>xy</span></a></h1>
 				</div>
 		 <!---->	
-		 
+
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="<?php echo U('Index/index');?>">Home</a></li>
 
-				<?php if(is_array($arr)): foreach($arr as $key=>$v): ?><li class="grid">
-						<?php if($v["title"] == CONTACT): ?><a href="<?php echo U('Contact/index');?>"><?php echo ($v["title"]); ?></a>
-							<?php else: ?> <a href="<?php echo U('Product/index',array('id' => 0));?>"><?php echo ($v["title"]); ?></a><?php endif; ?>
-
-						<div class="mepanel">
-							<div class="row">
-								
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>											
-											<?php  for ($i=0; $i <count($v['child']) ; $i++) { echo "<li><a href='".U('Product/index',array('id' => 0))."'>" .$v['child'][$i]['title']."</a></li>"; } ?>
-										</ul>
-									</div>
-																
-							</div>
-						</div>
-					</li><?php endforeach; endif; ?>
-				
+				<?php zxy_foreach($arr,1); ?>
 					
 				</ul>
 				<div class="clearfix"> </div>
@@ -237,9 +221,7 @@ amet consectetuer </a></h6>
 				  <li><span>Photo</span></li>
 				  <li><span>Product Name</span></li>
 				  <li><span>Unit Price</span></li>
-				  <li><span>Stock Status</span></li>
-				  <li><span>Purchase Quantity</span></li>
-				  <li></li>
+				  <li><span>Chount</span></li>
 				  <div class="clearfix"> </div>
 			  </ul>
 			  	
@@ -248,18 +230,15 @@ amet consectetuer </a></h6>
 						  <li class="ring-in"><a href="<?php echo U('Single/index');?>&pid=<?php echo ($plvv["id"]); ?>" ><img src="/Application/Home/View//Public/images/<?php echo ($plvv["photo"]); ?>" class="img-responsive" alt=""></a>
 						  </li>
 						  <li><span><?php echo ($plvv["name"]); ?></span></li>
-						  <li><span><?php echo ($plvv["price"]); ?></span></li>
-						  <li>
-							  <span>
-								  <?php if($plvv[stock] == 1): ?>In Stock
-									<?php else: ?>Out Of Stock<?php endif; ?>
-							  </span>
-						  </li>
-						  <li><span><?php echo ($plvv["quantity"]); ?></span></li>
+						  <li><span class="price"><?php echo ($plvv["price"]); ?></span></li>
+						  
+						  <li><span><?php echo ($plvv["count"]); ?></span></li>
+						  <input type="hidden" name="" value="<?php echo ($plvv["id"]); ?>" />
 						  <div class="clearfix"> </div>
 					  </ul><?php endforeach; endif; ?>
 			  <ul class="cart-header">
-				  <center><a class="Clearing" href="<?php echo U('Checkout/clear');?>">结算</a></center>
+			  	  <input type="hidden" class="allPrice" name="allPrice" value="<?php echo ($allPrice); ?>" />
+				  <center><a class="checkout" href="javascript:;">结算</a></center>
 			  </ul>
 		</div>
 			 </div>

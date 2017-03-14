@@ -1,7 +1,7 @@
 <?php 
 namespace Home\Controller;
 use Think\Controller;
-	class AccountController extends Controller{
+	class AccountController extends InitializeController{
 		public function index(){
 			$this->display();
 		}
