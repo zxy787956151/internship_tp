@@ -35,7 +35,9 @@ $(".checkout").click(function(){
 					json.success=0;
 					// $(".img_child").css({"opacity":"1","left":"400%","top":"-60%","width":"0","height":"0"});
 					alert("请您支付"+json.allPrice);
-				}else{
+				}else if(json.success==2){
+					alert("已结算");
+				}else{	
 					alert("AjaxWrong!!");
 				}
 			}

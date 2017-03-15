@@ -125,4 +125,24 @@
 					}
 	}
 
+	function array_remove_key($array, $keys) 
+	{ 
+		$num = count($keys); 
+		$num_last = $num - 1; 
+		$this_array_0 = &$array; 
+		$last_key = $keys[$num_last]; 
+		for ($i = 0; $i < $num_last; $i++) 
+		{ 
+		$this_key = $keys[$i]; 
+		$this_var_name = 'this_array_' . $i; 
+		$next_var_name = 'this_array_' . ($i + 1); 
+		if (!array_key_exists($this_key, $$this_var_name)) { 
+		break; 
+		} 
+		$$next_var_name = &${$this_var_name}[$this_key]; 
+		} 
+		unset(${$next_var_name}[$last_key]); 
+		return $array; 
+	} 
+
  ?>

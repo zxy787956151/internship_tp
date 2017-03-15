@@ -30,6 +30,7 @@ use Think\Controller;
 	                			$role = $model->where($where)->field('role_id')->select();
 	                			if ($role['0']['role_id'] == 3) {
 	                				session_start();
+	                				session_destroy('mallUserId');
 						        	$userId = $model->where($where)->field('user_id')->select();
 						        	session('mallUserId',$userId['0']['user_id']); 
 						        	$this->success("登陆成功!",U('Index/index'));

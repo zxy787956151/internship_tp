@@ -36,7 +36,7 @@ $(".addCar").click(function(){
 				if(json.success==1){
 					json.success=0;
 					// $(".img_child").css({"opacity":"1","left":"400%","top":"-60%","width":"0","height":"0"});
-					alert("添加成功!");
+					alert(json.count+"件商品添加成功!");
 				}else{
 					alert("AjaxWrong!!");
 				}

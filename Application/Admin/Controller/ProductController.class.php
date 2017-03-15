@@ -51,7 +51,7 @@ use Think\Controller;
 		}
 
 		public function checkout(){
-			//这么复杂,未优化!!!!
+			//这么复杂,未优化!!!!,这么多foreach!!
 			$db = M('prod_user');
 			$user = M('user');
 			$userId = $user->select();
@@ -66,6 +66,20 @@ use Think\Controller;
 			}
 			foreach ($checUseId as $v) {
 				$cheUseAll[] = $db->where("user_id=%d",$v)->select();
+			}
+			
+			foreach ($cheUseAll as $allK=>$allV) {
+				foreach ($allV as $k=>$v) {
+					$name = M('Product')->where("id=%d",$v['pid'])->field('name','price')->select();
+					//select都能忘!!
+					$cheUseAll["$allK"]["$k"]['name'] = $name['0']['name']; 
+					$cheUseAll["$allK"]["$k"]['price'] = $name['0']['price']; 
+					//处理用户结算数组
+					$prodName += $v['name']."*".$v['count']." ";
+					// $allPrice += $v
+				}
+				//处理用户结算数组	
+				$result[]['user_id']['name'] = $prodName;  	
 			}
 			test($cheUseAll);
 			$this->display();
