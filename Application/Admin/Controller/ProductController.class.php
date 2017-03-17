@@ -51,38 +51,50 @@ use Think\Controller;
 		}
 
 		public function checkout(){
-			//这么复杂,未优化!!!!,这么多foreach!!
-			$db = M('prod_user');
-			$user = M('user');
-			$userId = $user->select();
-			foreach ($userId as $v) {
-				$checkout = $db->where("user_id=%d",$v['user_id'])->select();
-				foreach ($checkout as $v) {
-					if ($v['checkout'] == 1) {
-						$checUseId[] = $v['user_id'];
-						break;
+			$db = M('checkout');
+			$uDb = M('user');
+			$proDb = M('Product');
+			$checkout = $db->select();
+			$group = array();
+			// test($checkout);
+			// die();
+			//手动对用户进行分组,未尝试优化
+			foreach ($checkout as $ck=>$cv) {
+				$pd = 1;
+				foreach ($group as $v) {
+					foreach ($v as $gv) {
+						if ($cv['user_id']==$gv['user_id']) {
+							$pd = 0;
+						}
+					}
+				}
+				if ($pd) {
+					$group[] = $db->where("user_id=%d",$cv['user_id'])->select();		
+					$username = $uDb->where("user_id=%d",$cv['user_id'])->field('username')->select();
+					$pidCou = $db->where("user_id=%d",$cv['user_id'])->field('pid,count')->select();
+					$result[]['username'] = $username['0']['username'];
+
+					foreach ($pidCou as $v) {
+						$prod = $proDb->where("id=%d",$v['pid'])->field('name,price')->select();
+						$result["$ck"]['prod'] .= " ".$prod['0']['name']."*".$v['count'];
+						$result["$ck"]['allPrice'] += $prod['0']['price']*$v['count'];
 					}
 				}
 			}
-			foreach ($checUseId as $v) {
-				$cheUseAll[] = $db->where("user_id=%d",$v)->select();
-			}
-			
-			foreach ($cheUseAll as $allK=>$allV) {
-				foreach ($allV as $k=>$v) {
-					$name = M('Product')->where("id=%d",$v['pid'])->field('name','price')->select();
-					//select都能忘!!
-					$cheUseAll["$allK"]["$k"]['name'] = $name['0']['name']; 
-					$cheUseAll["$allK"]["$k"]['price'] = $name['0']['price']; 
-					//处理用户结算数组
-					$prodName += $v['name']."*".$v['count']." ";
-					// $allPrice += $v
-				}
-				//处理用户结算数组	
-				$result[]['user_id']['name'] = $prodName;  	
-			}
-			test($cheUseAll);
+			$this->assign('checkout',$result);
 			$this->display();
 		}
+
+		public function excel(){
+			$data = array(
+	            array(NULL, 2010, 2011, 2012),
+	            array('Q1',   12,   15,   21),
+	            array('Q2',   56,   73,   86),
+	            array('Q3',   52,   61,   69),
+	            array('Q4',   30,   32,    0),
+	        );
+	     
+	    	create_xls($data);
+			}
 	}
  ?>

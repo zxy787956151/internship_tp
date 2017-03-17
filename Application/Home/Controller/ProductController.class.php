@@ -39,30 +39,30 @@ use Think\Controller;
 	        $show = $Page->show();// 分页显示输出
 	        //单独查一次count,未尝试优化
 	        foreach ($user_to_prod['user_to_prod'] as $k=>$v) {
-	        	$cou = M('prod_user')->where("user_id=%d and pid=%d",array($user_id,$v['id']))->getField('user_id,count,checkout');
+	        	$cou = M('prod_user')->where("user_id=%d and pid=%d",array($user_id,$v['id']))->field('count')->select();
 	        
 	        	// test($cou);
-	        	$user_to_prod['user_to_prod']["$k"]['count'] = $cou["$user_id"]['count'];
-	        	$user_to_prod['user_to_prod']["$k"]['price'] *=$cou["$user_id"]['count'];
-	        	$user_to_prod['user_to_prod']["$k"]['checkout'] = $cou["$user_id"]['checkout'];
+	        	$user_to_prod['user_to_prod']["$k"]['count'] = $cou['0']['count'];
+	        	$user_to_prod['user_to_prod']["$k"]['price'] *=$cou['0']['count'];
+	        	// $user_to_prod['user_to_prod']["$k"]['checkout'] = $cou["$user_id"]['checkout'];
 	        	$allPrice += $user_to_prod['user_to_prod']["$k"]['price'];
 	        	//价格为总价 不是单价
 	        }
 
-	        foreach ($user_to_prod['user_to_prod'] as $k => $v) {
-	        	//只显示未结算的商品
-	        	if ($v['checkout']==1) {
-	        		array_splice($user_to_prod['user_to_prod'],$k,1);
-	        	}
-	        }
+	        // foreach ($user_to_prod['user_to_prod'] as $k => $v) {
+	        // 	//只显示未结算的商品
+	        // 	if ($v['checkout']==1) {
+	        // 		array_splice($user_to_prod['user_to_prod'],$k,1);
+	        // 	}
+	        // }
 
-	        foreach ($user_to_prod['user_to_prod'] as $k => $v) {
-	        	//只显示未结算的商品
-	        	if ($k==0 && $v['checkout']==1) {
-	        		$user_to_prod['user_to_prod'] = null;
-	        	}
-	        }
-	        test($user_to_prod['user_to_prod']);
+	        // foreach ($user_to_prod['user_to_prod'] as $k => $v) {
+	        // 	//只显示未结算的商品
+	        // 	if ($k==0 && $v['checkout']==1) {
+	        // 		$user_to_prod['user_to_prod'] = null;
+	        // 	}
+	        // }
+	        // test($user_to_prod['user_to_prod']);
 	        $this->assign('model',$user_to_prod['user_to_prod']);
 	        $this->assign('allPrice',$allPrice);
 	        $this->assign('page',$show);
@@ -73,7 +73,7 @@ use Think\Controller;
 			if ($_GET['action'] == 'ajax') {
 				$db = M('prod_user');
 				if ($pd = $db ->where("pid=%d and user_id=%d",array(I('id'),$_SESSION['mallUserId']))->select()) {
-					if ($add = $db->where("pid=%d",I('id'))->setField('checkout','0')->setInc('count',I('count'))) {
+					if ($add = $db->where("pid=%d",I('id'))->setInc('count',I('count'))) {
 						$arr['success']=1;
 						$arr['count'] = I('count');
 						echo json_encode($arr);	//将数值转换成json数据存储格式
@@ -108,27 +108,54 @@ use Think\Controller;
 		}
 
 		public function  checkout(){
+			//此处结算为ajax,后期不行就改成表单提交
 			$db = M('prod_user');
-			if ($_GET['action'] == 'ajax') {
-				$checkout = $db->where("user_id=%d",$_SESSION['mallUserId'])->field('checkout')->select();
-				$pd = 0;
-				foreach ($checkout as $v) {
-					if($v['checkout']==0){
-						$pd = 1;
-						break;
+			$prod_user = $db->where("user_id=%d",$_SESSION['mallUserId'])->select();
+			$checkout = M('checkout')->select();
+			foreach ($prod_user as $k => $v) {
+				foreach ($checkout as $cv) {
+					if ($v['user_id'] == $cv['user_id']&&$v['pid']==$cv['pid']) {
+						$pd["$k"]=M('checkout')->where("user_id=%d and pid=%d",array($_SESSION['mallUserId'],$v['pid']))->setInc('count',$v['count']);	
 					}
 				}
-				if ($pd == 0) {
-						$arr['success']=2;
-						echo json_encode($arr);	//将数值转换成json数据存储格式
-				}else{
-					if ($db->where("user_id=%d",$_SESSION['mallUserId'])->setField('checkout',1)) {
-						$arr['success']=1;
-						// $arr['allPrice'] = I('allPrice');
-						echo json_encode($arr);	//将数值转换成json数据存储格式
-					}
+				if (!isset($pd["$k"])) {
+					$pd["$k"] = M('Checkout')->data($prod_user["$k"])->add();
 				}
 			}
+			foreach ($pd as $v) {
+				if (!$v) {
+					$arr['success'] = 0;
+					echo json_encode($arr);	//将数值转换成json数据存储格式
+				}
+			}
+
+			if ($pd =$db->where("user_id=%d",$_SESSION['mallUserId'])->delete()) {
+				$arr['success']=1;
+				$arr['allPrice'] = I('allPrice');
+				echo json_encode($arr);	//将数值转换成json数据存储格式
+			}
+
+			// $db = M('prod_user');
+			// if ($_GET['action'] == 'ajax') {
+			// 	$checkout = $db->where("user_id=%d",$_SESSION['mallUserId'])->field('checkout')->select();
+			// 	$pd = 0;
+			// 	foreach ($checkout as $v) {
+			// 		if($v['checkout']==0){
+			// 			$pd = 1;
+			// 			break;
+			// 		}
+			// 	}
+			// 	if ($pd == 0) {
+			// 			$arr['success']=2;
+			// 			echo json_encode($arr);	//将数值转换成json数据存储格式
+			// 	}else{
+			// 		if ($db->where("user_id=%d",$_SESSION['mallUserId'])->setField('checkout',1)) {
+			// 			$arr['success']=1;
+			// 			// $arr['allPrice'] = I('allPrice');
+			// 			echo json_encode($arr);	//将数值转换成json数据存储格式
+			// 		}
+			// 	}
+			// }
 		}
 	}
  ?>

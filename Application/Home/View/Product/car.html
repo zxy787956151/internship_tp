@@ -163,7 +163,7 @@ amet consectetuer </a></h6>
 			  <ul class="unit">
 				  <li><span>Photo</span></li>
 				  <li><span>Product Name</span></li>
-				  <li><span>Unit Price</span></li>
+				  <li><span>All Price</span></li>
 				  <li><span>Count</span></li>
 				  <li><span>Checkout?</span></li>
 				  <div class="clearfix"> </div>
@@ -178,9 +178,7 @@ amet consectetuer </a></h6>
 						  <li><span class="price">{$plvv.price}</span></li>
 						  
 						  <li><span>{$plvv.count}</span></li>
-						  <if condition="$plvv['checkout'] eq 1"> 
-						  <li><span>YES</span></li>
-						  <else /> <li><span>NO</span></li>
+						  <li><span>NO</span></li>
 						  </if>
 						  <input type="hidden" name="" value="{$plvv.id}" />
 						  <div class="clearfix"> </div>

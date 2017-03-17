@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 03 月 14 日 14:36
+-- 生成日期: 2017 年 03 月 17 日 13:38
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -33,6 +33,31 @@ CREATE TABLE IF NOT EXISTS `access` (
   `levels` int(11) DEFAULT NULL,
   PRIMARY KEY (`acce_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `checkout`
+--
+
+CREATE TABLE IF NOT EXISTS `checkout` (
+  `id` int(33) NOT NULL AUTO_INCREMENT,
+  `user_id` int(33) NOT NULL,
+  `pid` int(33) NOT NULL,
+  `count` int(33) NOT NULL,
+  `time` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=33 ;
+
+--
+-- 转存表中的数据 `checkout`
+--
+
+INSERT INTO `checkout` (`id`, `user_id`, `pid`, `count`, `time`) VALUES
+(32, 18, 47, 3, ''),
+(31, 19, 48, 1, ''),
+(23, 19, 45, 1, ''),
+(24, 19, 46, 4, '');
 
 -- --------------------------------------------------------
 
@@ -94,17 +119,8 @@ CREATE TABLE IF NOT EXISTS `prod_user` (
   `user_id` int(33) NOT NULL,
   `pid` int(33) NOT NULL,
   `count` int(33) NOT NULL,
-  `checkout` int(33) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
-
---
--- 转存表中的数据 `prod_user`
---
-
-INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`, `checkout`) VALUES
-(17, 18, 46, 1, 1),
-(16, 18, 45, 3, 1);
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=33 ;
 
 -- --------------------------------------------------------
 
