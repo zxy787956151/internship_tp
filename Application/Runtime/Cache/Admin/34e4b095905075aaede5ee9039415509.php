@@ -35,7 +35,8 @@
         <th>编号</th>  
         <th>商品名</th>  
         <th>图片</th>
-        <th>价格</th>
+        <th>单价</th>
+        <th>所属分类(菜单)</th>
         <th>操作</th>
         <form action="<?php echo U('Menu/update');?>" method="post">
             <?php if(is_array($model)): foreach($model as $k=>$v): ?><tr>  
@@ -43,6 +44,7 @@
                     <td><?php echo ($v["name"]); ?></td>  
                     <td><?php echo ($v["photoname"]); ?></td>  
                     <td><?php echo ($v["price"]); ?></td>  
+                    <td><?php echo ($v["menu"]); ?></td>
                     <!--str_repeat('字符串','重复的次数');重复一个字符串-->  
                     <td>
                     <a href="<?php echo U('Product/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('Product/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将同时删除所有子类!');">删除</a></td> 

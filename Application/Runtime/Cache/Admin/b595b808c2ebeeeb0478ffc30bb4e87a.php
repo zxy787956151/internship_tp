@@ -15,9 +15,6 @@
 			</div>
 			<div class="menu">
 				<ul>
-					<a href="#" class="nav-main" id="nav-main0"><span id="nav-ico0"></span>控制面板</a>
-				</ul>
-				<ul>
 					<a href="<?php echo U('Menu/index');?>" class="nav-main" id="nav-main1" target="myFrame"><span id="nav-ico1"></span>菜单管理</a>
 					<!-- <li class="nav-li" id="nav-li1">
 						<a href="<?php echo U('Menu/index');?>" target="myFrame">菜单管理</a>
@@ -44,14 +41,7 @@
 					</li>
 				</ul>
 				<ul>
-					<a href="#" class="nav-main" id="nav-main3"><span id="nav-ico3"></span>分类管理</a>
-					<li class="nav-li" id="nav-li3">
-						<a href="#">1</a>
-						<a href="#">2</a>
-						<a href="#">3</a>
-						<a href="#">4</a>
-						<a href="#">5</a>
-					</li>
+					<a href="<?php echo U('Product/checkout');?>" class="nav-main" id="nav-main3" target="myFrame"><span id="nav-ico3"></span>用户结算</a>
 				</ul>
 				<ul>
 					<a href="#" class="nav-main" id="nav-main4"><span id="nav-ico4"></span>产品管理</a>

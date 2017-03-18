@@ -12,6 +12,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script type="text/javascript" src="/Application/Home/View//Public/js/jquery.min.js"></script>
 <script type="text/javascript" src="/Application/Home/View//Public/js/Calculate.js"></script>
+<script type="text/javascript" src="/Application/Home/View//Public/js/ajaxChange.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
 <link href="/Application/Home/View//Public/css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -60,12 +61,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>138 9405 5929</span></li>			
 						</ul>
 						<ul class=" support-right">
-
-							<li><a href="<?php echo U('account/index');?>">
-									<i class="glyphicon glyphicon-user" class="men"> </i>
-									<?php echo ($_SESSION[user]); ?>
-								</a>
-							</li>
+							<?php if($username): ?><li><a href="#">
+										<i class="glyphicon glyphicon-user" class="men"> </i>
+										<?php echo ($username); ?>
+									</a>
+								</li> 
+							<?php else: ?> 
+								<li><a href="<?php echo U('account/index');?>">
+										<i class="glyphicon glyphicon-user" class="men"> </i>
+										To log in
+									</a>
+								</li><?php endif; ?>
+							
 							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
 							<li><a href="<?php echo U('register/index');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
 						</ul>
@@ -220,8 +227,9 @@ amet consectetuer </a></h6>
 			  <ul class="unit">
 				  <li><span>Photo</span></li>
 				  <li><span>Product Name</span></li>
-				  <li><span>Unit Price</span></li>
-				  <li><span>Chount</span></li>
+				  <li><span>All Price</span></li>
+				  <li><span>Count</span></li>
+				  <li><span>Checkout?</span></li>
 				  <div class="clearfix"> </div>
 			  </ul>
 			  	
@@ -230,15 +238,18 @@ amet consectetuer </a></h6>
 						  <li class="ring-in"><a href="<?php echo U('Single/index');?>&pid=<?php echo ($plvv["id"]); ?>" ><img src="/Application/Home/View//Public/images/<?php echo ($plvv["photo"]); ?>" class="img-responsive" alt=""></a>
 						  </li>
 						  <li><span><?php echo ($plvv["name"]); ?></span></li>
-						  <li><span class="price"><?php echo ($plvv["price"]); ?></span></li>
+						  <li><span class="price"><input type="text" value="<?php echo ($plvv["price"]); ?>" id="allPrice<?php echo ($plvv[id]); ?>" disabled="disabled" /></span></li>
 						  
-						  <li><span><?php echo ($plvv["count"]); ?></span></li>
+						  <li><span><input type="text" value="<?php echo ($plvv["count"]); ?>" onblur="ajaxChange(<?php echo $plvv['id']?>,this.value)"></span></li>
+						  <li><span>NO</span></li>
+						  </if>
 						  <input type="hidden" name="" value="<?php echo ($plvv["id"]); ?>" />
 						  <div class="clearfix"> </div>
 					  </ul><?php endforeach; endif; ?>
 			  <ul class="cart-header">
-			  	  <input type="hidden" class="allPrice" name="allPrice" value="<?php echo ($allPrice); ?>" />
-				  <center><a class="checkout" href="javascript:;">结算</a></center>
+				  	  <input type="hidden" class="allPrice" name="allPrice" value="<?php echo ($allPrice); ?>" />
+					  <center><a class="checkout" href="javascript:;">结算</a></center>
+			  	  
 			  </ul>
 		</div>
 			 </div>

@@ -9,9 +9,10 @@ use Think\Controller;
 
 	        //压缩数组
 	        $tree=build_tree($arr,0);
-	        // test($tree);
-	        // arr_foreach($tree);
-	        // die();
+
+	        //输出用户名
+	        $username = $User->where("user_id=%d",$_SESSION['mallUserId'])->field('username')->select();
+	        $this->assign('username',$username['0']['username']);
 	        $this->assign('arr',$tree);
 	        // $this->display();
     	}

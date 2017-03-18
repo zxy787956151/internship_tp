@@ -15,16 +15,20 @@
 
 <body>
 <div id="page-wrapper">
-    <form method="post" action="<?php echo U('Menu/run_add');?>">
+    <form method="post" action="<?php echo U('Product/run_add');?>" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="aa">菜单标题</label>
-            <input type="text" name="name" class="form-control" id="aa" placeholder="输入分类标题">
+            <label for="aa">商品名</label>
+            <input type="text" name="name" class="form-control" id="aa" placeholder="输入商品名">
         </div>
 
         <div class="form-group">
-            <label for="bb">父分类</label>
-            <select name="id" id="bb" class="form-control">
-                <option value="0">顶级分类</option>
+            <label for="aa">单价</label>
+            <input type="text" name="price" class="form-control" id="aa" placeholder="输入单价">
+        </div>
+
+        <div class="form-group">
+            <label for="bb">商品分类(菜单项)</label>
+            <select name="mid" id="bb" class="form-control">
                 <?php if(is_array($arr)): foreach($arr as $key=>$v): ?><tr>  
                         <td>  
                             <option value="<?php echo ($v["id"]); ?>">
@@ -35,6 +39,10 @@
                     </tr><?php endforeach; endif; ?>
                 <!-- <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["html"]); ?> <?php echo ($v["title"]); ?></option><?php endforeach; endif; ?> -->
             </select>
+        </div>
+        <div class="form-group">
+            <label for="aa">商品图片</label>
+            <input type="file" name="photo" class="form-control" id="aa" placeholder="上传图片">
         </div>
         <input type="submit" name="submit" class="btn btn-default" value="添加" />
     </form>

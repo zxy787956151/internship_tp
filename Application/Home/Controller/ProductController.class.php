@@ -48,20 +48,6 @@ use Think\Controller;
 	        	$allPrice += $user_to_prod['user_to_prod']["$k"]['price'];
 	        	//价格为总价 不是单价
 	        }
-
-	        // foreach ($user_to_prod['user_to_prod'] as $k => $v) {
-	        // 	//只显示未结算的商品
-	        // 	if ($v['checkout']==1) {
-	        // 		array_splice($user_to_prod['user_to_prod'],$k,1);
-	        // 	}
-	        // }
-
-	        // foreach ($user_to_prod['user_to_prod'] as $k => $v) {
-	        // 	//只显示未结算的商品
-	        // 	if ($k==0 && $v['checkout']==1) {
-	        // 		$user_to_prod['user_to_prod'] = null;
-	        // 	}
-	        // }
 	        // test($user_to_prod['user_to_prod']);
 	        $this->assign('model',$user_to_prod['user_to_prod']);
 	        $this->assign('allPrice',$allPrice);
@@ -113,6 +99,8 @@ use Think\Controller;
 			$prod_user = $db->where("user_id=%d",$_SESSION['mallUserId'])->select();
 			$checkout = M('checkout')->select();
 			foreach ($prod_user as $k => $v) {
+				$prod_user["$k"]['time'] = date("Y-m-d H:i:s",time());
+				//time获取当前时间戳,date将时间戳转换格式输出
 				foreach ($checkout as $cv) {
 					if ($v['user_id'] == $cv['user_id']&&$v['pid']==$cv['pid']) {
 						$pd["$k"]=M('checkout')->where("user_id=%d and pid=%d",array($_SESSION['mallUserId'],$v['pid']))->setInc('count',$v['count']);	
@@ -134,28 +122,25 @@ use Think\Controller;
 				$arr['allPrice'] = I('allPrice');
 				echo json_encode($arr);	//将数值转换成json数据存储格式
 			}
+		}
 
-			// $db = M('prod_user');
-			// if ($_GET['action'] == 'ajax') {
-			// 	$checkout = $db->where("user_id=%d",$_SESSION['mallUserId'])->field('checkout')->select();
-			// 	$pd = 0;
-			// 	foreach ($checkout as $v) {
-			// 		if($v['checkout']==0){
-			// 			$pd = 1;
-			// 			break;
-			// 		}
-			// 	}
-			// 	if ($pd == 0) {
-			// 			$arr['success']=2;
-			// 			echo json_encode($arr);	//将数值转换成json数据存储格式
-			// 	}else{
-			// 		if ($db->where("user_id=%d",$_SESSION['mallUserId'])->setField('checkout',1)) {
-			// 			$arr['success']=1;
-			// 			// $arr['allPrice'] = I('allPrice');
-			// 			echo json_encode($arr);	//将数值转换成json数据存储格式
-			// 		}
-			// 	}
-			// }
+		public function ajaxChange(){
+			$db = M('prod_user');
+			$price = M('Product')->where("id=%d",I('id'))->field('price')->select();
+			if (I('get.action') == 'ajax') {
+				if ($pd = $db->where("pid=%d and user_id=%d",array(I('id'),$_SESSION['mallUserId']))->setField('count',I('num'))) {
+					
+					$allPrice = I('num') * $price['0']['price'];
+					$response = array(
+						'allPrice' => $allPrice,
+						'errno'  =>  '0',
+						'errmsg' =>  'success',
+						'data'   =>  true,
+					);
+					echo json_encode($response);
+				}
+			}
+
 		}
 	}
  ?>

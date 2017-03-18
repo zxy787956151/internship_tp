@@ -63,12 +63,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>138 9405 5929</span></li>			
 						</ul>
 						<ul class=" support-right">
-
-							<li><a href="<?php echo U('account/index');?>">
-									<i class="glyphicon glyphicon-user" class="men"> </i>
-									<?php echo ($_SESSION[user]); ?>
-								</a>
-							</li>
+							<?php if($username): ?><li><a href="#">
+										<i class="glyphicon glyphicon-user" class="men"> </i>
+										<?php echo ($username); ?>
+									</a>
+								</li> 
+							<?php else: ?> 
+								<li><a href="<?php echo U('account/index');?>">
+										<i class="glyphicon glyphicon-user" class="men"> </i>
+										To log in
+									</a>
+								</li><?php endif; ?>
+							
 							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
 							<li><a href="<?php echo U('register/index');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
 						</ul>
@@ -88,28 +94,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1><a href="index.html">Z-<span>xy</span></a></h1>
 				</div>
 		 <!---->	
-		 
+
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="<?php echo U('Index/index');?>">Home</a></li>
 
-				<?php if(is_array($arr)): foreach($arr as $key=>$v): ?><li class="grid">
-						<?php if($v["title"] == CONTACT): ?><a href="<?php echo U('Contact/index');?>"><?php echo ($v["title"]); ?></a>
-							<?php else: ?> <a href="<?php echo U('Product/index',array('id' => 0));?>"><?php echo ($v["title"]); ?></a><?php endif; ?>
-
-						<div class="mepanel">
-							<div class="row">
-								
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>											
-											<?php  for ($i=0; $i <count($v['child']) ; $i++) { echo "<li><a href='".U('Product/index',array('id' => 0))."'>" .$v['child'][$i]['title']."</a></li>"; } ?>
-										</ul>
-									</div>
-																
-							</div>
-						</div>
-					</li><?php endforeach; endif; ?>
-				
+				<?php zxy_foreach($arr,1); ?>
 					
 				</ul>
 				<div class="clearfix"> </div>
@@ -494,20 +483,66 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 				
-			<?php if(is_array($latest)): foreach($latest as $key=>$v): ?><div class="col-md-3 product-left"> 
+				<div class="col-md-3 product-left"> 
 					<div class="p-one simpleCart_shelfItem">
 						
-						<a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>">
-								<img src="/Application/Home/View//Public/images/<?php echo ($v["photo"]); ?>" alt="" />
+						<!-- <a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"> -->
+								<img src="/Application/Home/View//Public/images/n1.jpg" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
-							</a>
-						<h4><?php echo ($v["name"]); ?></h4>
-						<p><a class="item_add" href="<?php echo U('Checkout/addCar',array('pid'=>$v[pid]));?>"><i></i> <span class=" item_price">$<?php echo ($v["price"]); ?></span></a></p>
+							<!-- </a> -->
+						<h4>name</h4>
+						<p><a class="item_add" href="<?php echo U('Checkout/addCar',array('pid'=>$v[pid]));?>"><i></i> <span class=" item_price">$price</span></a></p>
 						
 					</div>
-				</div><?php endforeach; endif; ?>
+				</div>
+
+				<div class="col-md-3 product-left"> 
+					<div class="p-one simpleCart_shelfItem">
+						
+						<!-- <a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"> -->
+								<img src="/Application/Home/View//Public/images/n1.jpg" alt="" />
+								<div class="mask">
+									<span>Quick View</span>
+								</div>
+							<!-- </a> -->
+						<h4>name</h4>
+						<p><a class="item_add" href="<?php echo U('Checkout/addCar',array('pid'=>$v[pid]));?>"><i></i> <span class=" item_price">$price</span></a></p>
+						
+					</div>
+				</div>
+
+				<div class="col-md-3 product-left"> 
+					<div class="p-one simpleCart_shelfItem">
+						
+						<!-- <a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"> -->
+								<img src="/Application/Home/View//Public/images/n1.jpg" alt="" />
+								<div class="mask">
+									<span>Quick View</span>
+								</div>
+							<!-- </a> -->
+						<h4>name</h4>
+						<p><a class="item_add" href="<?php echo U('Checkout/addCar',array('pid'=>$v[pid]));?>"><i></i> <span class=" item_price">$price</span></a></p>
+						
+					</div>
+				</div>
+
+				<div class="col-md-3 product-left"> 
+					<div class="p-one simpleCart_shelfItem">
+						
+						<!-- <a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"> -->
+								<img src="/Application/Home/View//Public/images/n1.jpg" alt="" />
+								<div class="mask">
+									<span>Quick View</span>
+								</div>
+							<!-- </a> -->
+						<h4>name</h4>
+						<p><a class="item_add" href="<?php echo U('Checkout/addCar',array('pid'=>$v[pid]));?>"><i></i> <span class=" item_price">$price</span></a></p>
+						
+					</div>
+				</div>
+
 			
 				<div class="clearfix"> </div>
 			</div>

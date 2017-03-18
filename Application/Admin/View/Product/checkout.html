@@ -14,11 +14,12 @@
 </head>
 
 <body>
+<form action="{:U('Product/excel')}" method="post">
 <div id="page-wrapper">
     
     <div class="row">
         <div class="col-md-6">
-            <a href="{:U('Product/excel')}" class="btn btn-success">导出Excel</a>
+            <input type="submit" class="btn btn-success" name="submit" value="导出Excel" />
         </div>
         <div class="col-md-6">
             <form action="{:U('category/index')}" method="post">
@@ -35,24 +36,30 @@
         <th>编号</th>  
         <th>商城用户名</th>  
         <th>所购物品</th>
+        <th>时间</th>
         <th>总价</th>
-        <form action="{:U('Menu/update')}" method="post">
-            <foreach name='checkout' key="k" item='v'>  
-                <tr>  
-                    <td>{$k+1}</td> 
-                    <td>{$v.username}</td>  
-                    <td>{$v.prod}</td>  
-                    <td>{$v.allPrice}</td>  
-                </tr>  
-            </foreach>  
-        </form>
+
+        <foreach name='checkout' key="k" item='v'>  
+            <tr>  
+                <td>{$k+1}</td> 
+                <td>{$v.username}</td>  
+                <td>{$v.prod}</td>  
+                <td>{$v.time}</td>
+                <td>{$v.allPrice}</td>  
+            </tr>
+            <input type="hidden" name="id[]" value="{$k+1}" />
+            <input type="hidden" name="username[]" value="{$v.username}" />  
+            <input type="hidden" name="prod[]" value="{$v.prod}" />  
+            <input type="hidden" name="time[]" value="{$v.time}" />  
+            <input type="hidden" name="allPrice[]" value="{$v.allPrice}" />  
+        </foreach>  
     </table>
     {$page}
 </div>
 <script src="__PUBLIC__/template/js/jquery-1.10.2.js"></script>
 <script src="__PUBLIC__/template/js/bootstrap.js"></script>
 <script src="__PUBLIC__/template/js/app.js"></script>
-
+</form>
 </body>
 </html>
 </body>

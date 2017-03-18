@@ -41,7 +41,7 @@
                     <!--str_repeat('字符串','重复的次数');重复一个字符串-->  
                     <td><?php echo str_repeat('----',$v['level']); echo ($v["name"]); ?></td>  
                     <td>
-                    <a href="<?php echo U('Menu/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('Menu/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将同时删除所有子类!');">删除</a></td> 
+                    <a href="<?php echo U('Menu/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('Menu/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将同时删除所有子类!\n\n及此类下所有商品!!!');">删除</a></td> 
                 </tr><?php endforeach; endif; ?>  
         </form>
     </table>

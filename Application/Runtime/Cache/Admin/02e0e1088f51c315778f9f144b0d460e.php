@@ -14,11 +14,12 @@
 </head>
 
 <body>
+<form action="<?php echo U('Product/excel');?>" method="post">
 <div id="page-wrapper">
     
     <div class="row">
         <div class="col-md-6">
-            <a href="<?php echo U('Product/add');?>" class="btn btn-success">导出Excel</a>
+            <input type="submit" class="btn btn-success" name="submit" value="导出Excel" />
         </div>
         <div class="col-md-6">
             <form action="<?php echo U('category/index');?>" method="post">
@@ -35,22 +36,28 @@
         <th>编号</th>  
         <th>商城用户名</th>  
         <th>所购物品</th>
+        <th>时间</th>
         <th>总价</th>
-        <form action="<?php echo U('Menu/update');?>" method="post">
-            <?php if(is_array($model)): foreach($model as $k=>$v): ?><tr>  
-                    <td><?php echo ($k+1); ?></td> 
-                    <td><?php echo ($v["name"]); ?></td>  
-                    <td><?php echo ($v["photoname"]); ?></td>  
-                    <td><?php echo ($v["price"]); ?></td>  
-                </tr><?php endforeach; endif; ?>  
-        </form>
+
+        <?php if(is_array($checkout)): foreach($checkout as $k=>$v): ?><tr>  
+                <td><?php echo ($k+1); ?></td> 
+                <td><?php echo ($v["username"]); ?></td>  
+                <td><?php echo ($v["prod"]); ?></td>  
+                <td><?php echo ($v["time"]); ?></td>
+                <td><?php echo ($v["allPrice"]); ?></td>  
+            </tr>
+            <input type="hidden" name="id[]" value="<?php echo ($k+1); ?>" />
+            <input type="hidden" name="username[]" value="<?php echo ($v["username"]); ?>" />  
+            <input type="hidden" name="prod[]" value="<?php echo ($v["prod"]); ?>" />  
+            <input type="hidden" name="time[]" value="<?php echo ($v["time"]); ?>" />  
+            <input type="hidden" name="allPrice[]" value="<?php echo ($v["allPrice"]); ?>" /><?php endforeach; endif; ?>  
     </table>
     <?php echo ($page); ?>
 </div>
 <script src="/Application/Admin/View//Public/template/js/jquery-1.10.2.js"></script>
 <script src="/Application/Admin/View//Public/template/js/bootstrap.js"></script>
 <script src="/Application/Admin/View//Public/template/js/app.js"></script>
-
+</form>
 </body>
 </html>
 </body>

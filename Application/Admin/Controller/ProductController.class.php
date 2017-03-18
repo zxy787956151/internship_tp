@@ -56,6 +56,7 @@ use Think\Controller;
 			$proDb = M('Product');
 			$checkout = $db->select();
 			$group = array();
+			$i = 0;
 			// test($checkout);
 			// die();
 			//手动对用户进行分组,未尝试优化
@@ -71,14 +72,16 @@ use Think\Controller;
 				if ($pd) {
 					$group[] = $db->where("user_id=%d",$cv['user_id'])->select();		
 					$username = $uDb->where("user_id=%d",$cv['user_id'])->field('username')->select();
-					$pidCou = $db->where("user_id=%d",$cv['user_id'])->field('pid,count')->select();
+					$pidCou = $db->where("user_id=%d",$cv['user_id'])->field('pid,count,time')->select();
 					$result[]['username'] = $username['0']['username'];
 
 					foreach ($pidCou as $v) {
 						$prod = $proDb->where("id=%d",$v['pid'])->field('name,price')->select();
-						$result["$ck"]['prod'] .= " ".$prod['0']['name']."*".$v['count'];
-						$result["$ck"]['allPrice'] += $prod['0']['price']*$v['count'];
+						$result["$i"]['prod'] .= " ".$prod['0']['name']."*".$v['count'];
+						$result["$i"]['allPrice'] += $prod['0']['price']*$v['count'];
+						$result["$i"]['time'] = $v['time'];
 					}
+					$i++;
 				}
 			}
 			$this->assign('checkout',$result);
@@ -86,14 +89,15 @@ use Think\Controller;
 		}
 
 		public function excel(){
-			$data = array(
-	            array(NULL, 2010, 2011, 2012),
-	            array('Q1',   12,   15,   21),
-	            array('Q2',   56,   73,   86),
-	            array('Q3',   52,   61,   69),
-	            array('Q4',   30,   32,    0),
-	        );
-	     
+			$data = array(array(编号, 商城用户名, 所购物品, 时间, 总价));
+            for ($i=0 ; $i<count(I('id')) ; $i++) { 
+            	$data["$i+1"]['0'] = I('id')["$i"];
+            	$data["$i+1"]['1'] = I('username')["$i"];
+            	$data["$i+1"]['2'] = I('prod')["$i"];
+            	$data["$i+1"]['3'] = I('time')["$i"];
+            	$data["$i+1"]['4'] = I('allPrice')["$i"];
+            }
+
 	    	create_xls($data);
 			}
 	}

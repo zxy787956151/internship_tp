@@ -63,12 +63,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>138 9405 5929</span></li>			
 						</ul>
 						<ul class=" support-right">
-
-							<li><a href="<?php echo U('account/index');?>">
-									<i class="glyphicon glyphicon-user" class="men"> </i>
-									<?php echo ($_SESSION[user]); ?>
-								</a>
-							</li>
+							<?php if($username): ?><li><a href="#">
+										<i class="glyphicon glyphicon-user" class="men"> </i>
+										<?php echo ($username); ?>
+									</a>
+								</li> 
+							<?php else: ?> 
+								<li><a href="<?php echo U('account/index');?>">
+										<i class="glyphicon glyphicon-user" class="men"> </i>
+										To log in
+									</a>
+								</li><?php endif; ?>
+							
 							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
 							<li><a href="<?php echo U('register/index');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
 						</ul>
@@ -85,28 +91,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h1><a href="index.html">Z-<span>xy</span></a></h1>
 				</div>
 		 <!---->	
-		 
+
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="<?php echo U('Index/index');?>">Home</a></li>
 
-				<?php if(is_array($arr)): foreach($arr as $key=>$v): ?><li class="grid">
-						<?php if($v["title"] == CONTACT): ?><a href="<?php echo U('Contact/index');?>"><?php echo ($v["title"]); ?></a>
-							<?php else: ?> <a href="<?php echo U('Product/index',array('id' => 0));?>"><?php echo ($v["title"]); ?></a><?php endif; ?>
-
-						<div class="mepanel">
-							<div class="row">
-								
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>											
-											<?php  for ($i=0; $i <count($v['child']) ; $i++) { echo "<li><a href='".U('Product/index',array('id' => 0))."'>" .$v['child'][$i]['title']."</a></li>"; } ?>
-										</ul>
-									</div>
-																
-							</div>
-						</div>
-					</li><?php endforeach; endif; ?>
-				
+				<?php zxy_foreach($arr,1); ?>
 					
 				</ul>
 				<div class="clearfix"> </div>
