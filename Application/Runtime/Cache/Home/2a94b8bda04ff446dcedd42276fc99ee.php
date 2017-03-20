@@ -76,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</li><?php endif; ?>
 							
 							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
-							<li><a href="<?php echo U('register/index');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
+							<li><a href="<?php echo U('Account/register');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
 						</ul>
 						<div class="clearfix"> </div>
 					</div>
@@ -129,8 +129,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	         <p>Goggles or safety glasses are forms of protective eyewear<span>fthat usually enclose or protect the area surrounding the eye in order to prevent particulates.</span></p>
 </div>
 	<div class="now">
-	         <a class="morebtn" href="<?php echo U('Product/index',array('pd'=>0));?>">Explore</a>
-	         <a class="morebtn at-in" href="single.html">Shop Now</a>
+	         <a class="morebtn" href="#">Explore</a>
+	         <a class="morebtn at-in" href="<?php echo U('Product/index',array('id'=>'0'));?>">Shop Now</a>
 	         <div class="clearfix"> </div>
 	         </div>
  	</div>	

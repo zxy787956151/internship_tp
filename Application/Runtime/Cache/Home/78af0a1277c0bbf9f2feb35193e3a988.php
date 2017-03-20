@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</li><?php endif; ?>
 							
 							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
-							<li><a href="<?php echo U('register/index');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
+							<li><a href="<?php echo U('Account/register');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
 						</ul>
 						<div class="clearfix"> </div>
 					</div>

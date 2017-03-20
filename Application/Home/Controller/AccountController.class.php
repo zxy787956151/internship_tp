@@ -2,6 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 	class AccountController extends InitializeController{
+
 		public function index(){
 			$this->display();
 		}
@@ -9,10 +10,15 @@ use Think\Controller;
 		public function runLogin(){
 			//与后台登录冗余,Common function.php尝试优化失败
 			//都用查询尚未优化?
+			$db = M('User');
+			$loginVerify = array(
+                array('username','require','请填账号！'), //默认情况下用正则进行验证
+                array('password','require','请填写密码！'), //默认情况下用正则进行验证
+            );
 			if (I('submit') == 'Login') {
 					//如果用户提交数据
 	            $model = D("User");
-	            if (!$model->create()) {
+	            if (!$model->validate($loginVerify)->create()) {
 	                // 如果创建失败 表示验证没有通过 输出错误提示信息
 	                $this->error($model->getError());
 	                exit();
@@ -32,8 +38,12 @@ use Think\Controller;
 	                				session_start();
 	                				session_destroy('mallUserId');
 						        	$userId = $model->where($where)->field('user_id')->select();
-						        	session('mallUserId',$userId['0']['user_id']); 
-						        	$this->success("登陆成功!",U('Index/index'));
+						        	session('mallUserId',$userId['0']['user_id']);
+						        	var_dump(11);
+						        	if ($pd = $db->where("user_id=%d",$userId['0']['user_id'])->setField(array('logintime','loginip'),array(date('Y-m-d H:i:s',time()),$_SERVER['SERVER_ADDR']))) {
+						        		//更新数据库此用户上次登录时间、ip
+						        		$this->success("登陆成功!",U('Index/index'));
+						        	 } 
 	                			}else{
 	                				$this->error("您无权登录!");
 	                			}
@@ -45,6 +55,29 @@ use Think\Controller;
 	                	$this->error("账号不存在!");
 	                }
 	            }
+			}
+		}
+
+		public function register(){
+			$db = M('User');
+			if (I('submit') == '注册') {
+			 	$model = D("User");
+	            if (!$model->create()) {
+	                // 如果创建失败 表示验证没有通过 输出错误提示信息
+	                $this->error($model->getError());
+	                exit();
+	            }else {
+	            	$data = array(
+					'username' => I('username'),
+					'password' => md5(I('password')),
+					'role_id' => 3,
+					);
+					if ($pd = $db->data($data)->add()) {
+						$this->success('注册成功!',U('Index/index'));
+					}
+	            }
+			}else{
+				$this->display();
 			}
 		}
 	}

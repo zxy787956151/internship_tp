@@ -18,7 +18,8 @@
     
     <div class="row">
         <div class="col-md-6">
-            <a href="<?php echo U('Access/set_node');?>" class="btn btn-success">角色&权限设置</a>
+            <a href="<?php echo U('Access/set_node');?>" class="btn btn-success">添加角色</a>
+            <a href="<?php echo U('Access/set_node');?>" class="btn btn-success">添加节点</a>
         </div>
         <div class="col-md-6">
             <form action="<?php echo U('category/index');?>" method="post">
@@ -38,16 +39,19 @@
                 <th>节点名称</th>
                 <th>角色名称</th>   <!-- 实际上就是权限名 -->
                 <th>权限名称</th>   <!-- 一个节点代表一个权限 -->
+                <th>操作</th>
             </tr>
         </thead>
         <tbody>
-        <?php if(is_array($model)): foreach($model as $key=>$v): ?><tr>
-                <td><?php echo ($v["id"]); ?></td>
-                <td><?php echo ($v["html"]); ?> <?php echo ($v["title"]); ?></td>
-                <td><?php echo ($v["name"]); ?></td>
-                <!-- 删除节点 -->
-                <td><a href="<?php echo U('category/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
-            </tr><?php endforeach; endif; ?>
+        <!-- tp遍历二维数组volist比foreach好用! -->
+            <?php if(is_array($role_to_perm)): $rk = 0; $__LIST__ = $role_to_perm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rv): $mod = ($rk % 2 );++$rk; if(is_array($rv['role_to_permission'])): $k = 0; $__LIST__ = $rv['role_to_permission'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr>
+                        <td><?php echo ($rk+$k-1); ?></td>
+                        <td><?php echo ($v["nodename"]); ?></td>
+                        <td><?php echo ($rv["rolename"]); ?></td>
+                        <td><?php echo ($v["permname"]); ?></td>
+                        <!-- 删除节点 -->
+                        <td><a href="<?php echo U('category/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
     <?php echo ($page); ?>
