@@ -21,16 +21,15 @@ use Think\Controller;
        				$nodename["$k"] = $db->where("role_id=%d and perm_id=%d",array($rv['id'],$v['id']))->field('nodename')->select();
        				$role_to_perm["$rk"]['role_to_permission']["$k"]['nodename'] = $nodename["$k"]['0']['nodename'];
        				if ($nodename["$k"]['0']['nodename'] == $nodename["$k"-1]['0']['nodename']) {
-       					//BUG!!!!!
-       					test($rv['role_to_permission']["$k"]['permname']);
-       					$rv['role_to_permission']["$k"-1]['permname'] .= $rv['role_to_permission']["$k"]['permname']; 
+       					define('NUM',$k-1);	//此处当
+       					//记录重复nodename的第一个permname
+       					$role_to_perm["$rk"]['role_to_permission'][NUM]['permname'] .=" ".$rv['role_to_permission']["$k"]['permname'];
+       					unset($role_to_perm["$rk"]['role_to_permission']["$k"]);  
        				}else{
        					// $role_to_perm["$rk"]['role_to_permission']["$k"]['nodename'] = $nodename["$k"]['0']['nodename'];
        				}
        			}
        		}
-       		test($role_to_perm);
-       		die();
        		$this->assign('role_to_perm',$role_to_perm);
        		$this->role = M('Role')->select();
        		$this->perm = M('Permission')->select();
@@ -86,6 +85,17 @@ use Think\Controller;
 				$this->success('节点添加成功!',U('Access/node_index'));
 			}else{
 				$this->display();
+			}
+		}
+
+		public function update_role(){
+			//解决这个实时修改完,另一个也要实时刷新
+			if (I('get.action') == 'ajax') {
+				if ($pd = M('Role')->where("id=%d",I('id'))->setField('rolename',I('rolename'))) {
+					$arr['success']=1;
+					$arr['rolename'] = I('rolename');
+					echo json_encode($arr);	//将数值转换成json数据存储格式	
+				}
 			}
 		}
 	}
