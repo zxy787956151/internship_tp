@@ -1,0 +1,101 @@
+[ 2017-03-21T08:16:51+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.014057s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000245s ]
+SQL: SELECT `username` FROM `user` WHERE ( user_id=41 )  [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `prod_user` [ RunTime:0.010435s ]
+SQL: SELECT * FROM `prod_user` WHERE ( pid=54 and user_id=41 )  [ RunTime:0.000318s ]
+SQL: INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (41,54,1) [ RunTime:0.028675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001634s ]
+
+[ 2017-03-21T08:16:59+08:00 ] 127.0.0.1 /Home/Product/ajaxChange?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.011709s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000247s ]
+SQL: SELECT `username` FROM `user` WHERE ( user_id=41 )  [ RunTime:0.000213s ]
+SQL: SELECT `price` FROM `product` WHERE ( id=54 )  [ RunTime:0.000201s ]
+SQL: UPDATE `prod_user` SET `count`=2 WHERE ( pid=54 and user_id=41 ) [ RunTime:0.047500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001488s ]
+
+[ 2017-03-21T08:51:00+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-03-21T08:52:20+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-03-21T09:04:56+08:00 ] 127.0.0.1 /index.php?m=Admin&c=category&a=index
+ERR: 无法加载控制器:Category
+
+[ 2017-03-21T09:12:00+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=add_role
+ERR: 非法操作:add_role
+
+[ 2017-03-21T09:32:37+08:00 ] 127.0.0.1 /Home/Product/add_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002144s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.047528s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000568s ]
+SQL: SELECT `username` FROM `user` WHERE ( user_id=41 )  [ RunTime:0.000491s ]
+ERR: 非法操作:add_role
+
+[ 2017-03-21T09:33:10+08:00 ] 127.0.0.1 /Home/Access/add_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+ERR: 无法加载控制器:Access
+
+[ 2017-03-21T09:34:02+08:00 ] 127.0.0.1 /Admin/Access/add_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: INSERT INTO `role` (`rolename`) VALUES ('前端商城超管') [ RunTime:0.001865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002672s ]
+
+[ 2017-03-21T09:36:23+08:00 ] 127.0.0.1 /Admin/Access/add_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001235s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: INSERT INTO `role` (`rolename`) VALUES ('AD') [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003312s ]
+
+[ 2017-03-21T10:04:26+08:00 ] 127.0.0.1 /Admin/Access/add_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: INSERT INTO `permission` (`permname`) VALUES ('前端所有功能的操作') [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002497s ]
+
+[ 2017-03-21T10:48:17+08:00 ] 127.0.0.1 /Admin/Access/add_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002122s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: INSERT INTO `role` (`rolename`) VALUES ('终极管理员') [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+

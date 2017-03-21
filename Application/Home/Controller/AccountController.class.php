@@ -39,7 +39,9 @@ use Think\Controller;
 	                				session_destroy('mallUserId');
 						        	$userId = $model->where($where)->field('user_id')->select();
 						        	session('mallUserId',$userId['0']['user_id']);
-						        	var_dump(11);
+						        	//BUG!!!!!!!!!!!!!!!!!!!!!!
+						        	// $pd = $db->where("user_id=%d",$userId['0']['user_id'])->setField(array('logintime','loginip'),array(date('Y-m-d H:i:s',time()),$_SERVER['SERVER_ADDR']));
+						        	// var_dump($pd);
 						        	if ($pd = $db->where("user_id=%d",$userId['0']['user_id'])->setField(array('logintime','loginip'),array(date('Y-m-d H:i:s',time()),$_SERVER['SERVER_ADDR']))) {
 						        		//更新数据库此用户上次登录时间、ip
 						        		$this->success("登陆成功!",U('Index/index'));

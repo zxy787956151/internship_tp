@@ -6,7 +6,6 @@ use Think\Controller;
 			//实例化model  
 	        $User=D('Menu');  
 	        $arr = $User->sel_all();  
-	        //print_r($arr);die;
 	        $this->assign('arr',$arr);  
 	        $this->display();
 		}

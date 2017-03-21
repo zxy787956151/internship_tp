@@ -87,8 +87,14 @@
 	    }
 	}
 
-	function zxy_foreach($arr,$level){
+	function zxy_foreach($arr,$level,$num){
+		//$num参数为计数器 无特别作用 但必须
+
+		//BUG!!!!!!!!!!!!!!!!!!!
 		foreach ($arr as $k => $v) {
+						if ($v['level'] == 0) {
+							$num = 0;
+						}
 						if (isset($v['child'])) {
 								echo "
 									<li class='grid'>
@@ -100,8 +106,8 @@
 														<h4>Shop</h4>
 														<ul>
 								";
-								
-								$fun = zxy_foreach($v['child'],$level+1);
+								$num ++;
+								$fun = zxy_foreach($v['child'],$level+1,$num);
 						}else{
 							echo "
 									<li class='grid'>
@@ -111,16 +117,24 @@
 													<div class='col1 me-one'>
 														<h4>Shop</h4>
 														<ul>
-								";
-							for($i=0;$i<$level;$i++){
-								echo "
 														</ul>
 													</div>
 											</div>
 										</div>
 									</li>
 								";
-							}
+							if($v['level']==0 && !isset($arr["$k+1"])){
+								//下一个数组元素的level是0,即此元素是这个顶级元素的最后一级子元素的最后一个元素
+								for($i=0;$i<2;$i++){
+									echo "
+															</ul>
+														</div>
+												</div>
+											</div>
+										</li>
+									";
+								}	
+							}	
 						}			
 					}
 	}

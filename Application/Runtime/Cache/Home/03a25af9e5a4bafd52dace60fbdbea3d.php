@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</li><?php endif; ?>
 							
 							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
-							<li><a href="<?php echo U('register/index');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
+							<li><a href="<?php echo U('Account/register');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
 						</ul>
 						<div class="clearfix"> </div>
 					</div>
@@ -443,62 +443,7 @@ $(window).load(function() {
 
 </li>
 <li data-content="television" class="selected">
-						<div class='comments-top-top'>
-							<div class='top-comment-left'>
-								<img class='img-responsive' src='/Application/Home/View//Public/images/co.png' alt=''>
-								<h6>听说名字起的长特别牛!</h6>
-							</div>
-							<div class='top-comment-right'>
-								<h4><a href='#' style="color:red">	楼主</a> </h4>
-								
-								<p>这副眼镜不错!</p>
-							</div>
-							<div class='clearfix'> </div>
-							<a class='add-re' href='javascript:;'>Reply to him or her</a>
-							<!--ADD REVIEW 功能就先不写了! 没必要!-->
-							<form>
-								<textarea class="reply" style="background-color:#ffffff;width: 600px;height: 100px;display: none;" >回复:听说名字起的长特别牛!</textarea>
-							</form>
-						</div>
-
-						<div class='comments-top-top'>
-							<div class='top-comment-left'>
-								<img class='img-responsive' src='/Application/Home/View//Public/images/co.png' alt=''>
-								<h6>马什么梅?</h6>
-							</div>
-							<div class='top-comment-right'>
-								<div style="background-color:gray">
-									<h4><a href='#' style="color:orange">@楼主</a>:这副眼镜不错!</h4>
-								</div>
-								
-								<p>不错个头</p>
-							</div>
-							<div class='clearfix'> </div>
-							<a class='add-re' href='javascript:;'>Reply to him or her</a>
-							<!--ADD REVIEW 功能就先不写了! 没必要!-->
-							<form>
-								<textarea class="reply" style="background-color:#ffffff;width: 600px;height: 100px;display: none;">回复:马什么梅?</textarea>
-							</form>
-						</div>
-
-						<div class='comments-top-top'>
-							<div class='top-comment-left'>
-								<img class='img-responsive' src='/Application/Home/View//Public/images/co.png' alt=''>
-								<h6>追风少年</h6>
-							</div>
-							<div class='top-comment-right'>
-								<div style="background-color:gray">
-									<h4><a href='#' style="color:orange">@马什么梅?</a>:不错个头</h4>
-								</div>
-								<p>马冬梅</p>
-							</div>
-							<div class='clearfix'> </div>
-							<a class='add-re' href='javascript:;'>Reply to him or her</a>
-							<!--ADD REVIEW 功能就先不写了! 没必要!-->
-							<form>
-								<textarea class="reply" style="background-color:#ffffff;width: 600px;height: 100px;display: none;">回复:追风少年</textarea>
-							</form>
-						</div>
+						
 
 </li>
 <!-- php foreach结束 -->

@@ -10,7 +10,7 @@ use Think\Controller;
 
 	        //压缩数组
 	        $tree=build_tree($arr,0);
-
+	        // test($tree);
 	        //输出用户名
 	        $username = $User->where("user_id=%d",$_SESSION['mallUserId'])->field('username')->select();
 	        $this->assign('username',$username['0']['username']);

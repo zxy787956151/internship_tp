@@ -24,7 +24,7 @@
 					<a href="#" class="nav-main" id="nav-main2"><span id="nav-ico2"></span>用户&权限管理</a>
 					<li class="nav-li" id="nav-li2">
 						<a href="<?php echo U('Access/index');?>" target="myFrame">用户列表</a>
-						<a href="<?php echo U('Access/role_index');?>" target="myFrame">动态管理权限</a>
+						<a href="<?php echo U('Access/node_index');?>" target="myFrame">动态管理权限</a>
 					</li>
 				</ul>
 				<ul>
