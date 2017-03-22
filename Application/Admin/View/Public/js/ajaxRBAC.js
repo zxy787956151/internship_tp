@@ -155,19 +155,17 @@ for(i=0;i<updateRole.length;i++){
 
 
 //修改权限(jq),这是自定义函数要写在页面加载的外面!
-function updatePerm(id,content,key){
+function updatePerm(id,content,key,allArr){
 		//第三参为'排序'传的键名,不加锁貌似没bug
 		var url = "Admin/Access/update_perm?action=ajax";
-		var data = {'id':id,'content':content};
-
+		var data = {'id':id,'content':content,'allArr':allArr};
 		//这个的beforeSend如何写? 加入.post里也不好使!
-		
+		console.log(allArr);
 		var success = function(response) {
 			if(response.errno == 0){
 				//response. 比 json.好用多了
-
-				//此处BUG为 多地方需要修改权限!
-				$(".oppositePermname").eq(key).html(response.permname);
+				alert(response.num['0']['value']);
+				// $(".oppositePermname").eq(key).html(response.permname);
 			}
 		}
 		$.post(url,data,success,"json");

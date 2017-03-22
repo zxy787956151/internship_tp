@@ -87,7 +87,9 @@
             <?php if(is_array($perm)): foreach($perm as $k=>$v): ?><tr>
                     <td><?php echo ($v["id"]); ?></td>
                     <td>
-                        <input type="text" class="permName" name="permname" value="<?php echo ($v["permname"]); ?>" onblur="updatePerm(<?php echo $v['id']?>,this.value,<?php echo $k?>)" />
+                        <?php
+ echo "<input type='text' class='permName' name='permname' value='".$v['permname']."' onblur='updatePerm(".$v['id'].",".json_encode($v['permname']).",".$k.",".json_encode($role_to_perm).")' />"; ?>
+                        <!-- <input type="text" class="permName" name="permname" value="<?php echo ($v["permname"]); ?>" onblur="updatePerm(<?php echo $v['id']?>,this.value,<?php echo $k?>,$jqAllArr)" /> -->
                     </td>
                     <!-- 删除节点 -->
                     <td><a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除权限</a></td>

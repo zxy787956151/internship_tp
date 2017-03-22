@@ -30,6 +30,7 @@ use Think\Controller;
        				}
        			}
        		}
+       		test($role_to_perm);
        		$this->assign('role_to_perm',$role_to_perm);
        		$this->role = M('Role')->select();
        		$this->perm = M('Permission')->select();
@@ -104,8 +105,25 @@ use Think\Controller;
 
 		public function update_perm(){
 			if (I('get.action') == 'ajax') {
-				if ($judge = M('Permission')->where("id=%d",I('id'))->setField('permname',I('content'))) {
+				$db = M('Permission');
+				$i = 0;
+				
+				//解决多处需要异步修改权限名称
+				$permname = $db->where("id=%d",I('id'))->field('permname')->select();
+				foreach (I('allArr') as $allk => $allv) {
+				//因为使用的是数组,所以只能在数组里查 不能使用mysql模糊查询,简直不忍直视
+					foreach ($allv['role_to_permission'] as $k => $v) {
+						if (strpos($v['permname'],$permname['0']['permname'])!==-1) {
+							$num["$i"]['key'] = $allk + $k;
+							$num["$i"]['value'] = str_replace($permname['0']['permname'],I('coutent'),$v['permname']);
+							$i++;
+						}
+					}
+				}
+
+				if ($judge = $db->where("id=%d",I('id'))->setField('permname',I('content'))) {
 					$response = array(
+						'num' => $num,
 						'permname' => I('content'),
 						'errno'  =>  '0',
 						'errmsg' =>  'success',
@@ -123,7 +141,6 @@ use Think\Controller;
 					$db = M('Role');
 					break;
 			}
-			
 			$judge1 = $db->where("id=%d",I('get.id'))->delete();
 			$judge2 = M('role_perm')->where("role_id=%d",I('get.id'))->delete();
 			if ($judge1 && $judge2) {
