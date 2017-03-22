@@ -53,7 +53,7 @@ use Think\Controller;
 		public function add_car(){
 			if ($_GET['action'] == 'ajax') {
 				$db = M('prod_user');
-				if ($pd = $db ->where("pid=%d and user_id=%d",array(I('id'),$_SESSION['mallUserId']))->select()) {
+				if ($judge = $db ->where("pid=%d and user_id=%d",array(I('id'),$_SESSION['mallUserId']))->select()) {
 					if ($add = $db->where("pid=%d",I('id'))->setInc('count',I('count'))) {
 						$arr['success']=1;
 						$arr['count'] = I('count');
@@ -81,7 +81,7 @@ use Think\Controller;
 				$where['pid'] = I('id');
 				$where['user_id'] = $_SESSION['mallUserId'];
 				//此处数组做条件 依然不好使
-				if ($pd = $db ->where($where)->setField(array('price','count'),array(I('price')*I('count')))) {
+				if ($judge = $db ->where($where)->setField(array('price','count'),array(I('price')*I('count')))) {
 					$arr['success']=1;
 					echo json_encode($arr);	//将数值转换成json数据存储格式
 				}
@@ -98,21 +98,21 @@ use Think\Controller;
 				//time获取当前时间戳,date将时间戳转换格式输出
 				foreach ($checkout as $cv) {
 					if ($v['user_id'] == $cv['user_id']&&$v['pid']==$cv['pid']) {
-						$pd["$k"]=M('checkout')->where("user_id=%d and pid=%d",array($_SESSION['mallUserId'],$v['pid']))->setInc('count',$v['count']);	
+						$judge["$k"]=M('checkout')->where("user_id=%d and pid=%d",array($_SESSION['mallUserId'],$v['pid']))->setInc('count',$v['count']);	
 					}
 				}
-				if (!isset($pd["$k"])) {
-					$pd["$k"] = M('Checkout')->data($prod_user["$k"])->add();
+				if (!isset($judge["$k"])) {
+					$judge["$k"] = M('Checkout')->data($prod_user["$k"])->add();
 				}
 			}
-			foreach ($pd as $v) {
+			foreach ($judge as $v) {
 				if (!$v) {
 					$arr['success'] = 0;
 					echo json_encode($arr);	//将数值转换成json数据存储格式
 				}
 			}
 
-			if ($pd =$db->where("user_id=%d",$_SESSION['mallUserId'])->delete()) {
+			if ($judge =$db->where("user_id=%d",$_SESSION['mallUserId'])->delete()) {
 				$arr['success']=1;
 				$arr['allPrice'] = I('allPrice');
 				echo json_encode($arr);	//将数值转换成json数据存储格式
@@ -123,7 +123,7 @@ use Think\Controller;
 			$db = M('prod_user');
 			$price = M('Product')->where("id=%d",I('id'))->field('price')->select();
 			if (I('get.action') == 'ajax') {
-				if ($pd = $db->where("pid=%d and user_id=%d",array(I('id'),$_SESSION['mallUserId']))->setField('count',I('num'))) {
+				if ($judge = $db->where("pid=%d and user_id=%d",array(I('id'),$_SESSION['mallUserId']))->setField('count',I('num'))) {
 					
 					$allPrice = I('num') * $price['0']['price'];
 					$response = array(

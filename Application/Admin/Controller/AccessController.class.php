@@ -23,7 +23,7 @@ use Think\Controller;
        				if ($nodename["$k"]['0']['nodename'] == $nodename["$k"-1]['0']['nodename']) {
        					define('NUM',$k-1);	//此处当
        					//记录重复nodename的第一个permname
-       					$role_to_perm["$rk"]['role_to_permission'][NUM]['permname'] .=" ".$rv['role_to_permission']["$k"]['permname'];
+       					$role_to_perm["$rk"]['role_to_permission'][NUM]['permname'] .=" | ".$rv['role_to_permission']["$k"]['permname'];
        					unset($role_to_perm["$rk"]['role_to_permission']["$k"]);  
        				}else{
        					// $role_to_perm["$rk"]['role_to_permission']["$k"]['nodename'] = $nodename["$k"]['0']['nodename'];
@@ -39,7 +39,7 @@ use Think\Controller;
 		public function add_role(){
 			if (I('get.action') == 'ajax') {
 				$data = array('rolename' => I('content'));
-				if ($pd = M('Role')->data($data)->add()) {
+				if ($judge = M('Role')->data($data)->add()) {
 					$arr['success']=1;
 					$arr['rolename'] = I('content');
 					echo json_encode($arr);	//将数值转换成json数据存储格式	
@@ -50,7 +50,7 @@ use Think\Controller;
 		public function add_perm(){
 			if (I('get.action') == 'ajax') {
 				$data = array('permname' => I('content'));
-				if ($pd = M('Permission')->data($data)->add()) {
+				if ($judge = M('Permission')->data($data)->add()) {
 					$arr['success']=1;
 					$arr['rolename'] = I('content');
 					echo json_encode($arr);	//将数值转换成json数据存储格式	
@@ -71,11 +71,11 @@ use Think\Controller;
 						'role_id' => I('role')
 						);
 					
-					$pd[] = M('role_perm')->data($data)->add();
+					$judge[] = M('role_perm')->data($data)->add();
 				}
 
 				//多选权限有任意一个未成功 均报错!
-				foreach ($pd as $pv) {
+				foreach ($judge as $pv) {
 					foreach ($pv as $v) {
 						if (!$v) {
 							$this->error('访问错误!');
@@ -91,11 +91,43 @@ use Think\Controller;
 		public function update_role(){
 			//解决这个实时修改完,另一个也要实时刷新
 			if (I('get.action') == 'ajax') {
-				if ($pd = M('Role')->where("id=%d",I('id'))->setField('rolename',I('rolename'))) {
+				if ($judge = M('Role')->where("id=%d",I('id'))->setField('rolename',I('rolename'))) {
 					$arr['success']=1;
 					$arr['rolename'] = I('rolename');
 					echo json_encode($arr);	//将数值转换成json数据存储格式	
+				}else{
+					$arr['success']=0;
+					echo json_encode($arr);	//将数值转换成json数据存储格式	
 				}
+			}
+		}
+
+		public function update_perm(){
+			if (I('get.action') == 'ajax') {
+				if ($judge = M('Permission')->where("id=%d",I('id'))->setField('permname',I('content'))) {
+					$response = array(
+						'permname' => I('content'),
+						'errno'  =>  '0',
+						'errmsg' =>  'success',
+						'data'   =>  true,
+					);
+					echo json_encode($response);
+				}
+			}
+		}
+
+		public function delete(){
+			test($_GET);
+			switch (I('get.type')) {
+				case 'role':
+					$db = M('Role');
+					break;
+			}
+			
+			$judge1 = $db->where("id=%d",I('get.id'))->delete();
+			$judge2 = M('role_perm')->where("role_id=%d",I('get.id'))->delete();
+			if ($judge1 && $judge2) {
+				
 			}
 		}
 	}

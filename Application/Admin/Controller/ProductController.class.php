@@ -33,7 +33,7 @@ use Think\Controller;
 					'price' => I('price'),
 					'mid' => I('mid')
 				);
-				if ($pd = M('Product')->data($data)->add()) {
+				if ($judge = M('Product')->data($data)->add()) {
 					$this->success('添加成功!',U('Product/index'));
 				}else{
 					$this->error('访问错误!');
@@ -61,15 +61,15 @@ use Think\Controller;
 			// die();
 			//手动对用户进行分组,未尝试优化
 			foreach ($checkout as $ck=>$cv) {
-				$pd = 1;
+				$judge = 1;
 				foreach ($group as $v) {
 					foreach ($v as $gv) {
 						if ($cv['user_id']==$gv['user_id']) {
-							$pd = 0;
+							$judge = 0;
 						}
 					}
 				}
-				if ($pd) {
+				if ($judge) {
 					$group[] = $db->where("user_id=%d",$cv['user_id'])->select();		
 					$username = $uDb->where("user_id=%d",$cv['user_id'])->field('username')->select();
 					$pidCou = $db->where("user_id=%d",$cv['user_id'])->field('pid,count,time')->select();

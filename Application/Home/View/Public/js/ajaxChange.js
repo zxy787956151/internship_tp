@@ -1,6 +1,5 @@
 function ajaxChange(id,num){
-		//alert(productid);
-		//alert(num);
+		//不加锁貌似没bug
 		//通过ajax将对应商品的数量进行修改操作
 		var url = "Home/Product/ajaxChange?action=ajax";
 		var data = {'id':id,'num':num};

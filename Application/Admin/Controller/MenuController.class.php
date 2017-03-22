@@ -42,7 +42,7 @@ use Think\Controller;
 						);
 					}
 
-					if ($pd = $db->data($data)->add()) {
+					if ($judge = $db->data($data)->add()) {
 						$this->success('添加成功!',U('Menu/index'));
 					}else{
 						$this->error('访问出错!');
@@ -60,7 +60,7 @@ use Think\Controller;
 				$data = array(
 					'name' => I('name'),
 					);
-				if ($pd = $db->where("id=%d",$_GET['id'])->save($data)) {
+				if ($judge = $db->where("id=%d",$_GET['id'])->save($data)) {
 					$this->success('修改成功!',U('Menu/index'));
 				}else{
 					$this->error('访问出错!');
