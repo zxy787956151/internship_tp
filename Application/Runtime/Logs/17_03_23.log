@@ -1,0 +1,2070 @@
+[ 2017-03-23T18:17:50+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.079909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001965s ]
+
+[ 2017-03-23T18:18:25+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000588s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003177s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003381s ]
+
+[ 2017-03-23T18:19:19+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000397s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2017-03-23T18:19:31+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000552s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-03-23T18:20:11+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 109 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000666s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000549s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002141s ]
+
+[ 2017-03-23T18:20:34+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000274s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001232s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2017-03-23T18:20:52+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000593s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002140s ]
+
+[ 2017-03-23T18:21:00+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001375s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2017-03-23T18:21:15+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002194s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000643s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002560s ]
+
+[ 2017-03-23T18:21:44+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000657s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002341s ]
+
+[ 2017-03-23T18:22:09+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000622s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 124 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 124 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002612s ]
+
+[ 2017-03-23T18:22:59+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000642s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 115 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002197s ]
+
+[ 2017-03-23T18:23:10+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000270s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001277s ]
+
+[ 2017-03-23T18:23:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+
+[ 2017-03-23T18:32:18+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000302s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 121 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2017-03-23T18:32:20+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002782s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000369s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 121 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2017-03-23T18:32:53+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000380s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 121 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001252s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001341s ]
+
+[ 2017-03-23T18:33:34+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000758s ]
+NOTIC: [8] Undefined index: role_to_permission D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 123 行.
+SQL: UPDATE `permission` SET `permname`='登陆前端商城' WHERE ( id=1 ) [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003183s ]
+
+[ 2017-03-23T18:36:12+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000322s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 121 行.
+SQL: UPDATE `permission` SET `permname`='' WHERE ( id=1 ) [ RunTime:0.019631s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 134 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2017-03-23T18:40:22+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2017-03-23T18:40:45+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2017-03-23T18:40:58+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002110s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2017-03-23T18:41:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000256s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2017-03-23T18:45:34+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2017-03-23T18:45:35+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2017-03-23T18:45:39+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000250s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2017-03-23T18:48:18+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1' WHERE ( id=1 ) [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001104s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2017-03-23T18:55:50+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城11' WHERE ( id=1 ) [ RunTime:0.000429s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2017-03-23T18:56:06+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000273s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城112' WHERE ( id=1 ) [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2017-03-23T18:56:53+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000609s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城11213' WHERE ( id=1 ) [ RunTime:0.000651s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002219s ]
+
+[ 2017-03-23T18:57:01+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000697s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城112131' WHERE ( id=1 ) [ RunTime:0.000700s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002587s ]
+
+[ 2017-03-23T18:57:12+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000270s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1a' WHERE ( id=1 ) [ RunTime:0.000229s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-03-23T18:57:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1a1' WHERE ( id=1 ) [ RunTime:0.000221s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2017-03-23T18:57:42+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000740s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1a1a' WHERE ( id=1 ) [ RunTime:0.000649s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002479s ]
+
+[ 2017-03-23T18:57:57+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001256s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1a1ab' WHERE ( id=1 ) [ RunTime:0.000321s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001149s ]
+
+[ 2017-03-23T18:58:05+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1sss' WHERE ( id=1 ) [ RunTime:0.000269s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2017-03-23T18:58:45+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000424s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1xz' WHERE ( id=1 ) [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2017-03-23T19:00:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000264s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1xz1' WHERE ( id=1 ) [ RunTime:0.000268s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2017-03-23T19:00:50+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1xz1222' WHERE ( id=1 ) [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001017s ]
+
+[ 2017-03-23T19:01:08+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 114 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1asdad' WHERE ( id=1 ) [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2017-03-23T19:02:08+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1asdad1' WHERE ( id=1 ) [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: vallue D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-03-23T19:02:17+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000303s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城1asd31ad1' WHERE ( id=1 ) [ RunTime:0.000295s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: vallue D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-03-23T19:02:24+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000655s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+SQL: UPDATE `permission` SET `permname`='登录后台13' WHERE ( id=2 ) [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003237s ]
+
+[ 2017-03-23T19:02:28+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001862s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000313s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+SQL: UPDATE `permission` SET `permname`='登录后台13' WHERE ( id=2 ) [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2017-03-23T19:02:31+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000742s ]
+NOTIC: [8] Undefined variable: role_to_perm D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 113 行.
+SQL: UPDATE `permission` SET `permname`='登录前端商城gfdgdf1ad1' WHERE ( id=1 ) [ RunTime:0.000732s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 126 行.
+NOTIC: [8] Undefined variable: vallue D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 127 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002692s ]
+
+[ 2017-03-23T19:13:13+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000331s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城gfdgdf1ad11' WHERE ( id=1 ) [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: vallue D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001220s ]
+
+[ 2017-03-23T19:13:25+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000816s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城gfdgASDFad11' WHERE ( id=1 ) [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002901s ]
+
+[ 2017-03-23T19:14:10+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000322s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城23' WHERE ( id=1 ) [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2017-03-23T19:14:19+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000300s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城232' WHERE ( id=1 ) [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2017-03-23T19:15:08+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002223s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000879s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2321a' WHERE ( id=1 ) [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005349s ]
+
+[ 2017-03-23T19:16:50+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002411s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000766s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2321a2' WHERE ( id=1 ) [ RunTime:0.000802s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003380s ]
+
+[ 2017-03-23T19:16:57+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001474s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000315s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a' WHERE ( id=1 ) [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2017-03-23T19:18:13+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001207s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000634s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a1' WHERE ( id=1 ) [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002390s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002561s ]
+
+[ 2017-03-23T19:18:20+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000236s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a12' WHERE ( id=1 ) [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2017-03-23T19:19:33+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000247s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a123' WHERE ( id=1 ) [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2017-03-23T19:19:41+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000240s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a12' WHERE ( id=1 ) [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2017-03-23T19:27:34+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004970s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000282s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a12' WHERE ( id=1 ) [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001111s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001183s ]
+
+[ 2017-03-23T19:27:37+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000281s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a12' WHERE ( id=1 ) [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2017-03-23T19:29:45+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002441s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000418s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2a12' WHERE ( id=1 ) [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001757s ]
+
+[ 2017-03-23T19:30:34+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000921s ]
+SQL: UPDATE `permission` SET `permname`='' WHERE ( id=1 ) [ RunTime:0.000633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002678s ]
+
+[ 2017-03-23T19:31:10+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001111s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000310s ]
+NOTIC: [2] strpos(): Empty needle D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 117 行.
+NOTIC: [2] strpos(): Empty needle D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 117 行.
+NOTIC: [2] strpos(): Empty needle D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 117 行.
+NOTIC: [2] strpos(): Empty needle D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 117 行.
+NOTIC: [2] strpos(): Empty needle D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 117 行.
+NOTIC: [2] strpos(): Empty needle D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 117 行.
+SQL: UPDATE `permission` SET `permname`='' WHERE ( id=1 ) [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2017-03-23T19:31:24+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000390s ]
+SQL: UPDATE `permission` SET `permname`='' WHERE ( id=1 ) [ RunTime:0.000322s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 128 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 129 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2017-03-23T19:31:37+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000447s ]
+SQL: UPDATE `permission` SET `permname`='' WHERE ( id=1 ) [ RunTime:0.000400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001693s ]
+
+[ 2017-03-23T19:32:25+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001609s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000263s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2' WHERE ( id=1 ) [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001077s ]
+
+[ 2017-03-23T19:32:48+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000873s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城22' WHERE ( id=1 ) [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003283s ]
+
+[ 2017-03-23T19:34:43+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000297s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城222' WHERE ( id=1 ) [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2017-03-23T19:38:20+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000674s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城222a' WHERE ( id=1 ) [ RunTime:0.000646s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002519s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002684s ]
+
+[ 2017-03-23T19:38:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000255s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城sss' WHERE ( id=1 ) [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2017-03-23T19:40:14+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000657s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城xxxx' WHERE ( id=1 ) [ RunTime:0.000555s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002504s ]
+
+[ 2017-03-23T19:40:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000589s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城sss' WHERE ( id=1 ) [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2017-03-23T19:41:09+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000646s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城sss2' WHERE ( id=1 ) [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002406s ]
+
+[ 2017-03-23T19:41:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001335s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000665s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城s13' WHERE ( id=1 ) [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002848s ]
+
+[ 2017-03-23T19:42:01+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000635s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城sss' WHERE ( id=1 ) [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002522s ]
+
+[ 2017-03-23T19:42:26+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000657s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城aaa' WHERE ( id=1 ) [ RunTime:0.000651s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003294s ]
+
+[ 2017-03-23T19:42:58+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000276s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城xx' WHERE ( id=1 ) [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001250s ]
+
+[ 2017-03-23T19:43:56+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000382s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城xx' WHERE ( id=1 ) [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001270s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001380s ]
+
+[ 2017-03-23T19:44:00+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000402s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城xsss' WHERE ( id=1 ) [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001350s ]
+
+[ 2017-03-23T19:44:20+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000427s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城asc' WHERE ( id=1 ) [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001694s ]
+
+[ 2017-03-23T19:44:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000650s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城xxx' WHERE ( id=1 ) [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002245s ]
+
+[ 2017-03-23T19:44:42+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.001994s ]
+SQL: UPDATE `permission` SET `permname`='登录后台sad' WHERE ( id=2 ) [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002178s ]
+
+[ 2017-03-23T19:44:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=4 )  [ RunTime:0.000262s ]
+SQL: UPDATE `permission` SET `permname`='前端所有功能的操作ad' WHERE ( id=4 ) [ RunTime:0.000223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2017-03-23T19:44:50+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=3 )  [ RunTime:0.000597s ]
+SQL: UPDATE `permission` SET `permname`='登录后台及管理所有功能wqeeqwe' WHERE ( id=3 ) [ RunTime:0.000603s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002341s ]
+
+[ 2017-03-23T19:45:04+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003171s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台管理员1' WHERE ( id=1 ) [ RunTime:0.000913s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2017-03-23T20:01:03+08:00 ] 127.0.0.1 /Admin/Access/add_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: INSERT INTO `role` (`rolename`) VALUES ('你大哥') [ RunTime:0.103099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2017-03-23T20:01:19+08:00 ] 127.0.0.1 /Admin/Access/add_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: INSERT INTO `permission` (`permname`) VALUES ('哈哈') [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001609s ]
+
+[ 2017-03-23T20:13:36+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=update
+ERR: 模板不存在:./Application/Admin/View/Access/update.html
+
+[ 2017-03-23T20:17:26+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=update
+ERR: 非法操作:update
+
+[ 2017-03-23T20:35:15+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000257s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2017-03-23T20:35:16+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000292s ]
+SQL: UPDATE `permission` SET `permname`='登录后台' WHERE ( id=2 ) [ RunTime:0.000207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000804s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2017-03-23T20:35:18+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=3 )  [ RunTime:0.000238s ]
+SQL: UPDATE `permission` SET `permname`='登录后台及管理所有功能' WHERE ( id=3 ) [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000837s ]
+
+[ 2017-03-23T20:35:19+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=4 )  [ RunTime:0.000261s ]
+SQL: UPDATE `permission` SET `permname`='前端所有功能的操作' WHERE ( id=4 ) [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2017-03-23T20:36:37+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000300s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城1' WHERE ( id=1 ) [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2017-03-23T20:36:41+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000699s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000719s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002891s ]
+
+[ 2017-03-23T20:37:28+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000599s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2' WHERE ( id=1 ) [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2017-03-23T20:37:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001018s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000308s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2017-03-23T20:37:36+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000386s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商' WHERE ( id=1 ) [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001570s ]
+
+[ 2017-03-23T20:37:41+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000916s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000721s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002970s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003168s ]
+
+[ 2017-03-23T20:39:36+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000259s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城2' WHERE ( id=1 ) [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001194s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+
+[ 2017-03-23T20:39:42+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000574s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000587s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003642s ]
+
+[ 2017-03-23T20:42:42+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000692s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城1' WHERE ( id=1 ) [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002260s ]
+
+[ 2017-03-23T20:42:44+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000775s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城12' WHERE ( id=1 ) [ RunTime:0.000937s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002829s ]
+
+[ 2017-03-23T20:44:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273071000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000256s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城122' WHERE ( id=1 ) [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2017-03-23T20:44:34+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273073000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001557s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000621s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城1223' WHERE ( id=1 ) [ RunTime:0.000555s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2017-03-23T20:44:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273086000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000904s ]
+SQL: UPDATE `permission` SET `permname`='登录后台4' WHERE ( id=2 ) [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2017-03-23T20:44:51+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273090000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=3 )  [ RunTime:0.000603s ]
+SQL: UPDATE `permission` SET `permname`='登录后台及管理所有功能5' WHERE ( id=3 ) [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003057s ]
+
+[ 2017-03-23T20:44:54+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273093000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=3 )  [ RunTime:0.000429s ]
+SQL: UPDATE `permission` SET `permname`='登录后台及管理所有功能1' WHERE ( id=3 ) [ RunTime:0.000575s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002017s ]
+
+[ 2017-03-23T20:47:30+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273249000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000458s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城12231' WHERE ( id=1 ) [ RunTime:0.000328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001496s ]
+
+[ 2017-03-23T20:47:33+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273252000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000316s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城122312' WHERE ( id=1 ) [ RunTime:0.000215s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 132 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 133 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2017-03-23T20:56:37+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:56:44+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:57:07+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:57:09+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:57:11+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:57:26+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:57:28+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:57:30+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Access&a=node_index
+ERR: Think\Model:makeRBAC方法不存在！
+
+[ 2017-03-23T20:59:31+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273969000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000651s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城122312' WHERE ( id=1 ) [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003293s ]
+
+[ 2017-03-23T20:59:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273970000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.001211s ]
+SQL: UPDATE `permission` SET `permname`='登录后台42' WHERE ( id=2 ) [ RunTime:0.000534s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000603s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000460s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000541s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001948s ]
+
+[ 2017-03-23T20:59:35+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490273974000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000387s ]
+SQL: UPDATE `permission` SET `permname`='登录后台423' WHERE ( id=2 ) [ RunTime:0.000331s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000538s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000369s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000343s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000305s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 118 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 119 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2017-03-23T21:08:14+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274493000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=4 )  [ RunTime:0.000579s ]
+SQL: UPDATE `permission` SET `permname`='前端所有功能的操作2' WHERE ( id=4 ) [ RunTime:0.000673s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000597s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000684s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000668s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000748s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000702s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000727s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000619s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000589s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003411s ]
+
+[ 2017-03-23T21:08:29+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274508000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000353s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 ' WHERE ( id=2 ) [ RunTime:0.000393s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000337s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000299s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000247s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000321s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000202s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000186s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000747s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2017-03-23T21:08:32+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274511000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.001017s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 2' WHERE ( id=2 ) [ RunTime:0.001424s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000639s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000296s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000323s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000297s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000214s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000185s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2017-03-23T21:08:35+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274514000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001027s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000932s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 23' WHERE ( id=2 ) [ RunTime:0.000709s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000608s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000751s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000604s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000685s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000709s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000626s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000571s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002230s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2017-03-23T21:08:37+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274516000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001498s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000321s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 234' WHERE ( id=2 ) [ RunTime:0.000323s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000324s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000202s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000420s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000293s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000272s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2017-03-23T21:08:41+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274520000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=4 )  [ RunTime:0.000640s ]
+SQL: UPDATE `permission` SET `permname`='前端所有功能的操作22' WHERE ( id=4 ) [ RunTime:0.000576s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000637s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000753s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000612s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000672s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000436s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000317s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000316s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000338s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001373s ]
+
+[ 2017-03-23T21:09:40+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274579000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000251s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城1223123' WHERE ( id=1 ) [ RunTime:0.000214s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000256s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000341s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000311s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000225s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2017-03-23T21:09:48+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274587000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000389s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城12231232' WHERE ( id=1 ) [ RunTime:0.000376s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000398s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000345s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000388s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000508s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000340s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000352s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2017-03-23T21:09:55+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274594000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002105s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000313s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 2343' WHERE ( id=2 ) [ RunTime:0.000348s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000326s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000388s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000269s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000330s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000352s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000185s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000172s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001037s ]
+
+[ 2017-03-23T21:09:59+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274598000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004098s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000386s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 2343' WHERE ( id=2 ) [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2017-03-23T21:10:02+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274601000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000886s ]
+SQL: UPDATE `permission` SET `permname`='登录后台 23434' WHERE ( id=2 ) [ RunTime:0.000618s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000601s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000694s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000659s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000708s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000438s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000357s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000321s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2017-03-23T21:10:27+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274626000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+
+[ 2017-03-23T21:10:27+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Login&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001497s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.056449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2017-03-23T21:10:52+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274651000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000800s ]
+SQL: UPDATE `permission` SET `permname`='登录后台a' WHERE ( id=2 ) [ RunTime:0.000935s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000733s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000760s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.001162s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000697s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000499s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000306s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000277s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2017-03-23T21:10:58+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274657000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=4 )  [ RunTime:0.000717s ]
+SQL: UPDATE `permission` SET `permname`='前端所有功能的操作222' WHERE ( id=4 ) [ RunTime:0.000562s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000581s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000801s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000601s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000465s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000481s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000337s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000333s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000373s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001639s ]
+
+[ 2017-03-23T21:11:25+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274684000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000275s ]
+SQL: UPDATE `permission` SET `permname`='登录后台a2' WHERE ( id=2 ) [ RunTime:0.000315s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000379s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000440s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000283s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000314s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000243s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000202s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000878s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2017-03-23T21:11:27+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274686000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=4 )  [ RunTime:0.000346s ]
+SQL: UPDATE `permission` SET `permname`='前端所有功能的操作2221' WHERE ( id=4 ) [ RunTime:0.000337s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000383s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000736s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000606s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000549s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000293s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000209s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000236s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: key D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: value D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\AccessController.class.php 第 120 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000811s ]
+
+[ 2017-03-23T21:12:36+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003519s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台管理员113' WHERE ( id=1 ) [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2017-03-23T21:12:41+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台管理员113' WHERE ( id=1 ) [ RunTime:0.000670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002671s ]
+
+[ 2017-03-23T21:12:45+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台超级管理员23' WHERE ( id=2 ) [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001664s ]
+
+[ 2017-03-23T21:13:09+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台管理员' WHERE ( id=1 ) [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2017-03-23T21:13:11+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001971s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台超级管理员' WHERE ( id=2 ) [ RunTime:0.000244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2017-03-23T21:13:14+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274793000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000775s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000646s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000839s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000457s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000368s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000366s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000401s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000346s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000314s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001257s ]
+
+[ 2017-03-23T21:13:16+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274795000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000733s ]
+SQL: UPDATE `permission` SET `permname`='登录后台' WHERE ( id=2 ) [ RunTime:0.000535s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000357s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000425s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000392s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000565s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000903s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000256s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2017-03-23T21:13:17+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490274796000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=3 )  [ RunTime:0.000325s ]
+SQL: UPDATE `permission` SET `permname`='登录后台及管理所有功能' WHERE ( id=3 ) [ RunTime:0.000305s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000271s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000221s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000348s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000210s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000207s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 12 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2017-03-23T21:13:37+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='大哥' WHERE ( id=12 ) [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+

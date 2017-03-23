@@ -27,13 +27,7 @@
     
     <div class="row">
         <div class="col-md-6">
-            <form>
-                <input type="text" id="roleOrNode" name="roleOrNode" value="在此输入角色或权限并点击添加" />
-            </form>
-
-            <a href="javascript:;" id="addRole" class="btn btn-success" style="background-color: orange">添加角色</a>
-            <a href="javascript:;" id="addPerm" class="btn btn-success" style="background-color: orange">添加权限</a>
-            <br/> <br/>
+            <a href="<?php echo U('Access/add');?>" id="addRole" class="btn btn-success">添加角色or权限</a>
 
         </div>
         <div class="col-md-6">
@@ -60,14 +54,14 @@
         <!-- tp遍历二维数组volist比foreach好用! -->
             <?php if(is_array($role)): foreach($role as $k=>$v): ?><!-- 索引index不要用v.id,数组有被删除,用键名key -->
                 <tr>
-                    <td><?php echo ($v["id"]); ?></td>
+                    <td><?php echo ($k+1); ?></td>
                     <td>
                         <input type="text" class="roleName" name="rolename" value="<?php echo ($v["rolename"]); ?>" index="<?php echo ($k); ?>" />
                         <input type="hidden" class="roleId" name="id" value="<?php echo ($v["id"]); ?>" index="<?php echo ($k); ?>" />
                         <img src="/Application/Admin/View//Public/images/RBAC/loading.gif" class="loading" index="<?php echo ($k); ?>" />
                     </td>
                     <!-- 删除节点 -->
-                    <td><a href="javascript:;" class="updateRole" index="<?php echo ($k); ?>">修改</a> | <a href="javascript:;" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将删除与此角色关联的所有节点!!\n\n慎重!! 删除后将不能恢复!'); deleteRole('role',<?php echo $v['id']?>);">
+                    <td><a href="javascript:;" class="updateRole" index="<?php echo ($k); ?>">修改</a> | <a href="<?php echo U('Access/delete',array('id'=>$v[id],'type'=>'role'));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将删除与此角色关联的所有节点!!\n\n慎重!! 删除后将不能恢复!');">
                     删除角色</a></td>
                     <!-- ※※※记住这个传id的前端写法※※※ -->
                 </tr><?php endforeach; endif; ?>
@@ -85,14 +79,13 @@
         <tbody>
         <!-- tp遍历二维数组volist比foreach好用! -->
             <?php if(is_array($perm)): foreach($perm as $k=>$v): ?><tr>
-                    <td><?php echo ($v["id"]); ?></td>
+                    <td><?php echo ($k+1); ?></td>
                     <td>
-                        <?php
- echo "<input type='text' class='permName' name='permname' value='".$v['permname']."' onblur='updatePerm(".$v['id'].",".json_encode($v['permname']).",".$k.",".json_encode($role_to_perm).")' />"; ?>
+                        <input type="text" class="permName" name="permname" value="<?php echo ($v["permname"]); ?>" onblur="updatePerm(<?php echo ($v["id"]); ?>,this.value,<?php echo ($k); ?>)">
                         <!-- <input type="text" class="permName" name="permname" value="<?php echo ($v["permname"]); ?>" onblur="updatePerm(<?php echo $v['id']?>,this.value,<?php echo $k?>,$jqAllArr)" /> -->
                     </td>
                     <!-- 删除节点 -->
-                    <td><a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除权限</a></td>
+                    <td><a href="<?php echo U('Access/delete',array('id'=>$v[id],'type'=>'perm'));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将删除所有节点里的此权限\n\n删除后将不能恢复!');">删除权限</a></td>
                 </tr><?php endforeach; endif; ?>
         </tbody>
     </table>
@@ -113,17 +106,19 @@
         <tbody>
         <!-- tp遍历二维数组volist比foreach好用! -->
             <?php if(is_array($role_to_perm)): $rk = 0; $__LIST__ = $role_to_perm;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rv): $mod = ($rk % 2 );++$rk; if(is_array($rv['role_to_permission'])): $k = 0; $__LIST__ = $rv['role_to_permission'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr>
-                        <td><?php echo ($rk+$k-1); ?></td>
+                        <td><?php echo ($nodeNum); ?></td>
                         <td>
                             <input type="text" class="nodeName" name="nodename" value="<?php echo ($v["nodename"]); ?>" />
+                            <!-- 节点的修改留给志伟的样式 -->
                             <input type="hidden" class="nodeId" name="id" value="<?php echo ($v["id"]); ?>" />
                             <img src="/Application/Admin/View//Public/images/RBAC/loading.gif" class="loading" />
                         </td>
                         <td class="oppositeRolename"><?php echo ($rv["rolename"]); ?></td>
-                        <td class="oppositePermname"><?php echo ($v["permname"]); ?></td>
+                        <td class="oppositePermname" id="oppositePermname<?php echo ($rk+$k-2); ?>"><?php echo ($v["permname"]); ?></td>
                         <!-- 删除节点 -->
-                        <td><a href="<?php echo U('category/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
-                    </tr><?php endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
+                        <td><a href="<?php echo U('Access/delete',array('id'=>$rv[id],'type'=>'node'));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
+                    </tr>
+                    <?php $nodeNum++; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
         </tbody>
     </table>
     <?php echo ($page); ?>

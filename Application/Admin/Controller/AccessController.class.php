@@ -11,51 +11,48 @@ use Think\Controller;
 		}
 
 		public function node_index(){
+			// $_SESSION['role_to_perm'] = null;
+			// test($_SESSION['role_to_perm']);
 			$Role = D('Role');
-       		$db = M('role_perm');
-       		$role_to_perm = $Role->relation(true)->select();
-       		//处理多对多添加节点信息进此数组
-       		foreach ($role_to_perm as $rk => $rv) {
-       			foreach ($rv['role_to_permission'] as $k => $v) {
-       				//rv['id']为role_id,v['id']为perm_id
-       				$nodename["$k"] = $db->where("role_id=%d and perm_id=%d",array($rv['id'],$v['id']))->field('nodename')->select();
-       				$role_to_perm["$rk"]['role_to_permission']["$k"]['nodename'] = $nodename["$k"]['0']['nodename'];
-       				if ($nodename["$k"]['0']['nodename'] == $nodename["$k"-1]['0']['nodename']) {
-       					define('NUM',$k-1);	//此处当
-       					//记录重复nodename的第一个permname
-       					$role_to_perm["$rk"]['role_to_permission'][NUM]['permname'] .=" | ".$rv['role_to_permission']["$k"]['permname'];
-       					unset($role_to_perm["$rk"]['role_to_permission']["$k"]);  
-       				}else{
-       					// $role_to_perm["$rk"]['role_to_permission']["$k"]['nodename'] = $nodename["$k"]['0']['nodename'];
-       				}
-       			}
-       		}
-       		test($role_to_perm);
-       		$this->assign('role_to_perm',$role_to_perm);
+			if (!isset($_SESSION['role_to_perm'])) {
+       			$role_to_perm = $Role->relation(true)->select();
+       			$role_to_perm = D('RolePerm')->makeRBAC($role_to_perm);
+	       		session_start();
+	       		session('role_to_perm',$role_to_perm);
+			}else{
+       			$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($_SESSION['role_to_perm']);
+			}
+       		
+       		// test($role_to_perm);
+       		$this->assign('nodeNum',1);
+       		$this->assign('role_to_perm',$_SESSION['role_to_perm']);
        		$this->role = M('Role')->select();
        		$this->perm = M('Permission')->select();
 			$this->display();
 		}
 
-		public function add_role(){
-			if (I('get.action') == 'ajax') {
-				$data = array('rolename' => I('content'));
-				if ($judge = M('Role')->data($data)->add()) {
-					$arr['success']=1;
-					$arr['rolename'] = I('content');
-					echo json_encode($arr);	//将数值转换成json数据存储格式	
+		public function add(){
+			if (I('submit') == '添加') {
+				switch (I('type')) {
+					case 'role':
+						$name = 'rolename';
+						$db = M('Role');
+						break;
+					case 'perm':
+						$name = 'permname';
+						$db = M('Permission');
+						break;
 				}
-			}
-		}
-
-		public function add_perm(){
-			if (I('get.action') == 'ajax') {
-				$data = array('permname' => I('content'));
-				if ($judge = M('Permission')->data($data)->add()) {
-					$arr['success']=1;
-					$arr['rolename'] = I('content');
-					echo json_encode($arr);	//将数值转换成json数据存储格式	
+				$data = array(
+					$name => I('name'),
+					);
+				if ($judge = $db->data($data)->add()) {
+					$this->success('添加成功!',U('Access/node_index'));
+				}else{
+					$this->error('访问错误!');
 				}
+			}else{
+				$this->display();
 			}
 		}
 
@@ -83,6 +80,9 @@ use Think\Controller;
 						}	
 					}
 				}
+
+				$role_to_perm = D('Role')->relation(true)->select();
+       			$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($role_to_perm);
 				$this->success('节点添加成功!',U('Access/node_index'));
 			}else{
 				$this->display();
@@ -107,23 +107,26 @@ use Think\Controller;
 			if (I('get.action') == 'ajax') {
 				$db = M('Permission');
 				$i = 0;
-				
+
 				//解决多处需要异步修改权限名称
 				$permname = $db->where("id=%d",I('id'))->field('permname')->select();
-				foreach (I('allArr') as $allk => $allv) {
+				foreach ($_SESSION['role_to_perm'] as $rk => $rv) {
 				//因为使用的是数组,所以只能在数组里查 不能使用mysql模糊查询,简直不忍直视
-					foreach ($allv['role_to_permission'] as $k => $v) {
-						if (strpos($v['permname'],$permname['0']['permname'])!==-1) {
-							$num["$i"]['key'] = $allk + $k;
-							$num["$i"]['value'] = str_replace($permname['0']['permname'],I('coutent'),$v['permname']);
+					foreach ($rv['role_to_permission'] as $k => $v) {
+						if (strpos($v['permname'],$permname['0']['permname'])!=false||$v['permname'] == $permname['0']['permname']) {
+							$key["$i"]= $rk + $k;
+							$value["$i"] = str_replace($permname['0']['permname'],I('content'),$v['permname']);
 							$i++;
 						}
 					}
 				}
 
 				if ($judge = $db->where("id=%d",I('id'))->setField('permname',I('content'))) {
+					$role_to_perm = D('Role')->relation(true)->select();
+					$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($role_to_perm);
 					$response = array(
-						'num' => $num,
+						'key' => $key,
+						'value' => $value,
 						'permname' => I('content'),
 						'errno'  =>  '0',
 						'errmsg' =>  'success',
@@ -135,16 +138,27 @@ use Think\Controller;
 		}
 
 		public function delete(){
-			test($_GET);
+			var_dump(I('get.id'));
+			$middle = M('role_perm');
 			switch (I('get.type')) {
 				case 'role':
 					$db = M('Role');
+					$id = 'role_id';
+					break;
+				case 'perm':
+					$db = M('Permission');
+					$id = 'perm_id';
+					break;
+				case 'node':
+					$db = M('role_perm');
+					$id = 'id';
 					break;
 			}
 			$judge1 = $db->where("id=%d",I('get.id'))->delete();
-			$judge2 = M('role_perm')->where("role_id=%d",I('get.id'))->delete();
-			if ($judge1 && $judge2) {
-				
+			$judge2 = $middle->where("$id=%d",I('get.id'))->delete();
+			if ($judge2 || $judge1) {
+				//一定是判断1或判断2,而不是反顺序
+				$this->success('删除成功!');
 			}
 		}
 	}
