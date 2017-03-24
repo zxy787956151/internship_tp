@@ -122,7 +122,7 @@
                         <td class="oppositeRolename">{$rv.rolename}</td>
                         <td class="oppositePermname" id="oppositePermname{$rk+$k-2}">{$v.permname}</td>
                         <!-- 删除节点 -->
-                        <td><a href="{:U('Access/delete',array('id'=>$v[id],'type'=>'node'))}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
+                        <td><a href="{:U('Access/delete',array('perm_id'=>$v[id],'role_id' =>$rv['id'],'type'=>'node'))}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
                     </tr>
                     <php>$nodeNum++;</php>
                 </volist>

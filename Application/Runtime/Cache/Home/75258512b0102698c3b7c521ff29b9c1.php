@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="<?php echo U('Index/index');?>">Home</a></li>
 
-				<?php zxy_foreach($arr,1); ?>
+				<?php zxy_foreach($arr,1,0); ?>
 					
 				</ul>
 				<div class="clearfix"> </div>

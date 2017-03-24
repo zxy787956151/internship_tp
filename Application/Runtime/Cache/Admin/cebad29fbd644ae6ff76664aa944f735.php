@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,16 +6,16 @@
     <title>[title]</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="__PUBLIC__/template/css/bootstrap.css" rel="stylesheet">
+    <link href="/Application/Admin/View//Public/template/css/bootstrap.css" rel="stylesheet">
 
     <!-- Add custom CSS here -->
-    <link href="__PUBLIC__/template/css/sb-admin.css" rel="stylesheet">
-    <link rel="stylesheet" href="__PUBLIC__/template/font-awesome/css/font-awesome.min.css">
+    <link href="/Application/Admin/View//Public/template/css/sb-admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Application/Admin/View//Public/template/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
 <div id="page-wrapper">
-    <form method="post" action="{:U('Access/add_user')}">
+    <form method="post" action="<?php echo U('Access/add_user');?>">
         <div class="form-group">
             <label for="aa">用户名</label>
             <input type="text" name="username" class="form-control" id="aa" placeholder="输入分类标题">
@@ -24,9 +24,7 @@
         <div class="form-group">
             <label for="aa">绑定角色</label>
             <select name="role" class="form-control">
-                <foreach name="role" item="v">
-                    <option value="{$v.id}">{$v.rolename}</option>
-                </foreach>
+                <?php if(is_array($role)): foreach($role as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["rolename"]); ?></option><?php endforeach; endif; ?>
             </select>
         </div>
 
@@ -43,9 +41,9 @@
         <input type="submit" name="submit" value="添加" class="btn btn-default">
     </form>
 </div>
-<script src="__PUBLIC__/template/js/jquery-1.10.2.js"></script>
-<script src="__PUBLIC__/template/js/bootstrap.js"></script>
-<script src="__PUBLIC__/template/js/app.js"></script>
+<script src="/Application/Admin/View//Public/template/js/jquery-1.10.2.js"></script>
+<script src="/Application/Admin/View//Public/template/js/bootstrap.js"></script>
+<script src="/Application/Admin/View//Public/template/js/app.js"></script>
 
 </body>
 </html>

@@ -7,23 +7,24 @@ use Think\Controller;
 			$User = D('User');
        		$user_to_role = $User->relation(true)->select();
        		$this->assign('users',$user_to_role);
-			$this->display('user_index');
+			$this->display();
 		}
 
 		public function node_index(){
 			// $_SESSION['role_to_perm'] = null;
 			// test($_SESSION['role_to_perm']);
 			$Role = D('Role');
-			if (!isset($_SESSION['role_to_perm'])) {
-       			$role_to_perm = $Role->relation(true)->select();
-       			$role_to_perm = D('RolePerm')->makeRBAC($role_to_perm);
-	       		session_start();
-	       		session('role_to_perm',$role_to_perm);
-			}else{
-       			$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($_SESSION['role_to_perm']);
-			}
-       		
-       		// test($role_to_perm);
+			// if (!isset($_SESSION['role_to_perm'])) {
+   //     			$role_to_perm = $Role->relation(true)->select();
+   //     			$role_to_perm = D('RolePerm')->makeRBAC($role_to_perm);
+	  //      		session_start();
+	  //      		session('role_to_perm',$role_to_perm);
+			// }else{
+   //     			$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($_SESSION['role_to_perm']);
+			// }
+       		$role_to_perm = $Role->relation(true)->select();
+       		$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($role_to_perm);
+       		// test($_SESSION['role_to_perm']);
        		$this->assign('nodeNum',1);
        		$this->assign('role_to_perm',$_SESSION['role_to_perm']);
        		$this->role = M('Role')->select();
@@ -47,7 +48,7 @@ use Think\Controller;
 					$name => I('name'),
 					);
 				if ($judge = $db->data($data)->add()) {
-					$this->success('添加成功!',U('Access/node_index'));
+					$this->success('添加成功!',U('Access/index'));
 				}else{
 					$this->error('访问错误!');
 				}
@@ -83,7 +84,30 @@ use Think\Controller;
 
 				$role_to_perm = D('Role')->relation(true)->select();
        			$_SESSION['role_to_perm'] = D('RolePerm')->makeRBAC($role_to_perm);
-				$this->success('节点添加成功!',U('Access/node_index'));
+				$this->success('节点添加成功!',U('Access/index'));
+			}else{
+				$this->display();
+			}
+		}
+
+		public function add_user(){
+			$this->role = M('Role')->select();
+			if (I('submit') == '添加') {
+				$model = D("User");
+	            if (!$model->create()) {
+	                // 如果创建失败 表示验证没有通过 输出错误提示信息
+	                $this->error($model->getError());
+	                exit();
+	            }else {
+	            	$data = array(
+	            		'username' => I('username'),
+	            		'password' => md5(I('password')),
+	            		'role_id' => I('role'),
+	            		);
+	            	if ($judge = M('User')->data($data)->add()) {
+		            	$this->success('添加用户成功!',U('Access/index'));
+	            	}
+	            }
 			}else{
 				$this->display();
 			}
@@ -138,7 +162,6 @@ use Think\Controller;
 		}
 
 		public function delete(){
-			var_dump(I('get.id'));
 			$middle = M('role_perm');
 			switch (I('get.type')) {
 				case 'role':
@@ -151,7 +174,11 @@ use Think\Controller;
 					break;
 				case 'node':
 					$db = M('role_perm');
-					$id = 'id';
+				case 'node_delete':
+					$judge = $db->where("role_id=%d and perm_id=%d",array(I('role_id'),I('perm_id')))->delete();
+					if ($judge) {
+						$this->success('删除成功!');
+					}
 					break;
 			}
 			$judge1 = $db->where("id=%d",I('get.id'))->delete();

@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 	class LoginController extends Controller{
-			//这个不能继承Initialize类,循环重定向了!!
+	//这个不能继承Initialize类,循环重定向了!!
 		public function index(){
 			$this->display();
 		}
@@ -20,11 +20,17 @@ use Think\Controller;
 	    }
 
 		public function runLogin(){
+
+			$loginVerify = array(
+	        	array('username','require','请填账号！'), //默认情况下用正则进行验证
+	        	array('password','require','请填写密码！'), //默认情况下用正则进行验证
+	        	// array('verify','require','请填写验证码！'), //默认情况下用正则进行验证
+	    	);
 			//字符串查询时可以防sql注入http://doc.thinkphp.cn/manual/sql_injection.html
 			if (I('submit') == 'Login') {
 					//如果用户提交数据
 	            $model = D("User");
-	            if (!$model->create()) {
+	            if (!$model->validate($loginVerify)->create()) {
 	                // 如果创建失败 表示验证没有通过 输出错误提示信息
 	                $this->error($model->getError());
 	                exit();

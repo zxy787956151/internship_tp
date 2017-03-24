@@ -116,7 +116,7 @@
                         <td class="oppositeRolename"><?php echo ($rv["rolename"]); ?></td>
                         <td class="oppositePermname" id="oppositePermname<?php echo ($rk+$k-2); ?>"><?php echo ($v["permname"]); ?></td>
                         <!-- 删除节点 -->
-                        <td><a href="<?php echo U('Access/delete',array('id'=>$rv[id],'type'=>'node'));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
+                        <td><a href="<?php echo U('Access/delete',array('perm_id'=>$v[id],'role_id' =>$rv['id'],'type'=>'node'));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
                     </tr>
                     <?php $nodeNum++; endforeach; endif; else: echo "" ;endif; endforeach; endif; else: echo "" ;endif; ?>
         </tbody>

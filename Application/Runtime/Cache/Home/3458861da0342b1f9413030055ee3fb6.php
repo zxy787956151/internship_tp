@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="top-nav">
 				<ul class="memenu skyblue"><li class="active"><a href="<?php echo U('Index/index');?>">Home</a></li>
 
-				<?php zxy_foreach($arr,1); ?>
+				<?php zxy_foreach($arr,1,0); ?>
 					
 				</ul>
 				<div class="clearfix"> </div>
@@ -383,7 +383,7 @@ amet consectetuer </a></h6>
 					&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'-'));?>">Up</a></li>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<?php $__FOR_START_12057__=1;$__FOR_END_12057__=$pagGlobals+1;for($i=$__FOR_START_12057__;$i < $__FOR_END_12057__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
+					<?php $__FOR_START_18067__=1;$__FOR_END_18067__=$pagGlobals+1;for($i=$__FOR_START_18067__;$i < $__FOR_END_18067__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
 						&nbsp;&nbsp;<?php } ?>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'+'));?>">Down</a></li>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 03 月 21 日 13:37
+-- 生成日期: 2017 年 03 月 24 日 09:19
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
 INSERT INTO `menu` (`id`, `name`, `pid`, `level`) VALUES
 (35, 'adad', 14, 2),
 (36, 'bug', 14, 2),
-(19, 'woman的菜单', 0, 1),
+(19, 'woman的菜单啊', 0, 1),
 (14, 'Men', 0, 1);
 
 -- --------------------------------------------------------
@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `permission` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `permname` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- 转存表中的数据 `permission`
@@ -89,7 +89,7 @@ INSERT INTO `permission` (`id`, `permname`) VALUES
 (1, '登录前端商城'),
 (2, '登录后台'),
 (3, '登录后台及管理所有功能'),
-(4, '前端所有功能的操作');
+(9, '登录后台并操作用户结算');
 
 -- --------------------------------------------------------
 
@@ -156,19 +156,18 @@ CREATE TABLE IF NOT EXISTS `role` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `rolename` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- 转存表中的数据 `role`
 --
 
 INSERT INTO `role` (`id`, `rolename`) VALUES
-(1, '后台管理员啊大大'),
+(1, '后台管理员'),
 (2, '后台超级管理员'),
 (3, '商城用户'),
-(4, '前端商城超管'),
-(6, '终极管理员'),
-(8, '前端终极管理员');
+(15, '用户结算处理管理员'),
+(14, '终极管理员');
 
 -- --------------------------------------------------------
 
@@ -184,24 +183,20 @@ CREATE TABLE IF NOT EXISTS `role_perm` (
   PRIMARY KEY (`id`),
   KEY `role_id` (`role_id`),
   KEY `perm_id` (`perm_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=50 ;
 
 --
 -- 转存表中的数据 `role_perm`
 --
 
 INSERT INTO `role_perm` (`id`, `nodename`, `role_id`, `perm_id`) VALUES
-(1, '后台登录', 1, 2),
 (2, '后台登录及所有功能管理', 2, 3),
 (3, '前端商城登录', 3, 1),
-(4, '商城用户登陆后台看看', 3, 2),
-(20, '想干啥干啥', 6, 2),
-(19, '想干啥干啥', 6, 1),
-(23, '前端也能进后台并管理', 8, 1),
-(21, '想干啥干啥', 6, 3),
-(22, '想干啥干啥', 6, 4),
-(24, '前端也能进后台并管理', 8, 2),
-(25, '前端也能进后台并管理', 8, 4);
+(39, '后台登录', 1, 2),
+(49, '用户结算', 15, 9),
+(48, '终极管理员使用所有权限', 14, 3),
+(47, '终极管理员使用所有权限', 14, 2),
+(46, '终极管理员使用所有权限', 14, 1);
 
 -- --------------------------------------------------------
 
@@ -219,7 +214,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `role_id` int(33) NOT NULL,
   PRIMARY KEY (`user_id`),
   KEY `role_id` (`role_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=42 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
 
 --
 -- 转存表中的数据 `user`
@@ -231,7 +226,8 @@ INSERT INTO `user` (`user_id`, `username`, `password`, `locked`, `logintime`, `l
 (18, 'zzw', 'fdea199d71b110a3533e55b6f25dee46', 0, '17-03-11 12:22:38', '127.0.0.1', 3),
 (19, 'xzf', '9fbb239f9faa3438aeb78f8bee213d17', 0, '17-03-11 01:11:44', '127.0.0.1', 3),
 (41, 'ytt', '788707ea6128fa1175f72e90d6b5c158', 0, 'adad', ' adad', 3),
-(39, 'taodaye', '8d2fd708287d36926125acc999d0606c', 0, 'adadad2', '2da', 3);
+(39, 'taodaye', '8d2fd708287d36926125acc999d0606c', 0, 'adadad2', '2da', 3),
+(42, 'zhaoxiuyu', 'b3f83843513d1eedf5f32859b1b13cc1', 0, '', '', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
