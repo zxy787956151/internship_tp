@@ -21,8 +21,9 @@
             <a href="<?php echo U('Menu/add');?>" class="btn btn-success">新增菜单</a>
         </div>
         <div class="col-md-6">
-            <form action="<?php echo U('category/index');?>" method="post">
+            <form action="<?php echo U('search/index');?>" method="post">
                 <div class="form-group input-group">
+                    <input type="hidden" name="type" value="Menu">
                     <input type="text" class="form-control" name="key" placeholder="输入分类标题或者别名关键词搜索">
                     <span class="input-group-btn">
                       <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>

@@ -1,208 +1,24 @@
-[ 2017-03-24T15:59:37+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000774s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001501s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: UPDATE `role` SET `rolename`='商城用户1' WHERE ( id=3 ) [ RunTime:0.043863s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.001340s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001465s ]
+[ 2017-03-24T21:26:23+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
 
-[ 2017-03-24T15:59:39+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490342378000
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000567s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000301s ]
-SQL: UPDATE `permission` SET `permname`='登录后台2' WHERE ( id=2 ) [ RunTime:0.000278s ]
-SQL: SELECT * FROM `role`  [ RunTime:0.000361s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000319s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000318s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000333s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='13' [ RunTime:0.000332s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000598s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000826s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000477s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=1 )  [ RunTime:0.000309s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=8 )  [ RunTime:0.000283s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.001077s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001155s ]
+[ 2017-03-24T21:31:38+08:00 ] 127.0.0.1 /index.php?m=Admin&c=search&a=index
+ERR: 无法加载控制器:Search
 
-[ 2017-03-24T15:59:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490342386000
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000563s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000424s ]
-SQL: UPDATE `permission` SET `permname`='登录后台' WHERE ( id=2 ) [ RunTime:0.000454s ]
-SQL: SELECT * FROM `role`  [ RunTime:0.000628s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000260s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000236s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000240s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='13' [ RunTime:0.000287s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000331s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000234s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000246s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=1 )  [ RunTime:0.000246s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=8 )  [ RunTime:0.000238s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.001118s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001190s ]
+[ 2017-03-24T21:33:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=search&a=index
+ERR: 模板不存在:./Application/Admin/View//index.php?m=Admin&c=I%28%27type%27%29&a=index.html
 
-[ 2017-03-24T15:59:51+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001425s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.003128s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: UPDATE `role` SET `rolename`='商城用户' WHERE ( id=3 ) [ RunTime:0.000517s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.001337s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+[ 2017-03-24T21:33:42+08:00 ] 127.0.0.1 /index.php?m=Admin&c=search&a=index
+ERR: 模板不存在:./Application/Admin/View//index.php?m=Admin&c=Menu&a=index.html
 
-[ 2017-03-24T16:09:12+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490342951000
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000875s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000914s ]
-SQL: UPDATE `permission` SET `permname`='登录前端商城1' WHERE ( id=1 ) [ RunTime:0.001236s ]
-SQL: SELECT * FROM `role`  [ RunTime:0.000509s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000411s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000407s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000720s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='13' [ RunTime:0.000452s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000433s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000355s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000278s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=1 )  [ RunTime:0.000238s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=8 )  [ RunTime:0.000201s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.000800s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+[ 2017-03-24T21:36:14+08:00 ] 127.0.0.1 /index.php?m=Admin&c=I%28%27type%27%29&a=index
+ERR: 无法加载控制器:I('type')
 
-[ 2017-03-24T16:09:14+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000563s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: UPDATE `role` SET `rolename`='后台管理员2' WHERE ( id=1 ) [ RunTime:0.000764s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.003078s ]
-INFO: [ app_end ] --END-- [ RunTime:0.003371s ]
+[ 2017-03-24T21:36:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=I%28%27type%27%29&a=index
+ERR: 无法加载控制器:I('type')
 
-[ 2017-03-24T16:09:18+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000586s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: UPDATE `role` SET `rolename`='后台管理员' WHERE ( id=1 ) [ RunTime:0.000386s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.001231s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001336s ]
+[ 2017-03-24T21:36:20+08:00 ] 127.0.0.1 /index.php?m=Admin&c=I%28%27type%27%29&a=index
+ERR: 无法加载控制器:I('type')
 
-[ 2017-03-24T16:09:21+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490342960000
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000571s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
-NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
-SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000411s ]
-SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000334s ]
-SQL: SELECT * FROM `role`  [ RunTime:0.000420s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000405s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000389s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000410s ]
-NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
-NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
-SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='13' [ RunTime:0.000420s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000634s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000581s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=2 )  [ RunTime:0.000532s ]
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=1 )  [ RunTime:0.000618s ]
-NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
-SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=13 and perm_id=8 )  [ RunTime:0.000512s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.001375s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001483s ]
-
-[ 2017-03-24T16:25:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=category&a=add
-ERR: 无法加载控制器:Category
-
-[ 2017-03-24T17:07:01+08:00 ] 127.0.0.1 /index.php?m=Admin&c=category&a=update&id=
-ERR: 无法加载控制器:Category
-
-[ 2017-03-24T17:09:29+08:00 ] 127.0.0.1 /page/products.html
-ERR: 无法加载控制器:Page
-
-[ 2017-03-24T17:24:34+08:00 ] 127.0.0.1 /Home/Product/checkout?action=ajax
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001417s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.002035s ]
-NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
-SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.022587s ]
-SQL: SELECT * FROM `Menu`  [ RunTime:0.000321s ]
-SQL: SELECT `username` FROM `user` WHERE ( user_id=18 )  [ RunTime:0.000312s ]
-SQL: SELECT * FROM `prod_user` WHERE ( user_id=18 )  [ RunTime:0.000427s ]
-SQL: SELECT * FROM `checkout`  [ RunTime:0.000259s ]
-SQL: INSERT INTO `checkout` (`id`,`user_id`,`pid`,`count`,`time`) VALUES (44,18,47,6,'2017-03-24 17:24:34') [ RunTime:0.000229s ]
-SQL: INSERT INTO `checkout` (`id`,`user_id`,`pid`,`count`,`time`) VALUES (43,18,48,2,'2017-03-24 17:24:34') [ RunTime:0.000190s ]
-SQL: UPDATE `checkout` SET `count`=count+6 WHERE ( user_id=18 and pid=46 ) [ RunTime:0.090065s ]
-SQL: INSERT INTO `checkout` (`id`,`user_id`,`pid`,`count`,`time`) VALUES (41,18,54,3,'2017-03-24 17:24:34') [ RunTime:0.000261s ]
-SQL: DELETE FROM `prod_user` WHERE ( user_id=18 ) [ RunTime:0.000283s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTrace [ RunTime:0.002300s ]
-INFO: [ app_end ] --END-- [ RunTime:0.002367s ]
+[ 2017-03-24T21:36:34+08:00 ] 127.0.0.1 /index.php?m=Admin&c=I%28%27type%27%29&a=index
+ERR: 无法加载控制器:I('type')
 

@@ -11,6 +11,8 @@
     <!-- Add custom CSS here -->
     <link href="/Application/Admin/View//Public/template/css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="/Application/Admin/View//Public/template/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="/Application/Admin/View//Public/js/jquery.js"></script>
+    <script type="text/javascript" src="/Application/Admin/View//Public/js/addProduct.js"></script>
 </head>
 
 <body>
@@ -42,7 +44,9 @@
         </div>
         <div class="form-group">
             <label for="aa">商品图片</label>
-            <input type="file" name="photo" class="form-control" id="aa" placeholder="上传图片">
+            <img src="" id="image" />
+            <input type="file" name="photo" class="form-control" id="photo" value="上传图片" onchange="addProduct(this)">
+            <!-- onchange在file选择完路径后执行 -->
         </div>
         <input type="submit" name="submit" class="btn btn-default" value="添加" />
     </form>

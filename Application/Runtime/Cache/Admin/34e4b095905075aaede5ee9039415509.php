@@ -42,7 +42,7 @@
             <?php if(is_array($model)): foreach($model as $k=>$v): ?><tr>  
                     <td><?php echo ($k+1); ?></td> 
                     <td><?php echo ($v["name"]); ?></td>  
-                    <td><?php echo ($v["photoname"]); ?></td>  
+                    <td><img style="width: 100px;height: 50px" src="./Application/Public/Uploads/<?php echo ($v["photourl"]); ?>/<?php echo ($v["photoname"]); ?>"></td>  
                     <td><?php echo ($v["price"]); ?></td>  
                     <td><?php echo ($v["menu"]); ?></td>
                     <!--str_repeat('字符串','重复的次数');重复一个字符串-->  

@@ -18,7 +18,7 @@ for(i=0;i<updateRole.length;i++){
             var rolename = roleNameClass[which].value;
             var id = idClass[which].value;
 
-            var ajaxTimeoutTest =$.ajax({	
+            $.ajax({	
 				type: "POST",//要求为String类型的参数，请求方式（post或get）默认为get。注意其他http请求方法，例如put和delete也可以使用，但仅部分浏览器支持。
 				url: "Admin/Access/update_role?action=ajax",//要求为String类型的参数，（默认为当前页地址）发送请求的地址。
 				//tp里ajax连接这么写!

@@ -28,17 +28,32 @@ use Think\Controller;
 
 		public function run_add(){
 			if (I('submit') == '添加') {
-				$data  = array(
-					'name' => I('name'),
-					'price' => I('price'),
-					'mid' => I('mid')
-				);
-				if ($judge = M('Product')->data($data)->add()) {
-					$this->success('添加成功!',U('Product/index'));
-				}else{
-					$this->error('访问错误!');
-				}
+				//图片上传
+				$upload = new \Think\Upload();// 实例化上传类
+	            $upload->maxSize = 3145728;// 设置附件上传大小
+	            $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+
+	            // 上传文件01
+	            $info = $upload->upload();
+	            if(!$info) {// 上传错误提示错误信息
+	                $this->error($upload->getError());
+	            }else{// 上传成功
+	                $data = array(
+	                	'name' => I('name'),
+						'price' => I('price'),
+	                    'photoname' => $info['photo']['savename'],
+	                    'photourl' => $info['photo']['savepath'],
+	                    'mid' => I('mid')
+	                );
+	            	//图片上传-end
+	                if ($judge = M('Product')->data($data)->add()) {
+						$this->success('添加成功!',U('Product/index'));
+					}else{
+						$this->error('访问错误!');
+					}
+	            }
 			}
+			
 		}
 
 		public function delete(){
