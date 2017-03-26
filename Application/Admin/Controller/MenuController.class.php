@@ -3,11 +3,17 @@ namespace Admin\Controller;
 use Think\Controller;
 	class MenuController extends InitializeController{
 		public function index(){
-			//实例化model  
-	        $User=D('Menu');  
-	        $arr = $User->sel_all();  
-	        $this->assign('arr',$arr);  
-	        $this->display();
+			if (I('type') == 'search') {
+				$where['name']=array('like',"%".I('key')."%");
+				$arr = M('Menu')->where($where)->select();
+				$this->assign('arr',$arr);
+				$this->display();
+			}else{
+				$User=D('Menu');  
+		        $arr = $User->sel_all();
+		        $this->assign('arr',$arr);  
+		        $this->display();
+			}
 		}
 
 		public function add(){
@@ -72,8 +78,8 @@ use Think\Controller;
 
 		public function delete(){
 			$db = M('Menu');
-			if (M('Product')->where("mid=%d",I('id'))->delete()&&$db->where("pid=%d",I('id'))->delete()&&$db->where("id=%d",I('id'))->delete()) {
-				//三个且连用出错,未搞定!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			if ($judge1 = M('Product')->where("mid=%d",I('id'))->delete()&&$judge2 = $db->where("pid=%d",I('id'))->delete()||$judge3 = $db->where("id=%d",I('id'))->delete()) {
+				//judge1且judge2或judege3
 				$this->success('删除成功!');
 			}else{
 				$this->error('访问错误!');

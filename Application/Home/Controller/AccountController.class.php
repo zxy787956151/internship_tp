@@ -42,7 +42,7 @@ use Think\Controller;
 						        	//BUG!!!!!!!!!!!!!!!!!!!!!!
 						        	// $judge = $db->where("user_id=%d",$userId['0']['user_id'])->setField(array('logintime','loginip'),array(date('Y-m-d H:i:s',time()),$_SERVER['SERVER_ADDR']));
 						        	// var_dump($judge);
-						        	if ($judge = $db->where("user_id=%d",$userId['0']['user_id'])->setField(array('logintime','loginip'),array(date('Y-m-d H:i:s',time()),$_SERVER['SERVER_ADDR']))) {
+						        	if ($judge = $db->where("user_id=%d",$userId['0']['user_id'])->setField(array('logintime'=>date("Y-m-d H:i:s",time()),'loginip'=>$_SERVER["REMOTE_ADDR"]))) {
 						        		//更新数据库此用户上次登录时间、ip
 						        		$this->success("登陆成功!",U('Index/index'));
 						        	 } 

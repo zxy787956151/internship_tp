@@ -47,9 +47,12 @@ use Think\Controller;
 					        // }else{
 	                			$role = $model->where($where)->field('role_id')->select();
 	                			if ($role['0']['role_id'] == 1||$role['0']['role_id'] == 2) {
-	                				session_start();
-						        	$_SESSION['username'] = I('username');
-						        	$this->success("登陆成功!",U('Index/index'));
+	                				if ($judge = M('User')->where($where)->setField(array('logintime'=>date("Y-m-d H:i:s",time()),'loginip'=>$_SERVER["REMOTE_ADDR"]))) {
+	                				//更新最近登录time、ip
+	                					session_start();
+							        	$_SESSION['username'] = I('username');
+							        	$this->success("登陆成功!",U('Index/index'));
+	                				}
 	                			}else{
 	                				$this->error("您无权登录!");
 	                			}

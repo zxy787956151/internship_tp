@@ -11,6 +11,8 @@
     <!-- Add custom CSS here -->
     <link href="/Application/Admin/View//Public/template/css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="/Application/Admin/View//Public/template/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="/Application/Admin/View//Public/js/jquery.js"></script>
+    <script type="text/javascript" src="/Application/Admin/View//Public/js/search.js"></script>
 </head>
 
 <body>
@@ -21,12 +23,12 @@
             <a href="<?php echo U('Menu/add');?>" class="btn btn-success">新增菜单</a>
         </div>
         <div class="col-md-6">
-            <form action="<?php echo U('search/index');?>" method="post">
+            <form action="<?php echo U('Menu/index');?>" method="post">
                 <div class="form-group input-group">
-                    <input type="hidden" name="type" value="Menu">
-                    <input type="text" class="form-control" name="key" placeholder="输入分类标题或者别名关键词搜索">
+                    <input type="hidden" id="type" name="type" value="search">
+                    <input type="text" id="key" class="form-control" name="key" placeholder="输入分类标题或者别名关键词搜索">
                     <span class="input-group-btn">
-                      <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                      <button id="search" class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
                     </span>
                 </div>
             </form>

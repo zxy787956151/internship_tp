@@ -1,0 +1,948 @@
+[ 2017-03-25T18:31:07+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437866000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001421s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.015310s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2017-03-25T18:31:11+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437870000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.020339s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000866s ]
+
+[ 2017-03-25T18:31:14+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437873000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.012444s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2017-03-25T18:31:33+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437892000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.017133s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2017-03-25T18:31:54+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437913000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.036969s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2017-03-25T18:32:25+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437931000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.013253s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000574s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-03-25T18:32:47+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490437966000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.014557s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2017-03-25T18:34:52+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438091000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.018310s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000284s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2017-03-25T18:36:14+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438172000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.061834s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002839s ]
+
+[ 2017-03-25T18:37:07+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438226000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.022048s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000418s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016077s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2017-03-25T18:37:25+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438244000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.016916s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2017-03-25T18:37:34+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438253000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.013184s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2017-03-25T18:38:11+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438290000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001033s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.015558s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000266s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000725s ]
+
+[ 2017-03-25T18:38:13+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438292000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.017243s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000421s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2017-03-25T18:40:50+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438423000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.036569s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001242s ]
+
+[ 2017-03-25T18:42:10+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438529000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002166s ]
+
+[ 2017-03-25T18:42:58+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438577000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001093s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%%' )  [ RunTime:0.000315s ]
+
+[ 2017-03-25T18:42:59+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.013351s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000810s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2017-03-25T18:43:02+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438581000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%%' )  [ RunTime:0.000432s ]
+
+[ 2017-03-25T18:43:03+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.032867s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029488s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000682s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2017-03-25T18:43:07+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438586000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%%' )  [ RunTime:0.000293s ]
+
+[ 2017-03-25T18:43:08+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.032370s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000267s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2017-03-25T18:43:10+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438589000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%%' )  [ RunTime:0.000419s ]
+
+[ 2017-03-25T18:43:11+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001140s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.028609s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000433s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2017-03-25T18:43:28+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438607000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%%' )  [ RunTime:0.000376s ]
+
+[ 2017-03-25T18:43:29+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.016407s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2017-03-25T18:43:59+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438638000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%%' )  [ RunTime:0.000640s ]
+
+[ 2017-03-25T18:44:00+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001165s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.012226s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2017-03-25T18:44:24+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438663000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%ad%' )  [ RunTime:0.000573s ]
+
+[ 2017-03-25T18:44:25+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002176s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.019216s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000992s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001070s ]
+
+[ 2017-03-25T18:45:16+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438715000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%ad%' )  [ RunTime:0.000413s ]
+
+[ 2017-03-25T18:45:18+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.108323s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000331s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2017-03-25T18:45:37+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438737000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002478s ]
+
+[ 2017-03-25T18:46:48+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438807000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001509s ]
+
+[ 2017-03-25T18:47:22+08:00 ] 127.0.0.1 /Admin/Search/index?action=search&time=1490438842000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2017-03-25T18:49:22+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438961000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.134358s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000221s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001215s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001291s ]
+
+[ 2017-03-25T18:49:23+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438962000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001938s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.020553s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001753s ]
+
+[ 2017-03-25T18:49:25+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490438964000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.346955s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: page D:\phpStudy\WWW\internship_tp\Application\Runtime\Cache\Admin\b956215329b6f9aca22277599a4efdfc.php 第 51 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2017-03-25T18:50:19+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439019000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2017-03-25T18:56:44+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439404000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002267s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2017-03-25T18:59:47+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Menu&a=index
+ERR: 表达式错误:35
+
+[ 2017-03-25T19:01:26+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439686000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8] Undefined variable: db D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\MenuController.class.php 第 9 行.
+
+[ 2017-03-25T19:01:54+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439714000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002210s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8] Undefined variable: db D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\MenuController.class.php 第 8 行.
+
+[ 2017-03-25T19:02:02+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439722000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004985s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8] Undefined variable: db D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\MenuController.class.php 第 8 行.
+
+[ 2017-03-25T19:02:13+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439733000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001158s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001421s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001581s ]
+
+[ 2017-03-25T19:02:20+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439740000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001416s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2017-03-25T19:02:26+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439746000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002146s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8] Undefined variable: db D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\MenuController.class.php 第 8 行.
+
+[ 2017-03-25T19:02:47+08:00 ] 127.0.0.1 /Admin/Menu/index?action=search&time=1490439766000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT * FROM `menu` WHERE ( `name` LIKE '%ad%' )  [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000894s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2017-03-25T19:15:23+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Login&a=runLogin
+ERR: Think\Model:setFiled方法不存在！
+
+[ 2017-03-25T20:11:11+08:00 ] 127.0.0.1 /index.php?m=Admin&c=Product&a=update&id=71
+ERR: 非法操作:update
+
+[ 2017-03-25T20:12:17+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003329s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.019958s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000256s ]
+SQL: SELECT `username` FROM `user` WHERE ( user_id=18 )  [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `prod_user` [ RunTime:0.035403s ]
+SQL: SELECT * FROM `prod_user` WHERE ( pid=71 and user_id=18 )  [ RunTime:0.000387s ]
+SQL: INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (18,71,2) [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001410s ]
+
+[ 2017-03-25T20:12:35+08:00 ] 127.0.0.1 /Home/Product/ajaxChange?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.014105s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000248s ]
+SQL: SELECT `username` FROM `user` WHERE ( user_id=18 )  [ RunTime:0.000224s ]
+SQL: SELECT `price` FROM `product` WHERE ( id=71 )  [ RunTime:0.000389s ]
+SQL: UPDATE `prod_user` SET `count`=3 WHERE ( pid=71 and user_id=18 ) [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2017-03-25T20:12:40+08:00 ] 127.0.0.1 /Home/Product/checkout?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004345s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.017565s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000253s ]
+SQL: SELECT `username` FROM `user` WHERE ( user_id=18 )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `prod_user` WHERE ( user_id=18 )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `checkout`  [ RunTime:0.037882s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 99 行.
+SQL: INSERT INTO `checkout` (`id`,`user_id`,`pid`,`count`,`time`) VALUES (46,18,71,3,'2017-03-25 20:12:40') [ RunTime:0.000214s ]
+SQL: DELETE FROM `prod_user` WHERE ( user_id=18 ) [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2017-03-25T20:24:46+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-03-25T20:29:41+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-03-25T20:35:32+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-03-25T20:40:28+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台管理员1' WHERE ( id=1 ) [ RunTime:0.001193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+
+[ 2017-03-25T20:40:37+08:00 ] 127.0.0.1 /Admin/Access/update_role?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006782s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: UPDATE `role` SET `rolename`='后台管理员' WHERE ( id=1 ) [ RunTime:0.000577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002367s ]
+
+[ 2017-03-25T20:40:51+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445650000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002331s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000915s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001202s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2017-03-25T20:40:54+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445653000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000284s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城q' WHERE ( id=1 ) [ RunTime:0.000281s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000286s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000809s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000195s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='15' [ RunTime:0.000194s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='14' [ RunTime:0.000215s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000298s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000178s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000228s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=15 and perm_id=9 )  [ RunTime:0.000281s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=14 and perm_id=3 )  [ RunTime:0.000251s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=14 and perm_id=2 )  [ RunTime:0.000198s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=14 and perm_id=1 )  [ RunTime:0.000186s ]
+NOTIC: [8] Constant NUM already defined D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-03-25T20:40:58+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445657000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001123s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000258s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.000203s ]
+SQL: SELECT * FROM `role`  [ RunTime:0.000285s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='1' [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='2' [ RunTime:0.000230s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='3' [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='15' [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: mapping_order D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 190 行.
+NOTIC: [8] Undefined index: mapping_limit D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 191 行.
+SQL: SELECT b.* FROM role_perm AS a, permission AS b WHERE a.perm_id = b.id AND a. role_id='14' [ RunTime:0.000305s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=1 and perm_id=2 )  [ RunTime:0.000409s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=2 and perm_id=3 )  [ RunTime:0.000227s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=3 and perm_id=1 )  [ RunTime:0.000218s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=15 and perm_id=9 )  [ RunTime:0.000241s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=14 and perm_id=3 )  [ RunTime:0.000259s ]
+NOTIC: [8] Undefined offset: -1 D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 13 行.
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=14 and perm_id=2 )  [ RunTime:0.000251s ]
+SQL: SELECT `nodename` FROM `role_perm` WHERE ( role_id=14 and perm_id=1 )  [ RunTime:0.000285s ]
+NOTIC: [8] Constant NUM already defined D:\phpStudy\WWW\internship_tp\Application\Admin\Model\RolePermModel.class.php 第 14 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001505s ]
+
+[ 2017-03-25T20:41:46+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445705000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009032s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=1 )  [ RunTime:0.000583s ]
+SQL: UPDATE `permission` SET `permname`='登录前端商城' WHERE ( id=1 ) [ RunTime:0.001271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004143s ]
+
+[ 2017-03-25T20:41:47+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445706000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003272s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.000280s ]
+SQL: UPDATE `permission` SET `permname`='登录后台' WHERE ( id=2 ) [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2017-03-25T20:41:48+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445707000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003353s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=3 )  [ RunTime:0.000291s ]
+SQL: UPDATE `permission` SET `permname`='登录后台及管理所有功能' WHERE ( id=3 ) [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001862s ]
+
+[ 2017-03-25T20:41:51+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445710000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002499s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=9 )  [ RunTime:0.000283s ]
+SQL: UPDATE `permission` SET `permname`='登录后台并操作用户结算' WHERE ( id=9 ) [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001833s ]
+
+[ 2017-03-25T20:41:58+08:00 ] 127.0.0.1 /Admin/Access/update_perm?action=ajax&time=1490445717000
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Admin\Controller\InitializeController.class.php 第 6 行.
+NOTIC: [8192] mysql_escape_string(): This function is deprecated; use mysql_real_escape_string() instead. D:\phpStudy\WWW\internship_tp\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 330 行.
+SQL: SELECT `permname` FROM `permission` WHERE ( id=2 )  [ RunTime:0.005208s ]
+SQL: UPDATE `permission` SET `permname`='登录后台' WHERE ( id=2 ) [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003472s ]
+
+[ 2017-03-25T20:50:37+08:00 ] 127.0.0.1 /index.php?m=Admin&c=category&a=index
+ERR: 无法加载控制器:Category
+

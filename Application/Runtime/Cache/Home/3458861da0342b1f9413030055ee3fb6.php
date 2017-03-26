@@ -341,7 +341,7 @@ amet consectetuer </a></h6>
 	   		     	<?php if(is_array($model)): foreach($model as $key=>$v): ?><div class="col-md-4 chain-grid simpleCart_shelfItem" id="br">
 						
 						<div class="grid-span-1">
-		   		     		<a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"><img class="img-responsive " src="/Application/Home/View//Public/images/n1.jpg" alt=" ">
+		   		     		<a href="<?php echo U('Single/index');?>&pid=<?php echo ($v["id"]); ?>"><img class="img-responsive " src="/Application/Public/Uploads/<?php echo ($v["photourl"]); ?>/<?php echo ($v["photoname"]); ?>" alt=" ">
 							<div class="link">
 		   		     			<ul >
 											<li><i class="glyphicon glyphicon-search"> </i></li>
@@ -383,7 +383,7 @@ amet consectetuer </a></h6>
 					&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'-'));?>">Up</a></li>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					<?php $__FOR_START_18067__=1;$__FOR_END_18067__=$pagGlobals+1;for($i=$__FOR_START_18067__;$i < $__FOR_END_18067__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
+					<?php $__FOR_START_30482__=1;$__FOR_END_30482__=$pagGlobals+1;for($i=$__FOR_START_30482__;$i < $__FOR_END_30482__;$i+=1){ ?><li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>$i-1));?>"><?php echo ($i); ?></a></li>
 						&nbsp;&nbsp;<?php } ?>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 					<li class="arrow"><a href="<?php echo U('Product/index',array('pd'=>'+'));?>">Down</a></li>

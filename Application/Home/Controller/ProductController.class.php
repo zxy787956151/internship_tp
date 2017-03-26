@@ -5,7 +5,7 @@ use Think\Controller;
 		public function index(){
 			
             $db = M('Product');  
-	        $count  = $db->count();// 查询满足要求的总记录数
+	        $count = $db->count();// 查询满足要求的总记录数
 	        
 	        if (I('id') == 0) {
 		        //商城主页显示最近6条商品
@@ -13,7 +13,6 @@ use Think\Controller;
 	        }else{
 	       		$Page = new \Extend\Page($count,6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 	        	$pages = $db->limit($Page->firstRow.','.$Page->listRows)->where("mid=%d",I('id'))->order('id DESC')->select();
-
 	        }
 	        $this->assign('model', $pages);
 	        $this->assign('page',$show);

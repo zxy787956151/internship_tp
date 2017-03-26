@@ -81,5 +81,5 @@ function updatePerm(id,content,key,lock){
 			}
 		}
 		$.post(url,data,success,"json");
-	}
+}
 //删除说啥不用ajax了,太累了~!

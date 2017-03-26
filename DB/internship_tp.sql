@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 03 月 24 日 09:19
+-- 生成日期: 2017 年 03 月 26 日 09:48
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -33,17 +33,14 @@ CREATE TABLE IF NOT EXISTS `checkout` (
   `count` int(33) NOT NULL,
   `time` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=47 ;
 
 --
 -- 转存表中的数据 `checkout`
 --
 
 INSERT INTO `checkout` (`id`, `user_id`, `pid`, `count`, `time`) VALUES
-(35, 18, 45, 1, '2017-03-18 17:02:04'),
-(36, 18, 46, 4, '2017-03-18 17:02:04'),
-(39, 19, 47, 1, '2017-03-18 17:26:20'),
-(40, 19, 48, 2, '2017-03-18 17:26:20');
+(46, 18, 71, 3, '2017-03-25 20:12:40');
 
 -- --------------------------------------------------------
 
@@ -57,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
   `pid` int(33) NOT NULL,
   `level` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=37 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=40 ;
 
 --
 -- 转存表中的数据 `menu`
@@ -65,8 +62,8 @@ CREATE TABLE IF NOT EXISTS `menu` (
 
 INSERT INTO `menu` (`id`, `name`, `pid`, `level`) VALUES
 (35, 'adad', 14, 2),
-(36, 'bug', 14, 2),
 (19, 'woman的菜单啊', 0, 1),
+(38, 'woman的另一种', 0, 1),
 (14, 'Men', 0, 1);
 
 -- --------------------------------------------------------
@@ -102,24 +99,18 @@ CREATE TABLE IF NOT EXISTS `product` (
   `name` varchar(50) NOT NULL,
   `price` varchar(50) NOT NULL,
   `photoname` varchar(50) NOT NULL,
+  `photourl` varchar(50) NOT NULL,
   `mid` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=55 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=72 ;
 
 --
 -- 转存表中的数据 `product`
 --
 
-INSERT INTO `product` (`id`, `name`, `price`, `photoname`, `mid`) VALUES
-(54, 'woman7', '123', '', 19),
-(53, 'woman6', '12345', '', 19),
-(52, 'woman5', '123', '', 19),
-(51, 'woman4', '123', '', 19),
-(50, 'woman3', 'adad', '', 19),
-(49, 'woman2', '123123', '', 19),
-(48, 'hurdles1', '213', '', 34),
-(45, 'woman1', '312', '', 19),
-(46, 'men1', '31', '', 14);
+INSERT INTO `product` (`id`, `name`, `price`, `photoname`, `photourl`, `mid`) VALUES
+(64, 'MenPhoto1', '213', '58d5153a7fb7f.png', '2017-03-24/', 14),
+(71, '志伟的小裤衩', '0.5', '58d65e5368f6d.jpg', '2017-03-25/', 14);
 
 -- --------------------------------------------------------
 
@@ -133,18 +124,14 @@ CREATE TABLE IF NOT EXISTS `prod_user` (
   `pid` int(33) NOT NULL,
   `count` int(33) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=46 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=47 ;
 
 --
 -- 转存表中的数据 `prod_user`
 --
 
 INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`) VALUES
-(45, 41, 54, 2),
-(44, 18, 47, 6),
-(43, 18, 48, 2),
-(42, 18, 46, 6),
-(41, 18, 54, 3);
+(45, 41, 54, 2);
 
 -- --------------------------------------------------------
 
@@ -183,7 +170,7 @@ CREATE TABLE IF NOT EXISTS `role_perm` (
   PRIMARY KEY (`id`),
   KEY `role_id` (`role_id`),
   KEY `perm_id` (`perm_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=50 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=51 ;
 
 --
 -- 转存表中的数据 `role_perm`
@@ -193,6 +180,7 @@ INSERT INTO `role_perm` (`id`, `nodename`, `role_id`, `perm_id`) VALUES
 (2, '后台登录及所有功能管理', 2, 3),
 (3, '前端商城登录', 3, 1),
 (39, '后台登录', 1, 2),
+(50, 'rwer', 1, 2),
 (49, '用户结算', 15, 9),
 (48, '终极管理员使用所有权限', 14, 3),
 (47, '终极管理员使用所有权限', 14, 2),
@@ -223,11 +211,11 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`user_id`, `username`, `password`, `locked`, `logintime`, `loginip`, `role_id`) VALUES
 (15, 'zxy', 'b904cb9b0a0ac1d0f9db1471412fba1d', 0, '17-03-11 11:57:29', '127.0.0.1', 2),
 (17, 'admin', '21232f297a57a5a743894a0e4a801fc3', 0, '17-03-11 12:22:05', '127.0.0.1', 1),
-(18, 'zzw', 'fdea199d71b110a3533e55b6f25dee46', 0, '17-03-11 12:22:38', '127.0.0.1', 3),
+(18, 'zzw', 'fdea199d71b110a3533e55b6f25dee46', 0, '2017-03-25 19:38:56', '127.0.0.1', 3),
 (19, 'xzf', '9fbb239f9faa3438aeb78f8bee213d17', 0, '17-03-11 01:11:44', '127.0.0.1', 3),
 (41, 'ytt', '788707ea6128fa1175f72e90d6b5c158', 0, 'adad', ' adad', 3),
 (39, 'taodaye', '8d2fd708287d36926125acc999d0606c', 0, 'adadad2', '2da', 3),
-(42, 'zhaoxiuyu', 'b3f83843513d1eedf5f32859b1b13cc1', 0, '', '', 1);
+(42, 'zhaoxiuyu', 'b3f83843513d1eedf5f32859b1b13cc1', 0, '2017-03-25 19:37:50', '127.0.0.1', 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
