@@ -3,6 +3,7 @@ namespace Admin\Controller;
 use Think\Controller;
 	class MenuController extends InitializeController{
 		public function index(){
+			//这个分页得自己写!!!!!!!!!!!
 			if (I('type') == 'search') {
 				$where['name']=array('like',"%".I('key')."%");
 				$arr = M('Menu')->where($where)->select();
@@ -76,13 +77,33 @@ use Think\Controller;
 			}
 		}
 
-		public function delete(){
+		public function delete($id){
+			//这么传就是接受get传参了!
 			$db = M('Menu');
-			if ($judge1 = M('Product')->where("mid=%d",I('id'))->delete()&&$judge2 = $db->where("pid=%d",I('id'))->delete()||$judge3 = $db->where("id=%d",I('id'))->delete()) {
-				//judge1且judge2或judege3
-				$this->success('删除成功!');
+			if($judge = $db->where("pid=%d",$id)->field('id')->select()){
+				//是否有子类,有把子类id都查出来
+				test($judge);
+				foreach ($judge as $v) {
+					$this->delete($v);
+				}
 			}else{
-				$this->error('访问错误!');
+				if ($judge = M('Product')->where("mid=%d",$id)->field('id')->select()) {
+					//此类下是否有商品
+					if ($judge = M('Product')->where("mid=%d",$id)->delete()) {
+						if ($judge = $db->where("id=%d",$id)->delete()) {
+							$this->success('',U('Menu/index'));
+							//成功确实应该什么都不处理!,否则
+						}else{
+							$this->error('404,页面不知道哪去了!');
+						}
+					}
+				}else{
+					if ($judge = $db->where("id=%d",$id)->delete()) {
+							$this->success('',U('Menu/index'));
+					}else{
+							$this->error('404,页面不知道哪去了!');
+					}
+				}
 			}
 		}
 	}

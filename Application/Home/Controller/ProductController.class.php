@@ -3,7 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 	class ProductController extends InitializeController{
 		public function index(){
-			
             $db = M('Product');  
 	        $count = $db->count();// 查询满足要求的总记录数
 	        
@@ -14,10 +13,15 @@ use Think\Controller;
 	       		$Page = new \Extend\Page($count,6);// 实例化分页类 传入总记录数和每页显示的记录数(25)
 	        	$pages = $db->limit($Page->firstRow.','.$Page->listRows)->where("mid=%d",I('id'))->order('id DESC')->select();
 	        }
+
+	        //取最新4条
+	        $this->newest = $db->where("mid=%d",I('id'))->order('id DESC')->limit(0,4)->select();
 	        $this->assign('model', $pages);
 	        $this->assign('page',$show);
 			$this->display();
 		}
+
+		
 
 		public function car(){
 			//用关联模型 多对多?
@@ -56,17 +60,19 @@ use Think\Controller;
 					if ($add = $db->where("pid=%d",I('id'))->setInc('count',I('count'))) {
 						$arr['success']=1;
 						$arr['count'] = I('count');
+						$arr['carCount'] = $this->carCount();
 						echo json_encode($arr);	//将数值转换成json数据存储格式
 					}
 				}else{
 					$data = array(
-					'user_id' => $_SESSION['mallUserId'], //后期改掉!
-					'pid' => I('id'),
-					'count' => I('count')
+						'user_id' => $_SESSION['mallUserId'], //后期改掉!
+						'pid' => I('id'),
+						'count' => I('count')
 					);
 					if ($add = $db->data($data)->add()) {
 						$arr['success']=1;
 						$arr['count'] = I('count');
+						$arr['carCount'] = $this->carCount();
 						echo json_encode($arr);	//将数值转换成json数据存储格式
 					}
 				}
@@ -135,6 +141,13 @@ use Think\Controller;
 				}
 			}
 
+		}
+
+		public function carDelete(){
+			$db = M('prod_user');
+			if ($judge = $db->where("user_id=%d and pid=%d",$_SESSION['mallUserId'],I('get.id'))->delete()) {
+				header("Location: ".U('Product/car'));
+			}
 		}
 	}
  ?>

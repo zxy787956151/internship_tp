@@ -49,12 +49,10 @@
 .flexslider .slides > li {
   display: none;
   -webkit-backface-visibility: hidden;
-    height: 318px !important;
 }
 .flexslider .slides img {
   width: 100%;
   display: block;
-    padding: 13%;
 }
 .flexslider .slides:after {
   content: "\0020";
@@ -77,7 +75,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 60px;
+  margin: 0 0 10px;
   background: #ffffff;
   border: 4px solid #ffffff;
   position: relative;
@@ -95,10 +93,9 @@ html[xmlns] .flexslider .slides {
 }
 .flexslider .slides img {
   height: auto;
-    margin-top: 3em;
 }
 .flex-viewport {
-  max-height: 2000px;
+  max-height: 450px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -ms-transition: all 1s ease;
@@ -148,9 +145,9 @@ html[xmlns] .flexslider .slides {
    background: url(../images/img-sprite.png) -184px -6px ;
   
 }
-.flexslider:hover .flex-direction-nav .flex-prev {/*
+.flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
-  left: 10px;*/
+  left: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
   opacity: 1;
@@ -235,7 +232,7 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
 }
 .flex-control-thumbs li {
-  width: 24.2%;
+  width: 32.2%;
   float: left;
   margin: 0 1% 0 0;
 }
@@ -254,7 +251,6 @@ html[xmlns] .flexslider .slides {
   -o-transition: all 1s ease;
   transition: all 1s ease;
     border: 1px solid #D1CFCF;
-        padding: 14%;
 }
 .flex-control-thumbs img:hover {
   opacity: 1;
@@ -268,35 +264,11 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
-    opacity: 0;
+    opacity: 1;
     left: 10px;
   }
   .flex-direction-nav .flex-next {
-    opacity: 0;
+    opacity: 1;
     right: 10px;
   }
-  .flex-direction-nav .flex-prev {
-	  opacity: 0;
-	  left: 10px;
-	}
-	.flexslider .slides img {
-	  height: auto;
-	  padding: 0;
-	  width: 48%;
-	    margin: 3em auto;
-	}
-	.flex-viewport {
-	    max-height: 200px;
-	}
-}
-@media screen and (max-width: 320px) {
-	.flexslider .slides > li {
-	  height: 180px !important;
-	}
-	.flex-viewport {
-	  max-height: 175px !important;
-	}
-	.flexslider {
-    margin: 0 0 32px;
-	}
 }

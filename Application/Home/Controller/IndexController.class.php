@@ -4,6 +4,8 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends InitializeController {
     public function index(){
+    	$db = M('Product');
+    	$this->hot = $db->limit(0,8)->select();
     	$this->display();
     }
 }

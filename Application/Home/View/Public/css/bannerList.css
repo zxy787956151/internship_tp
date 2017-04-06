@@ -1,0 +1,92 @@
+
+.banner {
+    width:92%;
+    height: 450px;
+    overflow: hidden;
+    position: absolute;
+    margin:0 4%;
+}
+li,ol,ul {
+    list-style: none;
+}
+.banner > ul {
+    display: none;
+    width:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.banner > ul > li > a > img{
+    width:100%;
+}
+.banner > ul > li  {
+    width:100%;
+    float: left;
+}
+.banner > ul > li > a {
+    width:100%;
+    display: block;
+    font-size: 200px;
+    text-align: center;
+    line-height: 450px;
+    font-weight: bold;
+}
+
+.left-btn,.right-btn {
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    background: url("../images/right-1.png");
+    cursor: pointer;
+}
+
+.left-btn {
+    left: 30px;
+    background: url("../images/left-1.png");
+}
+
+.img-btn-list {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+}
+
+.img-btn-list > span  {
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border-radius:10px;
+    margin: 0 5px;
+    background: rgba(0,0,0,0.8);
+    cursor: pointer;
+}
+
+.img-btn-list > span.current {
+    border: 3px solid rgba(0,0,0,0.8);
+    background: rgba(255,255,255,0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

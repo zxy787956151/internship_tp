@@ -5,7 +5,7 @@ $(".checkout").click(function(){
 	$(".checkout").live('click',function(){		//live 发生某个事件（ click事件） 
 		if (lock) {return;}
 		lock = true;
-		var allPrice = $(".allPrice").val();
+		var allPrice = $(".allPrice").text();
 		$.ajax({	
 			type: "POST",//要求为String类型的参数，请求方式（post或get）默认为get。注意其他http请求方法，例如put和delete也可以使用，但仅部分浏览器支持。
 			url: "Home/Product/checkout?action=ajax",//要求为String类型的参数，（默认为当前页地址）发送请求的地址。

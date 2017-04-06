@@ -1,0 +1,363 @@
+[ 2017-04-05T15:53:35+08:00 ] 127.0.0.1 /
+ERR: XML标签语法错误 : name="<?php echo ($lv['child']); ?
+
+[ 2017-04-05T15:53:36+08:00 ] 127.0.0.1 /
+ERR: XML标签语法错误 : name="<?php echo ($lv['child']); ?
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/move-top.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easyResponsiveTabs.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easing.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easyResponsiveTabs.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:42:30+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/move-top.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easing.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easyResponsiveTabs.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:43:20+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T18:44:30+08:00 ] 127.0.0.1 /css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T18:44:30+08:00 ] 127.0.0.1 /css/head.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/move-top.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easing.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easyResponsiveTabs.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:06:42+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:07:21+08:00 ] 127.0.0.1 /css/head.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T19:07:21+08:00 ] 127.0.0.1 /css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T19:12:07+08:00 ] 127.0.0.1 /index.php?m=&c=login&a=verify
+ERR: 无法加载控制器:Login
+
+[ 2017-04-05T19:13:08+08:00 ] 127.0.0.1 /index.php?m=&c=login&a=verify
+ERR: 无法加载控制器:Login
+
+[ 2017-04-05T19:13:12+08:00 ] 127.0.0.1 /index.php?m=&c=login&a=verify
+ERR: 无法加载控制器:Login
+
+[ 2017-04-05T19:13:15+08:00 ] 127.0.0.1 /index.php?m=&c=login&a=verify
+ERR: 无法加载控制器:Login
+
+[ 2017-04-05T19:15:56+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/jquery.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:19:42+08:00 ] 127.0.0.1 /index.php?m=&c=Account&a=register
+ERR: Think\Controller:check_verify方法不存在！
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/jquery-ui.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easing.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/move-top.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/jquery-ui.min.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easing.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:54+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/jquery-ui.min.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:37:55+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/jquery-ui.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:38:28+08:00 ] 127.0.0.1 /css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T19:38:28+08:00 ] 127.0.0.1 /css/bootstrap.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T19:38:28+08:00 ] 127.0.0.1 /js/jquery.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T19:38:28+08:00 ] 127.0.0.1 /css/head.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T19:38:28+08:00 ] 127.0.0.1 /js/right.menu.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T19:47:49+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:48:34+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:49:33+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:49:34+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:49:51+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:56:01+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:56:50+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:57:20+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:59:10+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:59:30+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:59:33+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002392s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.013286s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000362s ]
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 15 行.
+SQL: SELECT `username` FROM `user` WHERE ( user_id=%d )  [ RunTime:0.000186s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT `username` FROM `user` WHERE ( user_id=%d ) 
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 55 行.
+SQL: SELECT * FROM `prod_user` WHERE ( pid=0 and user_id=0 )  [ RunTime:0.016629s ]
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 63 行.
+SQL: INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (null,0,0) [ RunTime:0.000183s ]
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (null,0,0)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001417s ]
+
+[ 2017-04-05T19:59:50+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T19:59:56+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002313s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.099136s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000534s ]
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 15 行.
+SQL: SELECT `username` FROM `user` WHERE ( user_id=%d )  [ RunTime:0.000220s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT `username` FROM `user` WHERE ( user_id=%d ) 
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 55 行.
+SQL: SELECT * FROM `prod_user` WHERE ( pid=0 and user_id=0 )  [ RunTime:0.000464s ]
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 63 行.
+SQL: INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (null,0,0) [ RunTime:0.000477s ]
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (null,0,0)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002915s ]
+
+[ 2017-04-05T20:00:08+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:00:12+08:00 ] 127.0.0.1 /Home/Product/add_car?action=ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004516s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `Menu` [ RunTime:0.012498s ]
+SQL: SELECT * FROM `Menu`  [ RunTime:0.000378s ]
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\InitializeController.class.php 第 15 行.
+SQL: SELECT `username` FROM `user` WHERE ( user_id=%d )  [ RunTime:0.000159s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%d )' at line 1
+ [ SQL语句 ] : SELECT `username` FROM `user` WHERE ( user_id=%d ) 
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 55 行.
+SQL: SELECT * FROM `prod_user` WHERE ( pid=0 and user_id=0 )  [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: mallUserId D:\phpStudy\WWW\internship_tp\Application\Home\Controller\ProductController.class.php 第 63 行.
+SQL: INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (null,0,0) [ RunTime:0.000161s ]
+ERR: 1048:Column 'user_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `prod_user` (`user_id`,`pid`,`count`) VALUES (null,0,0)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2017-04-05T20:00:14+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:03:30+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/move-top.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/easing.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/memenu.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/css/memenu.css
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/js/bootstrap.js
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/images/si1.jpeg
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/images/s12.jpeg
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:11+08:00 ] 127.0.0.1 /Application/Home/View//Public/images/si2.jpeg
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:12+08:00 ] 127.0.0.1 /Application/Home/View//Public/images/s3.jpeg
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:07:12+08:00 ] 127.0.0.1 /Application/Home/View//Public/images/s12.jpeg
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:18:07+08:00 ] 127.0.0.1 /css/bootstrap.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T20:18:07+08:00 ] 127.0.0.1 /css/head.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T20:18:07+08:00 ] 127.0.0.1 /css/style.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T20:18:07+08:00 ] 127.0.0.1 /css/flexslider.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T20:18:07+08:00 ] 127.0.0.1 /js/jquery.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /js/right.menu.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /js/imagezoom.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /js/jquery.flexslider.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /js/jquery.min.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /js/imagezoom.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /css/flexslider.css
+ERR: 无法加载控制器:Css
+
+[ 2017-04-05T20:18:08+08:00 ] 127.0.0.1 /js/jquery.flexslider.js
+ERR: 无法加载控制器:Js
+
+[ 2017-04-05T20:49:23+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:49:25+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:53:16+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:53:48+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:54:00+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+
+[ 2017-04-05T20:55:59+08:00 ] 127.0.0.1 /Application/Home/View/Public/css/bootstrap.css.map
+ERR: 无法加载控制器:Application
+

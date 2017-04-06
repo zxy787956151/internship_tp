@@ -1,417 +1,132 @@
-<?php if (!defined('THINK_PATH')) exit();?><!--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE html>
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
 <head>
-<title>I-wear A Ecommerce Category Flat Bootstarp Resposive Website Template | Checkout :: w3layouts</title>
-<link href="/Application/Home/View//Public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="/Application/Home/View//Public/js/jquery.min.js"></script>
-<script type="text/javascript" src="/Application/Home/View//Public/js/Calculate.js"></script>
-<script type="text/javascript" src="/Application/Home/View//Public/js/ajaxChange.js"></script>
-<!-- Custom Theme files -->
-<!--theme-style-->
-<link href="/Application/Home/View//Public/css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="I-wear Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<script type="text/javascript" src="/Application/Home/View//Public/js/move-top.js"></script>
-<script type="text/javascript" src="/Application/Home/View//Public/js/easing.js"></script>
-<!--fonts-->
-<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Montez' rel='stylesheet' type='text/css'>
-<!--//fonts-->	
-<script src="/Application/Home/View//Public/js/simpleCart.min.js"> </script>
-<!-- start menu -->
-<link href="/Application/Home/View//Public/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/Application/Home/View//Public/js/memenu.js"></script>
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
-<!-- /start menu -->
-		  		 <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	<!-- js -->
-		 <script src="/Application/Home/View//Public/js/bootstrap.js"></script>
-	<!-- js -->
-	<style>
-		.Clearing{
-			font-size: 24px;
-			width:200px;
-			height:30px;
-			background-color: orange;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<title>checkout</title>
+	<link rel="stylesheet" href="/Application/Home/View/Public/css/bootstrap.css">
+	<link rel="stylesheet" href="/Application/Home/View/Public/css/style.css">
+	<link rel="stylesheet" href="/Application/Home/View/Public/css/head.css">
+	<script type="text/javascript" src="/Application/Home/View/Public/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/Application/Home/View/Public/js/Calculate.js"></script>
+	<script type="text/javascript" src="/Application/Home/View/Public/js/ajaxChange.js"></script>
 </head>
-<body> 
+<body>
+	<div class="header">
+		<div class="header-top">
+			<div class="header-title">
+				<span><img src="/Application/Home/View/Public/images/telephone.png" alt=""></span>
+				<p>131-1232-3232</p>
+				<a href="<?php echo U('Product/car');?>">
+					<span><img src="/Application/Home/View/Public/images/cart.png" alt=""></span>
+					购物车
+					<span id='cart-num'><?php echo $carCount;?></span> 
+					
+				</a>
+				<a href="<?php echo U('Account/register');?>">
+					<span><img src="/Application/Home/View/Public/images/res.png" alt=""></span>
+					注册
+				</a>
+				<?php if($username): ?><a href="#">
+						<span><img src="/Application/Home/View/Public/images/login.png" alt=""></span>
+						<?php echo ($username); ?>
+					</a>  
+				<?php else: ?> 
+					<a href="<?php echo U('account/index');?>">
+						<span><img src="/Application/Home/View/Public/images/login.png" alt=""></span>
+						登录
+					</a><?php endif; ?>
+			</div>
+			<div class="logo">
+				<img src="/Application/Home/View/Public/images/logo.png" alt="">
+			</div>
+			<div class="search">
+				<input type="text" placeholder="  搜索商品">
+				<input type="button" value="L">
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="<?php echo U('Index/index');?>">首页</a>
+					</li>
 
-<!--header-->	
-		<div class="header-info">
-			<div class="container">
-					<div class="header-top-in">
-						
-						<ul class="support">
-							<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope"> </i>787956151@qq.com</a></li>
-							<li><span><i class="glyphicon glyphicon-earphone" class="tele-in"> </i>138 9405 5929</span></li>			
-						</ul>
-						<ul class=" support-right">
-							<?php if($username): ?><li><a href="#">
-										<i class="glyphicon glyphicon-user" class="men"> </i>
-										<?php echo ($username); ?>
-									</a>
-								</li> 
-							<?php else: ?> 
-								<li><a href="<?php echo U('account/index');?>">
-										<i class="glyphicon glyphicon-user" class="men"> </i>
-										To log in
-									</a>
-								</li><?php endif; ?>
-							
-							<?php if(isset($_SESSION[user]) == true): ?><a href="<?php echo U('Account/out');?>">注销</a><?php endif; ?>
-							<li><a href="<?php echo U('Account/register');?>"><i class="glyphicon glyphicon-lock" class="tele"> </i>Create an Account</a></li>			
-						</ul>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>	
-	<div class="header header5">
-	<div class="header-top">
-
-			<div class="header-bottom">
-			<div class="container">			
-				<div class="logo">
-					<h1><a href="index.html">Z-<span>xy</span></a></h1>
-				</div>
-		 <!---->	
-
-			<div class="top-nav">
-				<ul class="memenu skyblue"><li class="active"><a href="<?php echo U('Index/index');?>">Home</a></li>
-
-				<?php zxy_foreach($arr,1,0); ?>
+					<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tv): $mod = ($i % 2 );++$i;?><li>
+							<a href="<?php echo U('Product/index',array('id'=>$tv['id']));?>"><?php echo ($tv["name"]); ?></a>
+							<div class="menu_show">
+								<ul>
+									<span><?php echo ($tv["name"]); ?></span>
+									<?php if(is_array($tv['child'])): $i = 0; $__LIST__ = $tv['child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Product/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
+								</ul>
+							</div>
+						</li><?php endforeach; endif; else: echo "" ;endif; ?>
 					
 				</ul>
-				<div class="clearfix"> </div>
 			</div>
-					<!---->
-					<div class="cart box_1">
-						<a href="<?php echo U('Product/car');?>">
-						<h3> <div class="total">
-							<span class="simpleCart_total"> </span> (<span id="simpleCart_quantity" class="simpleCart_quantity"> </span>)</div>
-							<img src="/Application/Home/View//Public/images/cart2-2.png" alt=""/></h3>
-						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-						<div class="clearfix"> </div>
-					</div>
-
-<div class="clearfix"> </div>
-					<!---->
-				</div>
-			<div class="clearfix"> </div>
-		</div>
-		</div>	
- 				<div class="clearfix"> </div>	
-			</div>	
-<!---->
-<div class="back">
-	<h2>Checkout</h2>
-</div>
-		<!---->
-		<div class="product">
-			<div class="container">
-				<div class="col-md-3 product-price">
-					  
-				
-				<!---->
-				<div class="product-bottom">
-					<div class="of-left-in">
-								<h3 class="best">BEST SELLERS</h3>
-							</div>
-					<div class="product-go">
-						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/be.jpg" alt=""></a>
-									
-								</div>
-							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
-amet consectetuer  </a></h6>
-								
-								<span class=" price-in1"> $40.00</span>
-							</div>
-								
-							<div class="clearfix"> </div>
-							</div>
-							<div class="product-go">
-						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/be1.jpg" alt=""></a>
-									
-								</div>
-							<div class="fashion-grid1">
-								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
-amet consectetuer </a></h6>
-								
-								<span class=" price-in1"> $40.00</span>
-							</div>
-								
-							<div class="clearfix"> </div>
-							</div>
-							<div class="product-go">
-						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/Application/Home/View//Public/images/be2.jpg" alt=""></a>
-									
-								</div>
-							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html">Lorem ipsum dolor sit
-amet consectetuer </a></h6>
-								<ul class="star-footer">
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-									<li><a href="#"><i> </i></a></li>
-								</ul>
-								<span class=" price-in1"><small>$70.00</small> $40.00</span>
-							</div>
-								
-							<div class="clearfix"> </div>
-							</div>
-				</div>
-<div class=" per1">
-				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi9.jpg" alt="">
-				<div class="six1">
-					<h4>DISCOUNT</h4>
-					<p>Up to</p>
-					<span>20%</span>
-				</div></a>
-			</div>
-				</div>
-				<!---->
-				<div class="col-md-9 product-price1">
-				<div class="check-out">	 
-			
-		 <div class=" cart-items">
-			 <h3>My Shopping Bag (2)</h3>
-				<script>$(document).ready(function(c) {
-//					$('.close1').on('click', function(c){
-//						$('.cart-header').fadeOut('slow', function(c){
-//							$('.cart-header').remove();
-//						});
-//						});
-//					});
-			   </script>
-
-
-				
-				  <div class="in-check" >
-
-			  <!--eq 等于-->
-			  <!--neq 不等于-->
-			  <!--gt 大于-->
-			  <!--egt 大于等于-->
-			  <!--lt 小于-->
-			  <!--elt 小于等于-->
-			  <!--like LIKE-->
-			  <!--between BETWEEN-->
-			  <!--notnull IS NUT NULL-->
-			  <!--null IS NULL-->
-			  <ul class="unit">
-				  <li><span>无记录,请登录!</span></li>
-				  <div class="clearfix"> </div>
-			  </ul>
-
-			  <ul class="unit">
-				  <li><span>Photo</span></li>
-				  <li><span>Product Name</span></li>
-				  <li><span>All Price</span></li>
-				  <li><span>Count</span></li>
-				  <li><span>Checkout?</span></li>
-				  <div class="clearfix"> </div>
-			  </ul>
-			  	
-				  <?php if(is_array($model)): foreach($model as $key=>$plvv): ?><ul class="cart-header">
-						  <a href="<?php echo U('Checkout/close',array('id' => $plvv[id]));?>"><div class="close1"></div></a>
-						  <li class="ring-in"><a href="<?php echo U('Single/index');?>&pid=<?php echo ($plvv["id"]); ?>" ><img src="/Application/Home/View//Public/images/<?php echo ($plvv["photo"]); ?>" class="img-responsive" alt=""></a>
-						  </li>
-						  <li><span><?php echo ($plvv["name"]); ?></span></li>
-						  <li><span class="price"><input type="text" value="<?php echo ($plvv["price"]); ?>" id="allPrice<?php echo ($plvv[id]); ?>" disabled="disabled" /></span></li>
-						  
-						  <li><span><input type="text" value="<?php echo ($plvv["count"]); ?>" onblur="ajaxChange(<?php echo $plvv['id']?>,this.value)"></span></li>
-						  <li><span>NO</span></li>
-						  </if>
-						  <input type="hidden" name="" value="<?php echo ($plvv["id"]); ?>" />
-						  <div class="clearfix"> </div>
-					  </ul><?php endforeach; endif; ?>
-			  <ul class="cart-header">
-				  	  <input type="hidden" class="allPrice" name="allPrice" value="<?php echo ($allPrice); ?>" />
-					  <center><a class="checkout" href="javascript:;">结算</a></center>
-			  	  
-			  </ul>
-		</div>
-			 </div>
-					  
-		 </div>
-		 
-<div class=" per2">
-				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi2.jpg" alt="">
-				<div class="six3">
-					<h4>DISCOUNT</h4>
-					<p>Up to</p>
-					<span>30%</span>
-				</div></a>
-			</div>
-			<div class=" per3">
-				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi3.jpg" alt="">
-				<div class="six3">
-					<h4>DISCOUNT</h4>
-					<p>Up to</p>
-					<span>45%</span>
-				</div></a>
-			</div>
-						<div class=" per4">
-				<a href="single.html"><img class="img-responsive" src="/Application/Home/View//Public/images/pi10.jpg" alt="">
-				<div class="six4">
-					<h4>DISCOUNT</h4>
-					<p>Up to</p>
-					<span>70%</span>
-				</div></a>
-			</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-			<!---->
-				<div class="bottom-grid1">
-					
-					<div class="fit1">
-						<h3>HAPPY SHOPPING</h3>
-						<p>Lorem Ipsum sit amet consectuer adipiscing elit
-sed diam nonummy nibh euismod</p>
-					</div>
-				</div>
-<!---->
-	<div class="footer">
-		<div class="container">
-			<div class="col-md-4 footer-top">
-				<h3>Quick Contact</h3>
-				<form>
-						
-						<input type="text" value="ENTER YOUR NAME*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR NAME*';}">
-						
-						<input type="text" value="ENTER YOUR EMAIL*" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR EMAIL*';}">
-						
-						<input type="text" value="ENTER YOUR PHONE" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='ENTER YOUR PHONE';}">
-					
-						<textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'ENTER YOUR MESSAGE*';}">ENTER YOUR MESSAGE*</textarea>
-						
-							<input type="submit" value="SEND MESSAGE" >
-						
-					</form>
-
-			</div>
-			<div class="col-md-4 footer-middle">
-				<h3>Top Rated Products</h3>
-					<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="/Application/Home/View//Public/images/f1.jpg" alt="">
-									<p>SALE</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-								<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="/Application/Home/View//Public/images/f2.jpg" alt="">
-									<p class="new1">NEW</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-								<div class="product-go">
-							<div class="grid-product">
-								<h6><a href="#" >Winter Combo Style</a></h6>
-								<div class="rating">
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-									<span>☆</span>
-								</div>
-								<span class=" price-in"><small>$70.00</small> $40.00</span>
-							</div>
-								<div class="fashion">
-									<a href="#"><img class="img-responsive " src="/Application/Home/View//Public/images/f3.jpg" alt="">
-									<p class="new1">NEW</p></a>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-
-			</div>
-			<div class="col-md-4 footer-bottom">
-				<h3>Get In Touch</h3>
-				<div class="logo-footer">
-					<ul class="social">
-		                    <li><a href="#"><i class="fb"> </i> </a></li>
-		                    <li><a href="#"><i class="rss"></i></a></li>
-		                    <li><a href="#"><i class="twitter"></i></a></li>
-		                    <li><a href="#"><i class="dribble"></i></a></li>
-		                    <div class="clearfix"></div>
-		                </ul>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="indo">
-					<ul class="social-footer ">
-						<li><span><i class="glyphicon glyphicon-earphone"> </i>+62 226759804 </span></li>
-						<li><a href="mailto:info@example.com"><i class="glyphicon glyphicon-envelope" class="mes"> </i>info@example.com</a></li>
-						<li><a href="#"><i class="glyphicon glyphicon-link" class="mes-in"> </i>http://example.com</a></li>
-					</ul>
-					<a href="#"><img src="/Application/Home/View//Public/images/pa.png" alt=""></a>
-					</div>
-			</div>
-			<div class="clearfix"> </div>
-			<p class="footer-class">Copyrights © 2015 I Wear. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 		</div>
 	</div>
-				 <!---->
+	
+	<div class="container">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>商品信息</th>
+					<th>数量</th>
+					<th>金额</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php if(is_array($model)): foreach($model as $plvk=>$plvv): ?><tr>
+						<td>
+							<img src="/Application/Public/Uploads/<?php echo ($plvv["photourl"]); echo ($plvv["photoname"]); ?>" alt="">
+							<p><?php echo ($plvv["name"]); ?>
+							</p>
+							<span class="checkout-type">颜色分类：黑色玫瑰-送膜</span>
+						</td>
+						<td>
+							<input type="button" value="-" class="reduce" onclick="ajaxChange(<?php echo $plvv['id']?>,<?php echo $plvk+1?>,this.value)">
+							<input type="text" id="proCount<?php echo ($plvk+1); ?>" class="pro-num" value="<?php echo ($plvv["count"]); ?>">
+							<input type="button" value="+" class="add" onclick="ajaxChange(<?php echo $plvv['id']?>,<?php echo $plvk+1?>,this.value)">
+						</td>
+						<td>￥<span id="proPrice<?php echo ($plvk+1); ?>" class="checkout-total"><?php echo ($plvv["price"]); ?></span></td>
+						<td>
+							<a href="<?php echo U('Product/carDelete',array('id'=>$plvv['id']));?>" class="delete">删除</a>
+							<!-- <a href="javascript:;" class="prohibit">暂时禁选</a> -->
+						</td>
+					</tr><?php endforeach; endif; ?>
+			</tbody>
+		</table>
+		<div class="balance">
+			<div class="balance-button">
+				<input type="button" value="结算" class="checkout" />
+			</div>
+			<div class="balance-total">
+				合计:<span class="allPrice">￥<?php echo ($allPrice); ?></span>
+			</div>
+			<!-- <div class="balance-num">
+				商品<span>4</span>件
+			</div> -->
+		</div>
+	</div>
+<script src="/Application/Home/View/Public/js/jquery.min.js"></script>
 <script type="text/javascript">
-		$(document).ready(function() {
-				/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-				*/
-		$().UItoTop({ easingType: 'easeOutQuart' });
+$(function(){
+	var reduce = $('.reduce');
+	var add = $('.add');
+	var pro_num = $('.pro-num');
+	var num_value = pro_num.val();
+	add.click(function(){
+		num_value++;
+		$(this).parent().find(':text').val(num_value);
+	});
+	reduce.click(function(){
+		if(num_value >= 2){
+			num_value--;
+			pro_num.val(num_value);
+		}
+	});
 });
 </script>
-<a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!----> 
-<!---->
 </body>
 </html>

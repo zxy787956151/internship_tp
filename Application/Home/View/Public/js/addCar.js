@@ -1,12 +1,12 @@
 // JavaScript Document
 $(function(){
 var lock = false;
-$(".addCar").click(function(){		
+$(".addCar").click(function(){	
 	$(".addCar").live('click',function(){		//live 发生某个事件（ click事件） 
 		if (lock) {return;}
 		lock = true;
 		var id = $(".id").val();
-		var price = $(".price").text();
+		var price = $(".thisPrice").text();
 		var count = $(".count").val();
 		$.ajax({	
 			type: "POST",//要求为String类型的参数，请求方式（post或get）默认为get。注意其他http请求方法，例如put和delete也可以使用，但仅部分浏览器支持。
@@ -36,6 +36,7 @@ $(".addCar").click(function(){
 				if(json.success==1){
 					json.success=0;
 					// $(".img_child").css({"opacity":"1","left":"400%","top":"-60%","width":"0","height":"0"});
+					$("#cart-num").text(json.carCount);
 					alert(json.count+"件商品添加成功!");
 				}else{
 					alert("AjaxWrong!!");

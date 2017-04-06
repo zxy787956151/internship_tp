@@ -1,0 +1,60 @@
+<div class="header">
+		<div class="header-top">
+			<div class="header-title">
+				<span><img src="__PUBLIC__/images/telephone.png" alt=""></span>
+				<p>131-1232-3232</p>
+				<a href="{:U('Product/car')}">
+					<span><img src="__PUBLIC__/images/cart.png" alt=""></span>
+					购物车
+					<span id='cart-num'><?php echo $carCount;?></span> 
+					
+				</a>
+				<a href="{:U('Account/register')}">
+					<span><img src="__PUBLIC__/images/res.png" alt=""></span>
+					注册
+				</a>
+				<if condition="$username">
+					<a href="#">
+						<span><img src="__PUBLIC__/images/login.png" alt=""></span>
+						{$username}
+					</a>  
+				<else /> 
+					<a href="{:U('account/index')}">
+						<span><img src="__PUBLIC__/images/login.png" alt=""></span>
+						登录
+					</a> 
+				</if>
+			</div>
+			<div class="logo">
+				<img src="__PUBLIC__/images/logo.png" alt="">
+			</div>
+			<div class="search">
+				<input type="text" placeholder="  搜索商品">
+				<input type="button" value="L">
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="nav">
+				<ul>
+					<li>
+						<a href="{:U('Index/index')}">首页</a>
+					</li>
+
+					<volist name="menu" id="tv">
+						<li>
+							<a href="{:U('Product/index',array('id'=>$tv['id']))}">{$tv.name}</a>
+							<div class="menu_show">
+								<ul>
+									<span>{$tv.name}</span>
+									<volist name="tv['child']" id="v">
+										<li><a href="{:U('Product/index',array('id'=>$v['id']))}">{$v.name}</a></li>
+									</volist>
+								</ul>
+							</div>
+						</li>
+					</volist>
+					
+				</ul>
+			</div>
+		</div>
+	</div>

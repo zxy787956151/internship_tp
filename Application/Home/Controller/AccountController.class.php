@@ -15,7 +15,7 @@ use Think\Controller;
                 array('username','require','请填账号！'), //默认情况下用正则进行验证
                 array('password','require','请填写密码！'), //默认情况下用正则进行验证
             );
-			if (I('submit') == 'Login') {
+			if (I('submit') == '立即登录') {
 					//如果用户提交数据
 	            $model = D("User");
 	            if (!$model->validate($loginVerify)->create()) {
@@ -62,7 +62,7 @@ use Think\Controller;
 
 		public function register(){
 			$db = M('User');
-			if (I('submit') == '注册') {
+			if (I('submit') == '立即注册') {
 			 	$model = D("User");
 	            if (!$model->create()) {
 	                // 如果创建失败 表示验证没有通过 输出错误提示信息
@@ -74,6 +74,9 @@ use Think\Controller;
 					'password' => md5(I('password')),
 					'role_id' => 3,
 					);
+					if (!($this->check_verify(I('verify','','strtolower')))) {
+						$this->error('验证码错误');
+					}
 					if ($judge = $db->data($data)->add()) {
 						$this->success('注册成功!',U('Index/index'));
 					}
@@ -82,5 +85,19 @@ use Think\Controller;
 				$this->display();
 			}
 		}
+
+		protected function check_verify($code){
+	        $verify = new \Think\Verify();
+	        return $verify->check($code);
+	    }
+
+		public function verify(){
+	        $Verify = new \Think\Verify();
+	        $Verify->codeSet = '0123456789';
+	        $Verify->fontSize = 13;
+	        $Verify->length = 4;
+	        $Verify->entry();
+	    }
+	    
 	}
  ?>
