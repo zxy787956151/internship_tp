@@ -10,6 +10,11 @@ class MenuModel extends Model{
         $arr = $this->Table('Menu')->select();  //M方法不好使,原因未测试
         return $this->list_level($arr,$pid=0,$level=0);  
     }  
+    //紧急情况改写参数
+    public function DFS($table){
+        $arr = $this->Table($table)->select();  //M方法不好使,原因未测试
+        return $this->list_level($arr,$pid=0,$level=0); 
+    }
     //递归遍历数据  
     public function list_level($arr,$pid=0,$level=0){  
         //此处递归函数老刘用了个引用传值更方便, 即&$arr,有待研究!!!!!!!!!!

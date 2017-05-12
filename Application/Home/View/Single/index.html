@@ -16,6 +16,8 @@
 
 <div class="container">
 <div class="col-md-9">
+	<foreach name="pro" item="v">
+
 	<div class="col-md-5 grid">		
 		<div class="flexslider">
 			  <ul class="slides">
@@ -36,7 +38,6 @@
 			  </ul>
 		</div>
 	</div>	
-	<foreach name="pro" item="v">
 		<div class="col-md-7 single-top-in">
 			<div class="single-para simpleCart_shelfItem">
 				<h1>{$v.name}</h1>
@@ -47,7 +48,7 @@
 					屏幕比例: 16:9
 					标称对比度: 3000:1
 					屏幕类型: LED</p>
-				¥<span  class="add-to item_price thisPrice">{$v.price}</span>
+				<span class="mon">¥</span><span  class="add-to item_price thisPrice">{$v.price}</span>
 				<div class="available">
 				<ul>
 					<li>型号:
@@ -72,10 +73,11 @@
 					<input type="hidden" class="id" name="" value="{$v.id}">
 			</div>
 		</div>
-	</foreach>
+	
 	
 	<div class="col-md-12 grid" id="detiles">
-		<h1>商品详情</h1>
+	{$v.detailsC}
+		<!-- <h1>商品详情</h1>
 		<p>
 		CCC证书编号: 2016010903878416<br/>
 		产地: 中国大陆<br/>
@@ -103,9 +105,10 @@
 		屏幕类型: LED<br/>
 		是否自带音箱: 否<br/>
 		适用场景: 游戏 办公 经济适用 媒体<br/>
-		</p>
-		<img src="__PUBLIC__/images/details.jpg" alt="商品详情">
+		</p> -->
+		<img src="__IMAGE__/{$v.photourl}{$v.detailsP}" alt="商品详情">
 	</div>
+	</foreach>
 			<div class="clearfix"> </div> 
 			<div class="content-top1">
 				<h1 style="font-size: 1.5em;font-family: '微软雅黑';color:#000;text-align:center;margin-bottom: 20px;">推荐购买</h1>

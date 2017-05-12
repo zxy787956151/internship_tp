@@ -14,7 +14,7 @@
 					注册
 				</a>
 				<if condition="$username">
-					<a href="#">
+					<a href="{:U('Account/userInfo')}">
 						<span><img src="__PUBLIC__/images/login.png" alt=""></span>
 						{$username}
 					</a>  
@@ -44,8 +44,7 @@
 						<li>
 							<a href="{:U('Product/index',array('id'=>$tv['id']))}">{$tv.name}</a>
 							<div class="menu_show">
-								<ul>
-									<span>{$tv.name}</span>
+								<ul><!-- <li><a href="{:U('Product/index',array('id'=>$tv['id']))}">{$tv.name}</a></li> -->
 									<volist name="tv['child']" id="v">
 										<li><a href="{:U('Product/index',array('id'=>$v['id']))}">{$v.name}</a></li>
 									</volist>

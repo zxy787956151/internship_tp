@@ -5,13 +5,46 @@
 	<title>index</title>
 	<link rel="stylesheet" href="__PUBLIC__/css/style.css">
 	<link rel="stylesheet" href="__PUBLIC__/css/head.css">
-    <link rel="stylesheet" href="__PUBLIC__/css/bannerList.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.hiSlider.min.css">
 	<script src="__PUBLIC__/js/jquery.min.js"></script>
 	<script type="text/javascript" src="__PUBLIC__/js/main.js"></script>
 </head>
 <body>
 	<include file="Public/header" title="前台头部" />
-	<div class="container">
+	<div class="container-index">
+		<div class="banner">
+			<ul class="hiSlider hiSlider1">
+		        <li class="hiSlider-item"><img src="__PUBLIC__/images/1.jpg" alt="11111"></li>
+		        <li class="hiSlider-item"><img src="__PUBLIC__/images/2.jpg" alt="22222"></li>
+		        <li class="hiSlider-item"><img src="__PUBLIC__/images/3.jpg" alt="33333"></li>
+		    </ul>
+		</div>
+
+		<script src="__PUBLIC__/js/jquery.hiSlider.min.js"></script>
+		<script>
+		    $('.hiSlider1').hiSlider();
+		    $('.hiSlider2').hiSlider({
+		        isFlexible: true,
+		        mode: 'fade',
+		        isSupportTouch: false,
+		        isShowTitle: false,
+		        isShowPage: false,
+		        titleAttr: function(curIdx){
+		            return $('img', this).attr('alt');
+		        }
+		    });
+		    $('.hiSlider3').hiSlider({
+		        isFlexible: true,
+		        isSupportTouch: true,
+		        titleAttr: function(curIdx){
+		            return $('img', this).attr('alt');
+		        }
+		    });
+		    $('.hiSlider4').hiSlider({
+		        startSlide: 2,
+		        direction: 'top'
+		    });
+		</script>
 		<div class="container-left">
 			<volist name="left" id="lv">
 				<div class="link-nav">
@@ -24,35 +57,10 @@
 
 		</div>
 		<div class="container-right">
-			<div class="banner">
-				<ul class="">
-				<foreach>
-				</foreach>		
-				<li><a href=""><img src="__PUBLIC__/images/banner1.jpg" alt=""></a></li>
-				<li><a href=""><img src="__PUBLIC__/images/banner2.jpg" alt=""></a></li>
-				<li><a href=""><img src="__PUBLIC__/images/banner3.jpg" alt=""></a></li>
-				<li><a href=""><img src="__PUBLIC__/images/banner4.jpg" alt=""></a></li>
-				</ul>
-				<div class="left-btn"></div>
-				<div class="right-btn"></div>
-				<div class="img-btn-list"></div>
-			</div>
-
-			<script src="__PUBLIC__/js/bannerList.js"></script>
-			<script>
-			bannerListFn(
-			$(".banner"),
-			$(".img-btn-list"),
-			$(".left-btn"),
-			$(".right-btn"),
-			2000,
-			true
-			);
-			</script>
 			<div class="product-show">
 				<foreach name="hot" item="v">
 					<div class="product-card">
-						<a href="javascript:;">
+						<a href="{:U('Single/index')}&pid={$v.id}">
 							<img src="__IMAGE__/{$v.photourl}{$v.photoname}" />
 						</a>
 						<span>{$v.name}</span>

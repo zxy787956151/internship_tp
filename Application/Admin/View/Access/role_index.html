@@ -18,8 +18,7 @@
     
     <div class="row">
         <div class="col-md-6">
-            <a href="{:U('Access/set_node')}" class="btn btn-success">添加角色</a>
-            <a href="{:U('Access/set_node')}" class="btn btn-success">添加节点</a>
+            <a href="{:U('Access/set_node')}" class="btn btn-success">角色&权限设置</a>
         </div>
         <div class="col-md-6">
             <form action="{:U('category/index')}" method="post">
@@ -39,23 +38,18 @@
                 <th>节点名称</th>
                 <th>角色名称</th>   <!-- 实际上就是权限名 -->
                 <th>权限名称</th>   <!-- 一个节点代表一个权限 -->
-                <th>操作</th>
             </tr>
         </thead>
         <tbody>
-        <!-- tp遍历二维数组volist比foreach好用! -->
-            <volist name="role_to_perm" key="rk" id="rv">
-                <volist name="rv['role_to_permission']" key="k" id="v">
-                    <tr>
-                        <td>{$rk+$k-1}</td>
-                        <td>{$v.nodename}</td>
-                        <td>{$rv.rolename}</td>
-                        <td>{$v.permname}</td>
-                        <!-- 删除节点 -->
-                        <td><a href="{:U('category/update?id=')}{$v.id}">编辑</a> | <a href="{:U('category/delete?id=')}{$v.id}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
-                    </tr>
-                </volist>
-            </volist>
+        <foreach name="model" item="v">
+            <tr>
+                <td>{$v.id}</td>
+                <td>{$v.html} {$v.title}</td>
+                <td>{$v.name}</td>
+                <!-- 删除节点 -->
+                <td><a href="{:U('category/update?id=')}{$v.id}">编辑</a> | <a href="{:U('category/delete?id=')}{$v.id}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除节点</a></td>
+            </tr>
+        </foreach>
         </tbody>
     </table>
     {$page}

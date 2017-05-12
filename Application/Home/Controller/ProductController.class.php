@@ -149,5 +149,68 @@ use Think\Controller;
 				header("Location: ".U('Product/car'));
 			}
 		}
+
+		public function calculate(){
+			//用关联模型 多对多?
+			$User = D('User');
+			$user_id = $_SESSION['mallUserId'];
+			//用户vs商品more_to_more
+			$user_to_prod = $User->relation(true)->where("user_id=%d",array($user_id))->find();
+			//查询该用户所购买的商品!
+	        // test($user_to_prod['user_to_prod']);
+			$count = count($user_to_prod);// 查询满足要求的总记录数
+	        $Page = new \Extend\Page($count,3);
+	        // 实例化分页类 传入总记录数和每页显示的记录数(3)
+	        $show = $Page->show();// 分页显示输出
+	        //单独查一次count,未尝试优化
+	        foreach ($user_to_prod['user_to_prod'] as $k=>$v) {
+	        	$cou = M('prod_user')->where("user_id=%d and pid=%d",array($user_id,$v['id']))->field('count')->select();
+	        
+	        	// test($cou);
+	        	$user_to_prod['user_to_prod']["$k"]['count'] = $cou['0']['count'];
+	        	$user_to_prod['user_to_prod']["$k"]['price'] *=$cou['0']['count'];
+	        	// $user_to_prod['user_to_prod']["$k"]['checkout'] = $cou["$user_id"]['checkout'];
+	        	$allPrice += $user_to_prod['user_to_prod']["$k"]['price'];
+	        	//价格为总价 不是单价
+	        }
+	        // test($user_to_prod['user_to_prod']);
+	        $this->assign('model',$user_to_prod['user_to_prod']);
+	        $this->assign('allPrice',$allPrice);
+	        $this->assign('page',$show);
+			$this->display();
+		}
+
+		public function showCal(){
+			//用关联模型 多对多?
+			$User = D('User');
+			$user_id = $_SESSION['mallUserId'];
+			//用户vs商品more_to_more
+			$user_to_prod = $User->relation(true)->where("user_id=%d",array($user_id))->find();
+			//查询该用户所购买的商品!
+	        // test($user_to_prod['user_to_prod']);
+			$count = count($user_to_prod);// 查询满足要求的总记录数
+	        $Page = new \Extend\Page($count,3);
+	        // 实例化分页类 传入总记录数和每页显示的记录数(3)
+	        $show = $Page->show();// 分页显示输出
+	        //单独查一次count,未尝试优化
+	        foreach ($user_to_prod['user_to_prod'] as $k=>$v) {
+	        	$cou = M('prod_user')->where("user_id=%d and pid=%d",array($user_id,$v['id']))->field('count')->select();
+	        
+	        	// test($cou);
+	        	$user_to_prod['user_to_prod']["$k"]['count'] = $cou['0']['count'];
+	        	$user_to_prod['user_to_prod']["$k"]['price'] *=$cou['0']['count'];
+	        	// $user_to_prod['user_to_prod']["$k"]['checkout'] = $cou["$user_id"]['checkout'];
+	        	$allPrice += $user_to_prod['user_to_prod']["$k"]['price'];
+	        	//价格为总价 不是单价s
+	        }
+	        // test($user_to_prod['user_to_prod']);
+	        
+	        //遍历userinfo输出收货地址
+	        $this->userinfo = M('userinfo')->select();
+	        $this->assign('model',$user_to_prod['user_to_prod']);
+	        $this->assign('allPrice',$allPrice);
+	        $this->assign('page',$show);
+			$this->display();
+		}
 	}
  ?>

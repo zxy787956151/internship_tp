@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkout</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/style.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/head.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/infoAdd.js"></script>
+</head>
+<body>
+	<include file="Public/header" title="前台头部" />
+	<div class="container">
+		<div class="personal-nav">
+			<span>
+				<img src="__PUBLIC__/images/tx.png" alt="">
+			</span>
+			<ul>
+				<h3>账户管理</h3>
+				<li><a href="javascript:;" id="nav-a1">修改个人资料</a></li>
+				<li><a href="javascript:;" id="nav-a2">查看收货地址</a></li>
+				<li><a href="javascript:;" id="nav-a3">个人交易信息</a></li>
+			</ul>
+		</div>
+		<div class="personal-right">
+			<div class="info-show" id="info-show-personal">
+				<span>个人资料</span>
+				<ul>
+					<li><span>昵称</span><input type="text"></li>
+					<li>
+						<span>性别</span>
+						<label><input type="radio" name="mail" value=""/>男</label>
+						<label><input type="radio" name="mail" value=""/>女</label>
+					</li>
+					<li><span>生日</span><input type="date"></li>
+					<li><span>手机号</span><input type="text"></li>
+					<li><span>邮箱</span><input type="text"></li>
+					<li><button>保存</button></li>
+				</ul>
+			</div>
+			
+			<div class="info-show" id="info-show-address">
+				<span>收货地址</span>
+				<ul>
+					<li><span>所在地区</span>
+						<select id="a" class="province">
+							<option>省份</option>
+						</select>
+						<select id="b" class="city">
+							<option>地级市</option>
+						</select>
+						<select id="c" class="region">
+							<option>区/县级市</option>
+						</select>
+					</li>
+					<li>
+						<span>详细地址</span>
+						<textarea class="address" id="" cols="40" rows="3"></textarea>
+					</li>
+					<li><span>邮政编码</span><input type="text" class="email"></li>
+					<li><span>收货人姓名</span><input type="text" class="realname"></li>
+					<li><span>手机号码</span><input type="text" class="tell"></li>
+					<li><button id="addInfo">增加地址</button></li>
+				</ul>
+				<table id="bigTab" class="add-table table-condensed table-hover">
+					<thead>
+						<tr>
+							<th>收货人</th>
+							<th>所在地区</th>
+							<th>详细地址</th>
+							<th>邮编</th>
+							<th>电话</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<foreach name="userinfo" item="v">
+							<tr>
+								<td>{$v.realname}</td>
+								<td>{$v.province}{$v.city}{$v.region}</td>
+								<td>{$v.address}</td>
+								<td>{$v.email}</td>
+								<td>{$v.tell}</td>
+								<td><a href="{:U('Account/uinfodel',array('id'=>$v[id]))}">删除</a></td>
+							</tr>			
+						</foreach>
+					</tbody>
+				</table>
+			</div>
+			<div class="info-show" id="info-show-buy">
+				<span>交易信息</span>
+				<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>商品信息</th>
+					<th>金额</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<img src="__PUBLIC__/images/pi2.png" alt="">
+						<p>复古旅行手帐本活页笔记本文具方格空白记事本仿皮手账日记本子
+						</p>
+						<span class="checkout-type">颜色分类：黑色玫瑰-送膜</span>
+					</td>
+					<td><span class="checkout-total">￥150</span></td>
+				</tr>
+				<tr>
+					<td>
+						<img src="__PUBLIC__/images/pi2.png" alt="">
+						<p>复古旅行手帐本活页笔记本文具方格空白记事本仿皮手账日记本子
+						</p>
+						<span class="checkout-type">颜色分类：黑色玫瑰-送膜</span>
+					</td>
+					<td><span class="checkout-total">￥150</span></td>
+				</tr>
+			</tbody>
+		</table>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/sjld.js"></script>
+	<script type="text/javascript">
+			var per_nav = $('.personal-nav');
+			var aBtn = per_nav.find('a');
+			var aDiv = $('.info-show');
+			var i = 0;
+			for(i=0;i<aBtn.length;i++){
+				aBtn[i].index = i;
+				aBtn[i].onclick=function(){
+					for(i=0;i<aBtn.length;i++){
+						aDiv[i].style.display='none';
+					}
+					aDiv[this.index].style.display='block';
+				};
+			}
+	</script>
+</body>
+</html>

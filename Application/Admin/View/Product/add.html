@@ -52,6 +52,24 @@
             <input type="file" name="photo" class="form-control" id="photo" value="上传图片" onchange="addProduct(this)">
             <!-- onchange在file选择完路径后执行 -->
         </div>
+
+        <div class="form-group">
+            <label for="aa">详细信息图片</label>
+            <img src="" id="image" />
+            <input type="file" name="detailsP" class="form-control" id="photo" value="上传图片" onchange="addProduct(this)">
+            <!-- onchange在file选择完路径后执行 -->
+        </div>
+
+         <script id="container" name="detailsC" type="text/plain" style="width:800px;height:200px">这里写你的文章内容!</script>
+            <!-- 文本编辑器里别留多余空格!,还是有,要字符串处理 -->
+            <!-- 配置文件 -->
+            <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+            <!-- 编辑器源码文件 -->
+            <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+            <!-- 实例化编辑器 -->
+            <script type="text/javascript">
+                var ue = UE.getEditor('container');
+            </script>
         <input type="submit" name="submit" class="btn btn-default" value="添加" />
     </form>
 </div>

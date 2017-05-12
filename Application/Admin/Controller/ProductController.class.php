@@ -43,7 +43,9 @@ use Think\Controller;
 						'price' => I('price'),
 	                    'photoname' => $info['photo']['savename'],
 	                    'photourl' => $info['photo']['savepath'],
-	                    'mid' => I('mid')
+	                    'mid' => I('mid'),
+	                    'detailsP' => $info['detailsP']['savename'],
+	                    'detailsC' => strip_tags(I('detailsC')),
 	                );
 	            	//图片上传-end
 	                if ($judge = M('Product')->data($data)->add()) {

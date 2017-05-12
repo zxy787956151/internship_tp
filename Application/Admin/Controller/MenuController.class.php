@@ -7,12 +7,27 @@ use Think\Controller;
 			if (I('type') == 'search') {
 				$where['name']=array('like',"%".I('key')."%");
 				$arr = M('Menu')->where($where)->select();
+				//解决levelBug
+				foreach ($arr as $k => $v) {
+					$arr["$k"]['level'] -= 1;
+				}
 				$this->assign('arr',$arr);
 				$this->display();
 			}else{
 				$User=D('Menu');  
 		        $arr = $User->sel_all();
-		        $this->assign('arr',$arr);  
+		        $this->assign('arr',$arr); 
+		        //分页 一页9个
+		        $nowPage = I('get.page');
+		        if ($nowPage=='') {
+		        	$this->page = 0;
+		        	$this->nowPage = 1;
+		        }else{
+		        	$this->page = ($nowPage-1)*9;
+		        	$this->nowPage = $nowPage;
+		        }
+
+		        $this->lastPage = ceil(count($arr)/9);
 		        $this->display();
 			}
 		}

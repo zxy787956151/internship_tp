@@ -98,6 +98,46 @@ use Think\Controller;
 	        $Verify->length = 4;
 	        $Verify->entry();
 	    }
+
+	    public function userInfo(){
+	    	$db = M('userinfo');
+	    	$this->userinfo = $db->select();
+	    	$this->display();
+	    }
+
+	    public function addInfo(){
+	    	$db = M('userinfo');
+	    	if (I('get.action') == 'ajax') {
+	    		$data = array(
+	    			'user_id' => $_SESSION['mallUserId'],
+	    			'province' => I('province'),
+	    			'city' => I('city'),
+	    			'region' => I('region'),
+	    			'address' =>I('address'),
+	    			'email' =>I('email'),
+	    			'realname' => I('realname'),
+	    			'tell' => I('tell'),
+	    			);
+	    		if ($db->data($data)->add()) {
+	    			$arr['success'] = 1;
+	    			$arr['province'] = I('province');
+	    			$arr['city'] = I('city');
+	    			$arr['region'] = I('region');
+	    			$arr['address'] = I('address');
+	    			$arr['email'] = I('email');
+	    			$arr['realname'] = I('realname');
+	    			$arr['tell'] = I('tell');
+					echo json_encode($arr);	//将数值转换成json数据存储格式	
+
+	    		}
+	    	}
+	    }
+
+	    public function uinfodel(){
+	    	if ($judge = M('userinfo')->where("id=%d",I('get.id'))->delete()) {
+	    		header("Location: ".U('Account/userInfo'));
+	    	}
+	    }
 	    
 	}
  ?>

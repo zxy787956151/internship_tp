@@ -48,7 +48,8 @@
 		</table>
 		<div class="balance">
 			<div class="balance-button">
-				<input type="button" value="结算" class="checkout" />
+				<!-- <input type="button" value="结算" class="checkout" /> -->
+				<a href="{:U('Product/showCal')}">结算</a>
 			</div>
 			<div class="balance-total">
 				合计:<span class="allPrice">￥{$allPrice}</span>
@@ -72,7 +73,7 @@ $(function(){
 	reduce.click(function(){
 		if(num_value >= 2){
 			num_value--;
-			pro_num.val(num_value);
+			$(this).parent().find(':text').val(num_value);
 		}
 	});
 });

@@ -39,18 +39,27 @@
         <th>菜单名</th>  
         <th>操作</th>
         <form action="{:U('Menu/update')}" method="post">
-            <foreach name='arr' key="k" item='v'>  
+            <volist name='arr' key='k' id='v' offset="$page" length='9'>  
                 <tr>  
-                    <td>{$k+1}</td>  
+                    <td>{$page+1}</td>  
                     <!--str_repeat('字符串','重复的次数');重复一个字符串-->  
                     <td><?php echo str_repeat('----',$v['level']);?>{$v.name}</td>  
                     <td>
                     <a href="{:U('Menu/update?id=')}{$v.id}">编辑</a> | <a href="{:U('Menu/delete?id=')}{$v.id}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将同时删除所有子类!\n\n及此类下所有商品!!!');">删除</a></td> 
                 </tr>  
-            </foreach>  
+                <!-- ※※※html注释了这段代码,但php还会执行 -->
+                <!-- {$page++} -->
+            </volist>  
         </form>
     </table>
-    {$page}
+    <if condition="$nowPage neq 1"> 
+        <div><a href="{:U('Menu/index',array('page'=>$nowPage-1))}">上一页</a></div>
+    </if>
+    <div>当前是第{$nowPage}页</div>
+    <if condition="$nowPage neq $lastPage"> 
+        <div><a href="{:U('Menu/index',array('page'=>$nowPage+1))}">下一页</a></div>
+    </if>
+
 </div>
 <script src="__PUBLIC__/template/js/jquery-1.10.2.js"></script>
 <script src="__PUBLIC__/template/js/bootstrap.js"></script>

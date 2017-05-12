@@ -16,7 +16,7 @@ $(function(){
 	});
 	nav_main2.click(function(){
 		nav_li.css("height","0");
-		nav_li2.css("height","175px");
+		nav_li2.css("height","75px");
 	});
 	nav_main3.click(function(){
 		nav_li.css("height","0");

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>checkout</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/style.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/head.css">
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/Calculate.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ajaxChange.js"></script>
+	<style>
+	.fact-mon{
+		width:500px;
+		height:auto;
+		float: right;
+		border:1px solid #ddd;
+		padding:10px;
+		box-shadow: 0 10px 10px #ddd;
+		margin-bottom:30px;
+	}
+	.fact-mon p{
+		width:100%;
+		text-align: left;
+		font-size:1em;
+		color:#000;
+		font-weight: bold;
+		float: left;
+	}
+	.fact-mon p:first-child span{
+		font-size:1.5em;
+		color:#f00;
+	}
+	.fact-mon p span{
+		font-size:.9em;
+		color:#666;
+	}
+	.fact-mon input{
+		width:150px;
+		height:50px;
+		font-size: 1em;
+		color:#fff;
+		background:#f30;
+		border:none;
+		outline: none;
+		float: right;
+	}
+	.address-card{
+		padding:5px;
+		width:200px;
+		height:100px;
+		border:3px solid #ddd;
+		float: left;
+		margin:20px 20px 20px 0;
+		cursor: pointer;
+	}
+	.address-on{
+		padding:5px;
+		width:200px;
+		height:100px;
+		float: left;
+		border:3px solid;
+		cursor: pointer;
+		border-image: -webkit-linear-gradient( #2BE7D3 , #2B31D3) 30 30;
+		border-image: -moz-linear-gradient( #2BE7D3, #2B31D3) 30 30;
+		border-image: linear-gradient( #2BE7D3 , #2B31D3) 30 30;
+		margin:20px 20px 20px 0;
+	}
+	.address-on:after{
+		z-index: 10;
+		content: ' ';
+		position:absolute;
+		width:20px;
+		height:20px;
+		right:0;
+		bottom:0;
+	}
+	.address-on span{
+		font-size:.8em;
+		display: block;
+		border-bottom:1px solid #ddd;
+		text-align: left;
+	}
+	.address-on p{
+		float: left;
+		font-size:.8em;
+		text-align: left;
+	}
+	.address-on img{
+		display: block;
+		float: right;
+		margin:-33px -7px 0 0;
+	}
+	.address-card span{
+		font-size:.8em;
+		display: block;
+		border-bottom:1px solid #ddd;
+		text-align: left;
+	}
+	.address-card p{
+		float: left;
+		font-size:.8em;
+		text-align: left;
+	}
+	.address-card img{
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<include file="Public/header" title="前台头部" />
+	
+	<div class="container">
+		<foreach name="userinfo" item="v">
+			<div class="address-card">
+				<span>{$v.realname}{$v.tell}</span>
+				<p>{$v.province}{$v.city}{$v.region}{$v.address}</p>
+				<img src="__PUBLIC__/images/selected.png" alt="">
+			</div>
+		</foreach>
+		
+		
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>商品信息</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>金额</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<foreach name="model" key="plvk" item="plvv">
+					<tr>
+						<td>
+							<img src="__IMAGE__/{$plvv.photourl}{$plvv.photoname}" alt="">
+							<p>{$plvv.name}
+							</p>
+							<span class="checkout-type">颜色分类：黑色玫瑰-送膜</span>
+						</td>
+						<td>
+							<input type="button" value="-" class="reduce" onclick="ajaxChange(<?php echo $plvv['id']?>,<?php echo $plvk+1?>,this.value)">
+							<input type="text" id="proCount{$plvk+1}" class="pro-num" value="{$plvv.count}">
+							<input type="button" value="+" class="add" onclick="ajaxChange(<?php echo $plvv['id']?>,<?php echo $plvk+1?>,this.value)">
+						</td>
+						<td>￥<span id="proPrice{$plvk+1}" class="checkout-total">{$plvv.price}</span></td>
+						<td>
+							<a href="{:U('Product/carDelete',array('id'=>$plvv['id']))}" class="delete">删除</a>
+							<!-- <a href="javascript:;" class="prohibit">暂时禁选</a> -->
+						</td>
+					</tr>
+				</foreach>
+			</tbody>
+		</table>
+		<div class="fact-mon">
+			<div class="fact-total">
+				<p>实付款:￥<span class="allPrice">{$allPrice}</span></p>
+				<p>寄送至<span></span></p>
+				<p>收货人<span></span></p>
+			</div>
+			<input type="button" class="checkout" value="提交订单">
+		</div>
+	</div>
+<script type="text/javascript">
+$(function(){
+	var reduce = $('.reduce');
+	var add = $('.add');
+	var pro_num = $('.pro-num');
+	var num_value = pro_num.val();
+	var address_card = $('.address-card');
+	add.click(function(){
+		num_value++;
+		$(this).parent().find(':text').val(num_value);
+	});
+	reduce.click(function(){
+		if(num_value >= 2){
+			num_value--;
+			$(this).parent().find(':text').val(num_value);
+		}
+	});
+	address_card.click(function(){
+		address_card.attr('class','address-card');
+		$(this).attr('class','address-on');
+		console.log("aaa");
+	});
+});
+</script>
+</body>
+</html>

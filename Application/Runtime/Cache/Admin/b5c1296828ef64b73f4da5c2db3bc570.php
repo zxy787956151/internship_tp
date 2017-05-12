@@ -27,7 +27,7 @@
     
     <div class="row">
         <div class="col-md-6">
-            <a href="<?php echo U('Access/add');?>" id="addRole" class="btn btn-success">添加角色or权限</a>
+            <a href="<?php echo U('Rbac/addRole');?>" id="addRole" class="btn btn-success">添加角色or权限</a>
 
         </div>
         <div class="col-md-6">
