@@ -144,15 +144,12 @@
 		<span class="ico" id="passico"></span>
 
 		<form action="<?php echo U('Login/runLogin');?>" method="post">
-			<input type="text" name="username" class="input" id="username" value="Username" onfocus="javascript:if(this.value=='Username')this.value='';">
-			<input type="password" name="password" class="input" id="password"  onfocus="javascript:if(this.value=='')this.value='';">
-			<!-- password的value去掉了 -->
+			<input type="text" name="username" class="input" id="username" placeholder="用户名">
+			<input type="password" placeholder="用户密码" name="password" class="input" id="password">
+            <!-- <input type="text"  name="verify" class="input" id="exampleInputCode" placeholder="验证码">
             <div>
-                <input type="text"  name="verify" class="input" id="exampleInputCode" placeholder="验证码">
-            </div>
-            <div >
                 <a href="javascript:void(0)"><img id="mask" class="verify" src="<?php echo U('login/verify');?>" alt="点击刷新"/></a>
-            </div>
+            </div> -->
 			<input type="submit" name="submit" class="submit" value="Login"></input>
 		</form>
 	</div>

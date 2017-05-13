@@ -8,10 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="/Application/Admin/View//Public/layui/css/layui.css"  media="all">
   <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
+  <script src="/Application/Admin/View//Public/js/jquery.js"></script>
   <style type="text/css">
+
     a{
       color: #01AAED;
     }
+
     a:hover{
       color: #c2c2c2;
     }
@@ -30,50 +33,68 @@
     .level1{
       color:#F7B824;
       border:1px solid #f2f2f2;
-      background-color:#f2f2f2; 
-      height: 30px;
-    }
-    .level1 span{
       margin-left: 40px;
       font-size: 18px;
+      height: 30px;
+    }
+    .level2{
+      margin-left: 100px;
     }
 
-    .level2{
-      margin-left: 80px;
-    }
 
     #all{
       padding-left: 10px;
     }
+
   </style>
 </head>
 <body>
          
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-  <legend>节点列表</legend>
+  <legend>配置权限</legend>
 </fieldset>  
 <br>
 <div id="all">
-  <button class="layui-btn" onclick="location.href='<?php echo U('Rbac/addNode',array('type'=>'app'));?>';">
-      <i class="layui-icon">&#xe608;</i> 添加应用
+  <button class="layui-btn">
+    <i class="layui-icon">&#x1002;</i>&nbsp;&nbsp;&nbsp;返回&nbsp;&nbsp;
   </button>
+
+      <!-- <input type="checkbox" name="like[write]" title="写作">
+      <input type="checkbox" name="like[read]" title="阅读" checked>
+      <input type="checkbox" name="like[dai]" title="发呆"> -->
+
+<form class="layui-form" action="<?php echo U('Rbac/setAccess');?>" method="post">
+<div class="layui-form-item">
+<div class="layui-input-block">
 
   <?php if(is_array($dfs)): foreach($dfs as $key=>$dv): if($dv[level] == 0): ?><br>
       <br>
       <hr>
-      <span class="level0"><?php echo ($dv["name"]); ?></span>
-      <a href="<?php echo U('Rbac/addNode',array('type'=>'con','pid'=>$dv[id]));?>"> [添加控制器] </a><a href="#"> [修改] </a><a href="<?php echo U('Rbac/delete');?>"> [删除] </a>
+       <label class="level0">应用</label>
+       <input type="checkbox" class="change" name="app" title="<?php echo ($dv["name"]); ?>" value="<?php echo ($dv["id"]); ?>" level="1">
       <br>
     <?php elseif($dv[level] == 1): ?>
       <br>
-      <div class="level1"><span><?php echo ($dv["name"]); ?> </span><a href="<?php echo U('Rbac/addNode',array('type'=>'fun','pid'=>$dv[id]));?>"> [添加方法] </a></div>
       <br>
+       <label class="level1">控制器</label>
+       <input type="checkbox" name="con" title="<?php echo ($dv["name"]); ?>" value="<?php echo ($dv["id"]); ?>" level="2">
+       <br>
+       <br>
+       <label class="level2">方法</label>
     <?php else: ?> 
-      <span class="level2"><?php echo ($dv["name"]); ?><a href=""> [修改] </a><a href=""> [删除] </a></span><?php endif; endforeach; endif; ?>
+       <input type="checkbox" name="fun" title="<?php echo ($dv["name"]); ?>" value="<?php echo ($dv["id"]); ?>" level="3"><?php endif; endforeach; endif; ?>
+</div>
+</div>
+
+  <div class="layui-form-item" style="text-align: center;">
+    <input type="submit" class="layui-btn" name="submit" value="保存修改" lay-submit="" lay-filter="demo2">
+  </div>
+
+</form>
 </div>
 
 
-<script src="/Application/Admin/View//Public/layui/layui.js" charset="utf-8"></script>
+<script src="/Application/Admin/View//Public/layui/lay/dest/layui.all.js" charset="utf-8"></script>
 <!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
 <script>
 layui.use('form', function(){
@@ -89,6 +110,16 @@ layui.use('form', function(){
   });
   
 });
+</script>
+
+<script type="text/javascript">
+  $(function(){
+    $('.layui-form-checkbox').click(function(){
+      alert('1');
+      // var inputs = $(this).parents('.layui-input-block').find('input');
+      $(".change").attr('checked','checked');
+    })
+  })
 </script>
 
 </body>

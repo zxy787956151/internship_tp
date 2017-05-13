@@ -39,16 +39,21 @@
         <th>菜单名</th>  
         <th>操作</th>
         <form action="<?php echo U('Menu/update');?>" method="post">
-            <?php if(is_array($arr)): foreach($arr as $k=>$v): ?><tr>  
-                    <td><?php echo ($k+1); ?></td>  
+            <?php if(is_array($arr)): $k = 0; $__LIST__ = array_slice($arr,$page,9,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($k % 2 );++$k;?><tr>  
+                    <td><?php echo ($page+1); ?></td>  
                     <!--str_repeat('字符串','重复的次数');重复一个字符串-->  
                     <td><?php echo str_repeat('----',$v['level']); echo ($v["name"]); ?></td>  
                     <td>
                     <a href="<?php echo U('Menu/update?id='); echo ($v["id"]); ?>">编辑</a> | <a href="<?php echo U('Menu/delete?id='); echo ($v["id"]); ?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n将同时删除所有子类!\n\n及此类下所有商品!!!');">删除</a></td> 
-                </tr><?php endforeach; endif; ?>  
+                </tr>  
+                <!-- ※※※html注释了这段代码,但php还会执行 -->
+                <!-- <?php echo ($page++); ?> --><?php endforeach; endif; else: echo "" ;endif; ?>  
         </form>
     </table>
-    <?php echo ($page); ?>
+    <?php if($nowPage != 1): ?><div><a href="<?php echo U('Menu/index',array('page'=>$nowPage-1));?>">上一页</a></div><?php endif; ?>
+    <div>当前是第<?php echo ($nowPage); ?>页</div>
+    <?php if($nowPage != $lastPage): ?><div><a href="<?php echo U('Menu/index',array('page'=>$nowPage+1));?>">下一页</a></div><?php endif; ?>
+
 </div>
 <script src="/Application/Admin/View//Public/template/js/jquery-1.10.2.js"></script>
 <script src="/Application/Admin/View//Public/template/js/bootstrap.js"></script>

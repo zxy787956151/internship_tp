@@ -38,7 +38,7 @@
     <div class="layui-inline">
       <label class="layui-form-label">角色名称</label>
       <div class="layui-input-inline">
-         <input type="text" name="name" lay-verify="required|number" autocomplete="off" class="layui-input">
+         <input type="text" name="name" lay-verify="required" autocomplete="off" class="layui-input">
       </div>
     </div>
    
@@ -48,7 +48,7 @@
     <div class="layui-inline">
       <label class="layui-form-label">角色描述</label>
       <div class="layui-input-inline">
-        <input type="text" name="remark" lay-verify="required|number" autocomplete="off" class="layui-input">
+        <input type="text" name="remark" lay-verify="required" autocomplete="off" class="layui-input">
       </div>
     </div>
   </div>

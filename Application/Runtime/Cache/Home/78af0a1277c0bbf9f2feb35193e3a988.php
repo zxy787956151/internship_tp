@@ -26,7 +26,7 @@
 					<span><img src="/Application/Home/View/Public/images/res.png" alt=""></span>
 					注册
 				</a>
-				<?php if($username): ?><a href="#">
+				<?php if($username): ?><a href="<?php echo U('Account/userInfo');?>">
 						<span><img src="/Application/Home/View/Public/images/login.png" alt=""></span>
 						<?php echo ($username); ?>
 					</a>  
@@ -54,8 +54,7 @@
 					<?php if(is_array($menu)): $i = 0; $__LIST__ = $menu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tv): $mod = ($i % 2 );++$i;?><li>
 							<a href="<?php echo U('Product/index',array('id'=>$tv['id']));?>"><?php echo ($tv["name"]); ?></a>
 							<div class="menu_show">
-								<ul>
-									<span><?php echo ($tv["name"]); ?></span>
+								<ul><!-- <li><a href="<?php echo U('Product/index',array('id'=>$tv['id']));?>"><?php echo ($tv["name"]); ?></a></li> -->
 									<?php if(is_array($tv['child'])): $i = 0; $__LIST__ = $tv['child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('Product/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 								</ul>
 							</div>
@@ -99,7 +98,8 @@
 		</table>
 		<div class="balance">
 			<div class="balance-button">
-				<input type="button" value="结算" class="checkout" />
+				<!-- <input type="button" value="结算" class="checkout" /> -->
+				<a href="<?php echo U('Product/showCal');?>">结算</a>
 			</div>
 			<div class="balance-total">
 				合计:<span class="allPrice">￥<?php echo ($allPrice); ?></span>
@@ -123,7 +123,7 @@ $(function(){
 	reduce.click(function(){
 		if(num_value >= 2){
 			num_value--;
-			pro_num.val(num_value);
+			$(this).parent().find(':text').val(num_value);
 		}
 	});
 });
