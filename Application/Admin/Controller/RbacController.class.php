@@ -77,14 +77,63 @@ use Think\Controller;
 
 		public function permission(){
 			$User=D('Menu');  
-	        $this->dfs = $User->DFS('Node');
+			$db = M('Access');
+	        $dfs = $User->DFS('Node');
+	        $acc = $db->where("role_id=%d",I('get.id'))->select();
+	        foreach ($acc as $av) {
+	        	foreach ($dfs as $dk => $dv) {
+	        		if ($dv['id'] == $av['node_id']) {
+	        			$dfs["$dk"]['checked'] = 1;
+	        		}
+	        	}
+	        }
+	        $this->assign('dfs',$dfs);
 			$this->display();
 		}
 
 		public function setAccess(){
-			test($_POST);
-		}
+			$db = M('Access');
+			foreach ($_POST as $pk => $pv) {
+				switch ($pk) {
+					case 'app':
+						$level = 0;
+						foreach ($pv as $v) {
+							$data[] = array(
+								'role_id' => I('role_id'),
+								'node_id' => $v,
+								'level' => $level,
+							);
+						}
+						break;
 
-		//用户列表
+					case 'con':
+						$level = 1;
+						foreach ($pv as $v) {
+							$data[] = array(
+								'role_id' => I('role_id'),
+								'node_id' => $v,
+								'level' => $level,
+							);
+						}
+						break;
+
+					case 'fun':
+						$level = 2;
+						foreach ($pv as $v) {
+							$data[] = array(
+								'role_id' => I('role_id'),
+								'node_id' => $v,
+								'level' => $level,
+							);
+						}
+						break;
+				}
+			}
+
+			if ($judge1 = $db->where("role_id=%d",I('role_id'))->delete() && $judge2 = $db->addAll($data)) {
+				$this->success('配置成功!');
+			}
+			
+		}
 	}
  ?>

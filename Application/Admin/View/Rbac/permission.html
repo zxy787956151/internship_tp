@@ -55,7 +55,7 @@
 </fieldset>  
 <br>
 <div id="all">
-  <button class="layui-btn">
+  <button class="layui-btn" onclick="Return();">
     <i class="layui-icon">&#x1002;</i>&nbsp;&nbsp;&nbsp;返回&nbsp;&nbsp;
   </button>
 
@@ -63,7 +63,7 @@
       <input type="checkbox" name="like[read]" title="阅读" checked>
       <input type="checkbox" name="like[dai]" title="发呆"> -->
 
-<form class="layui-form" action="{:U('Rbac/setAccess')}" method="post">
+<form action="{:U('Rbac/setAccess')}" method="post">
 <div class="layui-form-item">
 <div class="layui-input-block">
 
@@ -73,24 +73,25 @@
       <br>
       <hr>
        <label class="level0">应用</label>
-       <input type="checkbox" class="change" name="app" title="{$dv.name}" value="{$dv.id}" level="1">
+       {$dv.name}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} id{$dv['id']} pid{$dv['pid']}"  name="app[]" title="{$dv.name}" value="{$dv.id}" level="1" <?php if(isset($dv['checked'])){echo 'checked';} ?> />
       <br>
     <elseif condition="$dv[level] eq 1"/>
       <br>
       <br>
        <label class="level1">控制器</label>
-       <input type="checkbox" name="con" title="{$dv.name}" value="{$dv.id}" level="2">
+       {$dv.name}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} pid{$dv['pid']} id{$dv['id']}" name="con[]" title="{$dv.name}" value="{$dv.id}" level="2" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
        <br>
        <br>
        <label class="level2">方法</label>
     <else /> 
-       <input type="checkbox" name="fun" title="{$dv.name}" value="{$dv.id}" level="3">
+       {$dv.name}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} pid{$dv['pid']} id{$dv['id']}" name="fun[]" title="{$dv.name}" value="{$dv.id}" level="3" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
     </if>
   </foreach>
 </div>
 </div>
 
   <div class="layui-form-item" style="text-align: center;">
+    <input type="hidden" name="role_id" value="{$_GET['id']}"/>
     <input type="submit" class="layui-btn" name="submit" value="保存修改" lay-submit="" lay-filter="demo2">
   </div>
 
@@ -117,11 +118,46 @@ layui.use('form', function(){
 </script>
 
 <script type="text/javascript">
+  function Return(){
+    location.href = "http://my.internship_tp.com/index.php?m=Admin&c=Rbac&a=role";
+  }
+
   $(function(){
     $('.layui-form-checkbox').click(function(){
-      alert('1');
+      var levelClass = $(this).prev().attr('class').substring(0,6);
+
+      switch(levelClass){
+        case 'level0':
+          var firstId = $(this).prev().attr('class').substring(9,11).replace(' ','');
+
+          $(".pid"+firstId).next().is('.layui-form-checked') ? $(".pid"+firstId).next().removeClass('layui-form-checked') : $(".pid"+firstId).next().addClass('layui-form-checked');
+
+          var secondIdCount = $(".pid"+firstId);
+          for (var i = 0; i <secondIdCount.length; i++) {
+            var secondId = $(".pid"+firstId+":eq("+i+")").attr('class').substring(12,17).replace(' ','');
+            
+            $array = array('i','d');
+            secondId = str_replace($array,"",secondId);//字符串替换
+            alert(secondId);
+
+            $(".pid"+secondId).next().is('.layui-form-checked') ? $(".pid"+secondId).next().removeClass('layui-form-checked') : $(".pid"+secondId).next().addClass('layui-form-checked');
+          }
+        break;
+
+        case 'level1':
+          var secondId = $(this).prev().attr('class').substring(14,16).replace(' ','');
+
+          $(this).is('.layui-form-checked') ? $(".pid"+secondId).next().removeClass('layui-form-checked') : $(".pid"+secondId).next().addClass('layui-form-checked');
+
+           $(this).is('.layui-form-checked') ? $(this).removeClass('layui-form-checked') : $(this).addClass('layui-form-checked');
+        break;
+
+        case 'level2':
+        
+        break;
+      }
       // var inputs = $(this).parents('.layui-input-block').find('input');
-      $(".change").attr('checked','checked');
+      
     })
   })
 </script>

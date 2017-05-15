@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 05 月 12 日 13:21
+-- 生成日期: 2017 年 05 月 15 日 13:43
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -27,13 +27,24 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `access` (
+  `id` int(33) NOT NULL AUTO_INCREMENT,
   `role_id` smallint(6) unsigned NOT NULL,
   `node_id` smallint(6) unsigned NOT NULL,
   `level` tinyint(1) NOT NULL,
   `module` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
   KEY `groupId` (`role_id`),
   KEY `nodeId` (`node_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+
+--
+-- 转存表中的数据 `access`
+--
+
+INSERT INTO `access` (`id`, `role_id`, `node_id`, `level`, `module`) VALUES
+(15, 6, 27, 2, NULL),
+(14, 6, 26, 1, NULL),
+(13, 6, 15, 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -150,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `node` (
   KEY `pid` (`pid`),
   KEY `status` (`status`),
   KEY `name` (`name`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
 
 --
 -- 转存表中的数据 `node`
@@ -172,7 +183,9 @@ INSERT INTO `node` (`id`, `name`, `title`, `status`, `remark`, `sort`, `pid`, `l
 (13, '菜单列表', NULL, 1, 'index', 1, 12, 3),
 (14, '添加菜单', NULL, 1, ' add', 2, 12, 3),
 (15, '前端应用', NULL, 1, 'Home', 2, 0, 1),
-(16, '商品列表', NULL, 1, 'index', 3, 9, 3);
+(16, '商品列表', NULL, 1, 'index', 3, 9, 3),
+(26, '测试控制器', NULL, 1, '测试控制器', NULL, 15, 2),
+(27, '测试方法', NULL, 1, '测试方法', NULL, 26, 3);
 
 -- --------------------------------------------------------
 
@@ -238,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `prod_user` (
 --
 
 INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`) VALUES
-(76, 18, 80, 5);
+(76, 18, 80, 8);
 
 -- --------------------------------------------------------
 
@@ -255,15 +268,16 @@ CREATE TABLE IF NOT EXISTS `role` (
   PRIMARY KEY (`id`),
   KEY `pid` (`pid`),
   KEY `status` (`status`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `role`
 --
 
 INSERT INTO `role` (`id`, `name`, `pid`, `status`, `remark`) VALUES
-(4, '22', NULL, 0, '33'),
-(3, '12', NULL, 1, '23');
+(6, 'Manager', NULL, 1, '普通管理员'),
+(7, 'Editor', NULL, 1, '网站编辑'),
+(8, 'SuperAdmin', NULL, 1, '超级管理员');
 
 -- --------------------------------------------------------
 
@@ -301,14 +315,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `locked`, `logintime`, `loginip`, `role_id`) VALUES
-(15, 'zxy', 'b904cb9b0a0ac1d0f9db1471412fba1d', 0, '2017-05-12 15:31:14', '127.0.0.1', 2),
-(17, 'admin', '21232f297a57a5a743894a0e4a801fc3', 0, '17-03-11 12:22:05', '127.0.0.1', 1),
-(18, 'zzw', 'fdea199d71b110a3533e55b6f25dee46', 0, '2017-05-11 18:51:43', '127.0.0.1', 3),
-(19, 'xzf', '9fbb239f9faa3438aeb78f8bee213d17', 0, '17-03-11 01:11:44', '127.0.0.1', 3),
-(41, 'ytt', '788707ea6128fa1175f72e90d6b5c158', 0, 'adad', ' adad', 3),
-(39, 'taodaye', '8d2fd708287d36926125acc999d0606c', 0, 'adadad2', '2da', 3),
-(42, 'zhaoxiuyu', 'b3f83843513d1eedf5f32859b1b13cc1', 0, '2017-03-25 19:37:50', '127.0.0.1', 1),
-(43, 'liyan', 'c3d272f93cf13b993fb7da850086245e', 0, '', '', 3);
+(15, 'zxy', 'b904cb9b0a0ac1d0f9db1471412fba1d', 0, '2017-05-15 21:24:59', '127.0.0.1', 2);
 
 -- --------------------------------------------------------
 

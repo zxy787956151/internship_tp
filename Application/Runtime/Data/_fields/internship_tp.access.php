@@ -1,0 +1,1 @@
+a:7:{i:0;s:2:"id";i:1;s:7:"role_id";i:2;s:7:"node_id";i:3;s:5:"level";i:4;s:6:"module";s:3:"_pk";s:2:"id";s:5:"_type";a:5:{s:2:"id";s:7:"int(33)";s:7:"role_id";s:20:"smallint(6) unsigned";s:7:"node_id";s:20:"smallint(6) unsigned";s:5:"level";s:10:"tinyint(1)";s:6:"module";s:11:"varchar(50)";}}

@@ -137,7 +137,8 @@ use Think\Controller;
 						'errmsg' =>  'success',
 						'data'   =>  true,
 					);
-					echo json_encode($response);
+					$this->ajaxReturn($response);
+					// echo json_encode($response);
 				}
 			}
 
