@@ -71,18 +71,18 @@
       <br>
       <hr>
        <label class="level0">应用</label>
-       <?php echo ($dv["name"]); ?><input type="checkbox" value="<?php echo ($dv['id']); ?>" class="level<?php echo ($dv['level']); ?> id<?php echo ($dv['id']); ?> pid<?php echo ($dv['pid']); ?>"  name="app[]" title="<?php echo ($dv["name"]); ?>" value="<?php echo ($dv["id"]); ?>" level="1" <?php if(isset($dv['checked'])){echo 'checked';} ?> />
+       <?php echo ($dv["remark"]); ?><input type="checkbox" value="<?php echo ($dv['id']); ?>" class="level<?php echo ($dv['level']); ?> id<?php echo ($dv['id']); ?> pid<?php echo ($dv['pid']); ?>"  name="app[]" title="<?php echo ($dv["remark"]); ?>" value="<?php echo ($dv["id"]); ?>" level="1" <?php if(isset($dv['checked'])){echo 'checked';} ?> />
       <br>
     <?php elseif($dv[level] == 1): ?>
       <br>
       <br>
        <label class="level1">控制器</label>
-       <?php echo ($dv["name"]); ?><input type="checkbox" value="<?php echo ($dv['id']); ?>" class="level<?php echo ($dv['level']); ?> pid<?php echo ($dv['pid']); ?> id<?php echo ($dv['id']); ?>" name="con[]" title="<?php echo ($dv["name"]); ?>" value="<?php echo ($dv["id"]); ?>" level="2" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
+       <?php echo ($dv["remark"]); ?><input type="checkbox" value="<?php echo ($dv['id']); ?>" class="level<?php echo ($dv['level']); ?> pid<?php echo ($dv['pid']); ?> id<?php echo ($dv['id']); ?>" name="con[]" title="<?php echo ($dv["remark"]); ?>" value="<?php echo ($dv["id"]); ?>" level="2" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
        <br>
        <br>
        <label class="level2">方法</label>
     <?php else: ?> 
-       <?php echo ($dv["name"]); ?><input type="checkbox" value="<?php echo ($dv['id']); ?>" class="level<?php echo ($dv['level']); ?> pid<?php echo ($dv['pid']); ?> id<?php echo ($dv['id']); ?>" name="fun[]" title="<?php echo ($dv["name"]); ?>" value="<?php echo ($dv["id"]); ?>" level="3" <?php if(isset($dv['checked'])){echo 'checked';} ?> ><?php endif; endforeach; endif; ?>
+       <?php echo ($dv["remark"]); ?><input type="checkbox" value="<?php echo ($dv['id']); ?>" class="level<?php echo ($dv['level']); ?> pid<?php echo ($dv['pid']); ?> id<?php echo ($dv['id']); ?>" name="fun[]" title="<?php echo ($dv["remark"]); ?>" value="<?php echo ($dv["id"]); ?>" level="3" <?php if(isset($dv['checked'])){echo 'checked';} ?> ><?php endif; endforeach; endif; ?>
 </div>
 </div>
 

@@ -73,18 +73,18 @@
       <br>
       <hr>
        <label class="level0">应用</label>
-       {$dv.name}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} id{$dv['id']} pid{$dv['pid']}"  name="app[]" title="{$dv.name}" value="{$dv.id}" level="1" <?php if(isset($dv['checked'])){echo 'checked';} ?> />
+       {$dv.remark}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} id{$dv['id']} pid{$dv['pid']}"  name="app[]" title="{$dv.remark}" value="{$dv.id}" level="1" <?php if(isset($dv['checked'])){echo 'checked';} ?> />
       <br>
     <elseif condition="$dv[level] eq 1"/>
       <br>
       <br>
        <label class="level1">控制器</label>
-       {$dv.name}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} pid{$dv['pid']} id{$dv['id']}" name="con[]" title="{$dv.name}" value="{$dv.id}" level="2" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
+       {$dv.remark}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} pid{$dv['pid']} id{$dv['id']}" name="con[]" title="{$dv.remark}" value="{$dv.id}" level="2" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
        <br>
        <br>
        <label class="level2">方法</label>
     <else /> 
-       {$dv.name}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} pid{$dv['pid']} id{$dv['id']}" name="fun[]" title="{$dv.name}" value="{$dv.id}" level="3" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
+       {$dv.remark}<input type="checkbox" value="{$dv['id']}" class="level{$dv['level']} pid{$dv['pid']} id{$dv['id']}" name="fun[]" title="{$dv.remark}" value="{$dv.id}" level="3" <?php if(isset($dv['checked'])){echo 'checked';} ?> >
     </if>
   </foreach>
 </div>

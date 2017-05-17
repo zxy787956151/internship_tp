@@ -46,16 +46,18 @@ use Think\Controller;
 					        //     $this->error('验证码错误');
 					        // }else{
 	                			$role = $model->where($where)->field('role_id')->select();
-	                			if ($role['0']['role_id'] == 1||$role['0']['role_id'] == 2) {
+	                			// if ($role['0']['role_id'] == 1||$role['0']['role_id'] == 2) {
 	                				if ($judge = M('User')->where($where)->setField(array('logintime'=>date("Y-m-d H:i:s",time()),'loginip'=>$_SERVER["REMOTE_ADDR"]))) {
 	                				//更新最近登录time、ip
 	                					session_start();
 							        	$_SESSION['username'] = I('username');
+                						$user_id = $model->where($where)->field('user_id')->select();
+                						$_SESSION['user_id'] = $user_id['0']['user_id'];
 							        	$this->success("登陆成功!",U('Index/index'));
 	                				}
-	                			}else{
-	                				$this->error("您无权登录!");
-	                			}
+	                			// }else{
+	                			// 	$this->error("您无权登录!");
+	                			// }
 					        // }
 	                	}else{
 	                		$this->error("密码错误!");

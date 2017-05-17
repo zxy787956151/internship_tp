@@ -1,7 +1,7 @@
 <?php 
 namespace Admin\Controller;
 use Think\Controller;
-	class SearchController extends Controller{
+	class SearchController extends InitializeController{
 		public function index(){
 			if (I('get.action') == 'search') {
 				switch (I('get.type')) {

@@ -47,10 +47,14 @@
             <tr>
                 <td>{$v.user_id}</td>
                 <td>{$v.username}</td>
-                <td>{$v.user_to_role.rolename}</td>
+                <td>
+                    <foreach name="v[user_to_role]" item="uv">   
+                        {$uv.name}({$uv.remark})&nbsp;&nbsp;|&nbsp;&nbsp;
+                    </foreach>
+                </td>
                 <td>{$v.password}</td>
                 <td>
-                    <php>$lock = $v['locked']?"是":"否";echo $lock;</php>
+                    <php>$lock = $v['locked']?"已锁死":"已启用";echo $lock;</php>
                 </td>
                 <td>{$v.logintime}</td>
                 <td>{$v.loginip}</td>

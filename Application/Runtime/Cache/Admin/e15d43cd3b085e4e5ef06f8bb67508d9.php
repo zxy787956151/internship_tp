@@ -46,10 +46,12 @@
         <?php if(is_array($users)): foreach($users as $key=>$v): ?><tr>
                 <td><?php echo ($v["user_id"]); ?></td>
                 <td><?php echo ($v["username"]); ?></td>
-                <td><?php echo ($v["user_to_role"]["rolename"]); ?></td>
+                <td>
+                    <?php if(is_array($v[user_to_role])): foreach($v[user_to_role] as $key=>$uv): echo ($uv["name"]); ?>(<?php echo ($uv["remark"]); ?>)&nbsp;&nbsp;|&nbsp;&nbsp;<?php endforeach; endif; ?>
+                </td>
                 <td><?php echo ($v["password"]); ?></td>
                 <td>
-                    <?php $lock = $v['locked']?"是":"否";echo $lock; ?>
+                    <?php $lock = $v['locked']?"已锁死":"已启用";echo $lock; ?>
                 </td>
                 <td><?php echo ($v["logintime"]); ?></td>
                 <td><?php echo ($v["loginip"]); ?></td>

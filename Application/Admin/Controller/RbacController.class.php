@@ -87,26 +87,17 @@ use Think\Controller;
 	        		}
 	        	}
 	        }
+
 	        $this->assign('dfs',$dfs);
 			$this->display();
 		}
 
 		public function setAccess(){
 			$db = M('Access');
+			$judge = $db->where("role_id=%d",I('role_id'))->delete();
 			foreach ($_POST as $pk => $pv) {
 				switch ($pk) {
 					case 'app':
-						$level = 0;
-						foreach ($pv as $v) {
-							$data[] = array(
-								'role_id' => I('role_id'),
-								'node_id' => $v,
-								'level' => $level,
-							);
-						}
-						break;
-
-					case 'con':
 						$level = 1;
 						foreach ($pv as $v) {
 							$data[] = array(
@@ -117,8 +108,19 @@ use Think\Controller;
 						}
 						break;
 
-					case 'fun':
+					case 'con':
 						$level = 2;
+						foreach ($pv as $v) {
+							$data[] = array(
+								'role_id' => I('role_id'),
+								'node_id' => $v,
+								'level' => $level,
+							);
+						}
+						break;
+
+					case 'fun':
+						$level = 3;
 						foreach ($pv as $v) {
 							$data[] = array(
 								'role_id' => I('role_id'),
@@ -130,8 +132,8 @@ use Think\Controller;
 				}
 			}
 
-			if ($judge1 = $db->where("role_id=%d",I('role_id'))->delete() && $judge2 = $db->addAll($data)) {
-				$this->success('配置成功!');
+			if ($judge = $db->addAll($data)) {
+				$this->success('配置成功!',U('Rbac/role'));
 			}
 			
 		}

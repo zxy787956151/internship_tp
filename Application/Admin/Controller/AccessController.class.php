@@ -102,10 +102,19 @@ use Think\Controller;
 	            	$data = array(
 	            		'username' => I('username'),
 	            		'password' => md5(I('password')),
-	            		'role_id' => I('role'),
 	            		);
+
 	            	if ($judge = M('User')->data($data)->add()) {
-		            	$this->success('添加用户成功!',U('Access/index'));
+	            		$where['username'] = I('username');
+		            	$user_id = M('User')->where($where)->field('user_id')->select();
+		            	foreach ($_POST['role'] as $v) {
+		            		$role_user = array(
+		            			'user_id' => $user_id['0']['user_id'],
+		            			'role_id'=> $v, 
+		            		);	
+		            		M('role_user')->data($role_user)->add();
+		            	}
+		            	$this->success('添加成功!',U('Access/index'));
 	            	}
 	            }
 			}else{

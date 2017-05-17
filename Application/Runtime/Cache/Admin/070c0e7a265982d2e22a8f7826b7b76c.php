@@ -63,7 +63,7 @@
             <?php if($rv[status] == 1): ?>开启
             <?php else: ?> <span style="color:#777">关闭</span><?php endif; ?>
           </td>
-          <td><a class="link" href="<?php echo U('Rbac/permission',array('id'=>$rv['id']));?>">配置权限</a></td>
+          <td><a class="link" href="<?php echo U('Rbac/permission',array('id'=>$rv['role_id']));?>">配置权限</a></td>
         </tr><?php endforeach; endif; ?>
       
      

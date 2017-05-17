@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 年 05 月 15 日 13:43
+-- 生成日期: 2017 年 05 月 17 日 06:55
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -35,16 +35,30 @@ CREATE TABLE IF NOT EXISTS `access` (
   PRIMARY KEY (`id`),
   KEY `groupId` (`role_id`),
   KEY `nodeId` (`node_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=85 ;
 
 --
 -- 转存表中的数据 `access`
 --
 
 INSERT INTO `access` (`id`, `role_id`, `node_id`, `level`, `module`) VALUES
-(15, 6, 27, 2, NULL),
-(14, 6, 26, 1, NULL),
-(13, 6, 15, 0, NULL);
+(84, 8, 27, 3, NULL),
+(83, 8, 14, 3, NULL),
+(82, 8, 13, 3, NULL),
+(81, 8, 16, 3, NULL),
+(80, 8, 11, 3, NULL),
+(79, 8, 10, 3, NULL),
+(78, 8, 7, 3, NULL),
+(77, 8, 6, 3, NULL),
+(76, 8, 5, 3, NULL),
+(75, 8, 4, 3, NULL),
+(74, 8, 3, 3, NULL),
+(73, 8, 26, 2, NULL),
+(72, 8, 12, 2, NULL),
+(71, 8, 9, 2, NULL),
+(70, 8, 2, 2, NULL),
+(69, 8, 15, 1, NULL),
+(68, 8, 1, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -168,24 +182,24 @@ CREATE TABLE IF NOT EXISTS `node` (
 --
 
 INSERT INTO `node` (`id`, `name`, `title`, `status`, `remark`, `sort`, `pid`, `level`) VALUES
-(1, '后台应用', NULL, 1, 'adminApp', 1, 0, 1),
-(2, 'RBAC权限控制', NULL, 1, 'RbacAccessConrol', 1, 1, 2),
-(3, '添加角色', NULL, 1, 'addRole', 1, 2, 3),
-(4, '添加用户', NULL, 1, 'addUser', 2, 2, 3),
-(5, '节点列表', NULL, 1, 'node', 3, 2, 3),
-(6, '角色列表', NULL, 1, 'role', 4, 2, 3),
-(7, '用户列表', NULL, 1, 'user', 5, 2, 3),
-(8, '添加节点', NULL, 1, 'addNode', 6, 2, 3),
-(9, '商品管理', NULL, 1, 'Product', 2, 1, 2),
-(10, '添加商品', NULL, 1, 'add', 1, 9, 3),
-(11, '删除商品', NULL, 1, 'delete', 2, 9, 3),
-(12, '菜单管理', NULL, 1, 'Menu', 3, 1, 2),
-(13, '菜单列表', NULL, 1, 'index', 1, 12, 3),
-(14, '添加菜单', NULL, 1, ' add', 2, 12, 3),
-(15, '前端应用', NULL, 1, 'Home', 2, 0, 1),
-(16, '商品列表', NULL, 1, 'index', 3, 9, 3),
-(26, '测试控制器', NULL, 1, '测试控制器', NULL, 15, 2),
-(27, '测试方法', NULL, 1, '测试方法', NULL, 26, 3);
+(1, 'Admin', NULL, 1, '后台应用', 1, 0, 1),
+(2, 'Rbac', NULL, 1, 'RBAC权限控制', 1, 1, 2),
+(3, 'addRole', NULL, 1, '添加角色', 1, 2, 3),
+(4, 'addUser', NULL, 1, '添加用户', 2, 2, 3),
+(5, 'node', NULL, 1, '节点列表', 3, 2, 3),
+(6, 'role', NULL, 1, '角色列表', 4, 2, 3),
+(7, 'user', NULL, 1, '用户列表', 5, 2, 3),
+(8, 'addNode', NULL, 1, '添加节点', 6, 2, 3),
+(9, 'Product', NULL, 1, '商品管理', 2, 1, 2),
+(10, 'add', NULL, 1, '添加商品', 1, 9, 3),
+(11, 'delete', NULL, 1, '删除商品', 2, 9, 3),
+(12, 'Menu', NULL, 1, '菜单管理', 3, 1, 2),
+(13, 'index', NULL, 1, '菜单列表', 1, 12, 3),
+(14, 'add', NULL, 1, '添加菜单', 2, 12, 3),
+(15, 'Home', NULL, 1, '前端应用', 2, 0, 1),
+(16, 'index', NULL, 1, '商品列表', 3, 9, 3),
+(26, 'testControl', NULL, 1, '测试控制器', NULL, 15, 2),
+(27, 'testFunction', NULL, 1, '测试方法', NULL, 26, 3);
 
 -- --------------------------------------------------------
 
@@ -260,21 +274,22 @@ INSERT INTO `prod_user` (`id`, `user_id`, `pid`, `count`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `role` (
-  `id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
+  `role_id` smallint(6) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(20) NOT NULL,
   `pid` smallint(6) DEFAULT NULL,
   `status` tinyint(1) unsigned DEFAULT NULL,
   `remark` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`role_id`),
   KEY `pid` (`pid`),
-  KEY `status` (`status`)
+  KEY `status` (`status`),
+  KEY `role_id` (`role_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- 转存表中的数据 `role`
 --
 
-INSERT INTO `role` (`id`, `name`, `pid`, `status`, `remark`) VALUES
+INSERT INTO `role` (`role_id`, `name`, `pid`, `status`, `remark`) VALUES
 (6, 'Manager', NULL, 1, '普通管理员'),
 (7, 'Editor', NULL, 1, '网站编辑'),
 (8, 'SuperAdmin', NULL, 1, '超级管理员');
@@ -292,6 +307,15 @@ CREATE TABLE IF NOT EXISTS `role_user` (
   KEY `user_id` (`user_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+--
+-- 转存表中的数据 `role_user`
+--
+
+INSERT INTO `role_user` (`role_id`, `user_id`) VALUES
+(8, '58'),
+(7, '64'),
+(6, '64');
+
 -- --------------------------------------------------------
 
 --
@@ -305,17 +329,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `locked` int(11) NOT NULL DEFAULT '0',
   `logintime` varchar(50) NOT NULL,
   `loginip` varchar(30) NOT NULL,
-  `role_id` int(33) NOT NULL,
-  PRIMARY KEY (`user_id`),
-  KEY `role_id` (`role_id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=44 ;
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=65 ;
 
 --
 -- 转存表中的数据 `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `locked`, `logintime`, `loginip`, `role_id`) VALUES
-(15, 'zxy', 'b904cb9b0a0ac1d0f9db1471412fba1d', 0, '2017-05-15 21:24:59', '127.0.0.1', 2);
+INSERT INTO `user` (`user_id`, `username`, `password`, `locked`, `logintime`, `loginip`) VALUES
+(58, 'zxy', 'b904cb9b0a0ac1d0f9db1471412fba1d', 0, '2017-05-17 14:06:47', '127.0.0.1'),
+(64, 'zzw', '8e98935d1fa50c074c443c5282f696e6', 0, '', '');
 
 -- --------------------------------------------------------
 
